@@ -1,12 +1,22 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable, Subject } from 'rxjs';
 import { Videogioco } from '../model/videogioco';
 
 @Injectable({ providedIn: 'root' })
 export class videogiocoService {
-  private videogiochi!: Videogioco[];
+  private apiUrl =
+    'https://project-works-rest-api.onrender.com/api/v1/GROUP-I/videogame';
 
-  getVideogiochi() {
-    return this.videogiochi.slice();
-    console.log(this.videogiochi);
+  constructor(private http: HttpClient) {}
+
+  private giocoSubject = new Subject<Videogioco[]>();
+
+  private videogiochi: Videogioco[] = [];
+
+  giochi$ = this.giocoSubject.asObservable();
+
+  getVideogiochi(): Observable<Videogioco[]> {
+    return this.http.get<Videogioco[]>(this.apiUrl);
   }
 }
