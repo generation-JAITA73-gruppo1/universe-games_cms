@@ -9,3 +9,5 @@ export interface News {
     tags: string[],
     __v: number
 }
+
+export type NewNews = Omit<News, '_id' | '__v'>;
