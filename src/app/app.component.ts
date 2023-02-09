@@ -8,9 +8,10 @@ import { videogiocoService } from './service/videogioco.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
+  //implements OnInit
   title = 'universe-games_csm';
-
+  /*
   videogiochi!: Videogioco[];
   videogiochi$!: Observable<Videogioco[]>;
   videogiochiSubscription!: Subscription;
@@ -20,4 +21,5 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.videogiochi$ = this.videogiocoService.getVideogiochi();
   }
+  */
 }
