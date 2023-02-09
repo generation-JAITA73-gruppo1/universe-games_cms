@@ -12,7 +12,7 @@ export interface Videogioco {
   coverImage: string;
 }
 
-export type NewRecensione = Omit<Videogioco, '_id' | '__v'>;
+export type NewVideogioco = Omit<Videogioco, '_id' | '__v'>;
 
 export interface Lingua {
   voice: string[];
