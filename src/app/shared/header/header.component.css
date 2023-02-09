@@ -1,0 +1,10 @@
+.header {
+  background-color: chartreuse;
+  display: flex;
+}
+
+.header > ul {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+}

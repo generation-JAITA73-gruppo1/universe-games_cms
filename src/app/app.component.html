@@ -1,7 +1,5 @@
-<div>
-  <ul>
-    <li *ngFor="let r of lista$ | async as lista">
-      {{ r.title }}
-    </li>
-  </ul>
-</div>
+<app-header></app-header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
