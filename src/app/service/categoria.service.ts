@@ -4,7 +4,7 @@ import { Observable, Subject } from 'rxjs';
 import { Categoria } from '../model/categoria';
 
 @Injectable({ providedIn: 'root' })
-export class categoriaService {
+export class CategoriaService {
   private apiUrl =
     'https://project-works-rest-api.onrender.com/api/v1/GROUP-I/category';
 

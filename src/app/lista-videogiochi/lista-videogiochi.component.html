@@ -1,1 +1,16 @@
-<p>lista-videogiochi works!</p>
+<div class="lista-videogiochi">
+  <h1 class="title">Lista Videogiochi</h1>
+  <div class="">
+    <div class="gioco" *ngFor="let v of videogiochi$ | async">
+      <b>Titolo:</b> {{ v.title }} <br />
+      <b>Categoria:</b>{{ v.category }} <br />
+      <b>Data di rilascio:</b>{{ v.releaseDate }} <br />
+      <b>Genere:</b> {{ v.genre }} <br />
+      <b>Software House:</b>{{ v.softwareHouse }} <br />
+      <b>Publisher:</b> {{ v.publisher }} <br />
+      <b>Numero di Giocatori:</b> {{ v.numberOfPlayers }} <br />
+      <b>Doppiaggio:</b> {{ v.languages.voice }} <br />
+      <b>Lingua testi:</b> {{ v.languages.text }} <br />
+    </div>
+  </div>
+</div>
