@@ -1,7 +1,21 @@
 <div class="inserimento">
-  <h2>NUOVO CONTENUTO</h2>
-  <app-form-videogiochi></app-form-videogiochi>
-  <app-form-categorie></app-form-categorie>
-  <app-form-news></app-form-news>
-  <app-form-recensioni></app-form-recensioni>
+  <div *ngIf="showErrorMessage" class="error-message">
+    <h2>Errore</h2>
+    <p>Nessuna categoria selezionata, torna alla <a routerLink="">home</a></p>
+  </div>
+
+  <div *ngIf="showFormGames">
+    <app-form-videogiochi></app-form-videogiochi>
+  </div>
+
+  <div *ngIf="showFormCategories">
+    <app-form-categorie></app-form-categorie>
+  </div>
+
+  <div *ngIf="showFormNews">
+    <app-form-recensioni></app-form-recensioni>
+  </div>
+  <div *ngIf="showFormReviews">
+    <app-form-news></app-form-news>
+  </div>
 </div>

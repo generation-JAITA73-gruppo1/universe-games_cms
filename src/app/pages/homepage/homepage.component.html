@@ -1,7 +1,20 @@
 <div class="homepage">
-  <h2>homepage</h2>
-  <app-lista-videogiochi></app-lista-videogiochi>
-  <app-lista-categorie></app-lista-categorie>
-  <app-lista-recensioni></app-lista-recensioni>
-  <app-lista-news></app-lista-news>
+  <div *ngIf="showHomePage">
+    <h2>homepage</h2>
+  </div>
+
+  <div *ngIf="showListaGames">
+    <app-lista-videogiochi></app-lista-videogiochi>
+  </div>
+
+  <div *ngIf="showListaCategories">
+    <app-lista-categorie></app-lista-categorie>
+  </div>
+
+  <div *ngIf="showListaNews">
+    <app-lista-recensioni></app-lista-recensioni>
+  </div>
+  <div *ngIf="showListaReviews">
+    <app-lista-news></app-lista-news>
+  </div>
 </div>
