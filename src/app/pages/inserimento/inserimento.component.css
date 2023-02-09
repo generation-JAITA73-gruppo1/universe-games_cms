@@ -1,0 +1,11 @@
+.homepage {
+  width: 100%;
+}
+
+.error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff7f50;
+  min-width: 30%;
+}

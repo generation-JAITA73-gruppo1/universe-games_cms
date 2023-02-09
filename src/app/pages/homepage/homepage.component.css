@@ -1,0 +1,11 @@
+.homepage {
+  width: 100%;
+}
+
+.homepage-default {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: coral;
+  min-width: 30%;
+}
