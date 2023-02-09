@@ -1,1 +1,19 @@
-<p>lista-recensioni works!</p>
+<div>
+    <h1 class="lista-recensioni">Lista Recensioni</h1>
+    <div class="">
+      
+        <div class="recensione" *ngFor="let r of recensioni$ | async">
+          <b>Titolo:</b>{{ r.title }} <br/>
+          <b>Data di pubblicazione:</b>{{r.publicationDate}} <br/>
+          <b>Contenuto:</b>{{r.content}} <br/>
+          <b>Punteggio:</b>{{r.score}} <br/>
+          <b>Recensore:</b>{{r.reviewerName}} <br/>
+          <b>Immagini:</b><div class="recensioneImg" *ngFor="let i of r.imageUrls">
+                <img [src]="i">
+                <p>{{i}}</p>
+          </div><br/>
+          <b>Codice gioco:</b>{{ r.reviewedGame.id}} <br/>
+          <b>Nome gioco:</b>{{ r.reviewedGame.name}} <br/>
+        </div>
+    </div>
+</div>

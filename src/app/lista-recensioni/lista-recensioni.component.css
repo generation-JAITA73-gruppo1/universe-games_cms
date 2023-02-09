@@ -1,0 +1,12 @@
+.lista-recensioni   {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.recensione {
+    padding: 1rem;
+}
+.recensioneImg {
+    max-width: 10vw;
+}
