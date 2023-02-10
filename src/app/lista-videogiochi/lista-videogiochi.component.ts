@@ -18,4 +18,10 @@ export class ListaVideogiochiComponent implements OnInit {
   ngOnInit(): void {
     this.videogiochi$ = this.videogiocoService.getVideogiochi();
   }
+
+  onClickDelete(id: string) {
+    this.videogiocoService.deleteVideogioco(id).subscribe(() => {
+      this.videogiochi$ = this.videogiocoService.getVideogiochi();
+    });
+  }
 }

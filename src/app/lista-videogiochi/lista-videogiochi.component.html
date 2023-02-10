@@ -11,6 +11,8 @@
       <b>Numero di Giocatori:</b> {{ v.numberOfPlayers }} <br />
       <b>Doppiaggio:</b> {{ v.languages.voice }} <br />
       <b>Lingua testi:</b> {{ v.languages.text }} <br />
+      <b>Immagine di copertina</b> <img [src]="v.coverImage" /><br />
+      <button (click)="onClickDelete(v._id)">Elimina</button>
     </div>
   </div>
 </div>

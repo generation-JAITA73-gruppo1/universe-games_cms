@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
-import { Videogioco } from '../model/videogioco';
+import { NewVideogioco, Videogioco } from '../model/videogioco';
 
 @Injectable({ providedIn: 'root' })
 export class VideogiocoService {
@@ -16,5 +16,13 @@ export class VideogiocoService {
 
   getVideogiochi(): Observable<Videogioco[]> {
     return this.http.get<Videogioco[]>(this.apiUrl);
+  }
+
+  addVideogioco(nuovoGioco: NewVideogioco) {
+    return this.http.post(this.apiUrl, nuovoGioco);
+  }
+
+  deleteVideogioco(id: string) {
+    return this.http.delete(`${this.apiUrl}/${id}`);
   }
 }
