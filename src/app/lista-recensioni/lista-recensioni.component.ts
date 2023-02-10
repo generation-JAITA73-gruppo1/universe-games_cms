@@ -18,4 +18,9 @@ export class ListaRecensioniComponent implements OnInit{
   ngOnInit(): void {
     this.recensioni$ = this.recensioneService.getRecensioni();
   }
+  onClickDelete(id: string) {
+    this.recensioneService.deleteRecensione(id).subscribe(() => {
+      this.recensioni$ = this.recensioneService.getRecensioni()
+    })
+}
 }
