@@ -13,9 +13,15 @@ export class ListaNewsComponent implements OnInit{
   news$!: Observable<News[]>;
   newsSubscription!: Subscription;
 
-  constructor(private videogiocoService: NewsService) {}
+  constructor(private newsService: NewsService) {}
 
   ngOnInit(): void {
-    this.news$ = this.videogiocoService.getNews();
+    this.news$ = this.newsService.getNews();
+  }
+
+  onClickDelete(id: string) {
+    this.newsService.deleteNews(id).subscribe(() => {
+      this.news$ = this.newsService.getNews()
+    })
   }
 }

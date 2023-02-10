@@ -35,7 +35,12 @@ export class FormNewsComponent {
     this.newsService.postNews(this.form.getRawValue()).subscribe(() => {
       this.router.navigateByUrl('lista/news'),
       console.log(this.form.getRawValue())
-      })
+    })
+
+    if(this.form.invalid) {
+      alert('Compila tutti i campi!')
+      return
+    }
   }
 
   get tagsFormArray() {
