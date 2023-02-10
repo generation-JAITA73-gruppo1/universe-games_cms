@@ -14,4 +14,6 @@ h1 {
 
 body {
   margin: 0;
+  background-color: #c69749;
+  border: inset solid 20% #d14242;
 }
