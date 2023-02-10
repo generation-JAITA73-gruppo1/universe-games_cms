@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { News } from '../model/news';
+import { NewNews, News } from '../model/news';
 import { Subject } from 'rxjs';
 
 @Injectable({
@@ -23,9 +23,15 @@ export class NewsService {
     return this.http.post(this.apiUrl, newNews)
   }
 
-  //manca il metodo put 
+  // putNews(id: string, oldData: NewNews) {
+  //   const newData: News = {
+  //       id,
+  //       ...oldData
+  //   }
+  //   return this.http.put(`${this.apiUrl}/${id}`, newData);
+  // }
 
-  deleteNews(id: number) {
+  deleteNews(id: string) {
     return this.http.delete(`${this.apiUrl}/${id}`)
   }
 }

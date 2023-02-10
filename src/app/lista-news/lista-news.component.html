@@ -9,6 +9,7 @@
             <b>Data Pubblicazione: </b> {{ n.publicationDate }} <br />
             <b>Nome Autore: </b> {{ n.authorName }} <br />
             <b>Tags: </b> {{ n.tags }} <br />
+            <button (click)="onClickDelete(n._id)">X</button>
         </div>
     </div>
 </div>
