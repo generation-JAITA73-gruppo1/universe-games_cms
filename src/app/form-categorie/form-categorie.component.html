@@ -1,1 +1,6 @@
-<p>form-categorie works!</p>
+<div class="form-categorie">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <input type="text" placeholder="" formControlName="name" />
+    <button type="submit">Aggiungi nuova categoria</button>
+  </form>
+</div>

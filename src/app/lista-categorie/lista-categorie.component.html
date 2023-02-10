@@ -1,10 +1,10 @@
 <main>
+  <div class="">
     <h1 class="title">Lista Categorie</h1>
-    <div class="">
-        <ul>
-            <li class = "categoria" *ngFor="let c of categoria$ | async">
-                categoria: {{ c.name }}
-            </li>
-        </ul>
-      </div>
-  </main>
+    <ul>
+      <li class="categoria" *ngFor="let c of categoria$ | async">
+        categoria: {{ c.name }}
+      </li>
+    </ul>
+  </div>
+</main>
