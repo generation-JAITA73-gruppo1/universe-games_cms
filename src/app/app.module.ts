@@ -15,6 +15,7 @@ import { FormNewsComponent } from './form-news/form-news.component';
 import { ListaNewsComponent } from './lista-news/lista-news.component';
 import { ListaRecensioniComponent } from './lista-recensioni/lista-recensioni.component';
 import { FormRecensioniComponent } from './form-recensioni/form-recensioni.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,8 @@ import { FormRecensioniComponent } from './form-recensioni/form-recensioni.compo
     RouterModule,
     SharedModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
 })
 export class AppModule {}

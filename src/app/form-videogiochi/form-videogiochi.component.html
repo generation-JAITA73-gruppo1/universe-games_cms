@@ -1,1 +1,73 @@
-<p>form-videogiochi works!</p>
+<div class="form-container">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <h2>Inserisci un nuovo videogioco:</h2>
+    <br />
+    <input type="text" placeholder="Titolo" formControlName="title" />
+    <br />
+    <input type="text" placeholder="Categoria" formControlName="category" />
+    <br />
+    <input
+      type="date"
+      placeholder="Data di rilascio"
+      formControlName="releaseDate"
+    />
+    <br />
+    <input type="text" placeholder="Genere" formControlName="genre" />
+    <br />
+    <input
+      type="text"
+      placeholder="Software House"
+      formControlName="softwareHouse"
+    />
+    <br />
+    <input type="text" placeholder="Publisher" formControlName="publisher" />
+    <br />
+    <input
+      type="number"
+      placeholder="Numero di giocatori"
+      formControlName="numberOfPlayers"
+    />
+    <br />
+
+    <div formGroupName="languages">
+      <div formArrayName="voice">
+        <h3>Lingue doppiate:</h3>
+        <div *ngFor="let _ of voiceFormArray.controls; let i = index">
+          <input
+            type="text"
+            placeholder="Lingua Voce: ita , ecc."
+            [formControlName]="i"
+          />
+          <button type="button" (click)="onClickAddVoice()">+</button>
+          <button type="button" (click)="onClickRemoveVoice(i)" *ngIf="i > 0">
+            -
+          </button>
+        </div>
+      </div>
+
+      <div formArrayName="text">
+        <h3>Lingue di testo:</h3>
+        <div *ngFor="let _ of textFormArray.controls; let i = index">
+          <input
+            type="text"
+            placeholder="Testo tradotto in: ita, ecc."
+            [formControlName]="i"
+          />
+          <button type="button" (click)="onClickAddText()">+</button>
+          <button type="button" (click)="onClickRemoveText(i)" *ngIf="i > 0">
+            -
+          </button>
+        </div>
+      </div>
+    </div>
+    <br />
+    <input
+      type="text"
+      placeholder="Link URL all'Immagine di copertina"
+      formControlName="coverImage"
+    />
+    <br />
+
+    <button type="submit">Salva</button>
+  </form>
+</div>
