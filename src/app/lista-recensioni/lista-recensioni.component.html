@@ -8,12 +8,12 @@
           <b>Contenuto:</b>{{r.content}} <br/>
           <b>Punteggio:</b>{{r.score}} <br/>
           <b>Recensore:</b>{{r.reviewerName}} <br/>
-          <b>Immagini:</b><div class="recensioneImg" *ngFor="let i of r.imageUrls">
+          <b>Immagini:</b><div class="recensione-img-list"><div class="recensione-img" *ngFor="let i of r.imageUrls">
                 <img [src]="i">
                 <p>{{i}}</p>
-          </div><br/>
+          </div></div><br/>
           <b>Codice gioco:</b>{{ r.reviewedGame.id}} <br/>
           <b>Nome gioco:</b>{{ r.reviewedGame.name}} <br/>
-        </div>
+          <button (click)="onClickDelete(r._id)">Elimina</button>
+          </div> 
     </div>
-</div>

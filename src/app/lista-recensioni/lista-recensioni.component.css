@@ -7,6 +7,19 @@
 .recensione {
     padding: 1rem;
 }
-.recensioneImg {
-    max-width: 10vw;
+.recensione-img {
+    width: 100%;
+}
+
+.recensione-img-list {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.recensione-img > img {
+    width: 100%;
+    object-fit: cover;
+    max-width: 5vw;
 }

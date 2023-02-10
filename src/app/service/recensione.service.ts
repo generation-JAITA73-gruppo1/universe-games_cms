@@ -19,4 +19,16 @@ export class RecensioneService {
   getRecensioni(): Observable<Recensione[]> {
     return this.http.get<Recensione[]>(this.apiUrl);
   }
+  addRecensione(nuovaRecensione: Observable<Recensione[]>) {
+    return this.http.post<Recensione[]>(this.apiUrl, nuovaRecensione);
+  }
+  postRecensione(newNews: Omit<Recensione, 'id'>) {
+    return this.http.post(this.apiUrl, newNews)
+  }
+
+  //manca il metodo put 
+
+  deleteRecensione(id: string) {
+    return this.http.delete(`${this.apiUrl}/${id}`)
+  }
 }
