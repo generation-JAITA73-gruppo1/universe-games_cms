@@ -33,7 +33,11 @@
       <div formArrayName="voice">
         <h3>Lingue doppiate:</h3>
         <div *ngFor="let _ of voiceFormArray.controls; let i = index">
-          <input type="text" placeholder="Lingua Voce" [formControlName]="i" />
+          <input
+            type="text"
+            placeholder="Lingua Voce: ita , ecc."
+            [formControlName]="i"
+          />
           <button type="button" (click)="onClickAddVoice()">+</button>
           <button type="button" (click)="onClickRemoveVoice(i)" *ngIf="i > 0">
             -
@@ -46,7 +50,7 @@
         <div *ngFor="let _ of textFormArray.controls; let i = index">
           <input
             type="text"
-            placeholder="Testo tradotto in:"
+            placeholder="Testo tradotto in: ita, ecc."
             [formControlName]="i"
           />
           <button type="button" (click)="onClickAddText()">+</button>
@@ -56,6 +60,13 @@
         </div>
       </div>
     </div>
+    <br />
+    <input
+      type="text"
+      placeholder="Link URL all'Immagine di copertina"
+      formControlName="coverImage"
+    />
+    <br />
 
     <button type="submit">Salva</button>
   </form>

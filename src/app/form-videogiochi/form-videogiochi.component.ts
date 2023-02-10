@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
-import { FormArray, FormControl, FormGroup } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { max, Observable } from 'rxjs';
 import { NewVideogioco } from '../model/videogioco';
 import { VideogiocoService } from '../service/videogioco.service';
 
@@ -9,19 +10,26 @@ import { VideogiocoService } from '../service/videogioco.service';
   templateUrl: './form-videogiochi.component.html',
   styleUrls: ['./form-videogiochi.component.css'],
 })
-export class FormVideogiochiComponent {
+
+export class FormVideogiochiComponent implements OnInit {
+
   form: FormGroup = new FormGroup({
-    title: new FormControl(''),
-    category: new FormControl(''),
-    releaseDate: new FormControl(),
-    genre: new FormControl(''),
-    softwareHouse: new FormControl(''),
-    publisher: new FormControl(''),
-    numberOfPlayers: new FormControl(0),
+    title: new FormControl('', [Validators.required]),
+    category: new FormControl('', [Validators.required]),
+    releaseDate: new FormControl('', [Validators.required]),
+    genre: new FormControl('', [Validators.required]),
+    softwareHouse: new FormControl('', [Validators.required]),
+    publisher: new FormControl('', [Validators.required]),
+    numberOfPlayers: new FormControl('', [Validators.required]),
     languages: new FormGroup({
-      voice: new FormArray([new FormControl('')]),
-      text: new FormArray([new FormControl('')]),
+      voice: new FormArray([
+        new FormControl('', [Validators.required, Validators.maxLength(3)]),
+      ]),
+      text: new FormArray([
+        new FormControl('', [Validators.required, Validators.maxLength(3)]),
+      ]),
     }),
+    coverImage: new FormControl('', [Validators.required]),
   });
 
   constructor(
@@ -32,9 +40,6 @@ export class FormVideogiochiComponent {
 
   ngOnInit(): void {}
 
-  //   onRemoveAbilita(index: number): void {
-  //     this.abilitaFormArray.removeAt(index);
-  //   }
 
   get voiceFormArray() {
     return this.form.get('languages.voice') as FormArray;
@@ -69,7 +74,7 @@ export class FormVideogiochiComponent {
       return;
     }
     if (this.form.invalid) {
-      alert('Compila tutti i campi.');
+      alert('Compila tutti i campi in modo corretto.');
       return;
     }
 
@@ -77,11 +82,10 @@ export class FormVideogiochiComponent {
 
     this.videogiochiService.addVideogioco(newG).subscribe(() => {
       console.log('success');
-      //   error: (error: any) => {
-      //     console.log(error);
-      //   };
+      this.router.navigateByUrl('/lista/games');
     });
   }
+  
 
   //   newGame: NewVideogioco = {
   //     title: 'Fire Emblem Engage',

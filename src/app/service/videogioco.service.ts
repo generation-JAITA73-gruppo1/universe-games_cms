@@ -12,8 +12,6 @@ export class VideogiocoService {
 
   private giocoSubject = new Subject<Videogioco[]>();
 
-  private videogiochi: Videogioco[] = [];
-
   giochi$ = this.giocoSubject.asObservable();
 
   getVideogiochi(): Observable<Videogioco[]> {
@@ -22,5 +20,9 @@ export class VideogiocoService {
 
   addVideogioco(nuovoGioco: NewVideogioco) {
     return this.http.post(this.apiUrl, nuovoGioco);
+  }
+  
+  deleteVideogioco(id: string) {
+    return this.http.delete(`${this.apiUrl}/${id}`);
   }
 }
