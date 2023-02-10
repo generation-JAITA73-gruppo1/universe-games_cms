@@ -8,7 +8,7 @@ export interface Videogioco {
   publisher: string;
   numberOfPlayers: number;
   languages: Lingua;
-  _v: number;
+  __v: number;
   coverImage: string;
 }
 
