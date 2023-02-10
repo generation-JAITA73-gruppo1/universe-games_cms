@@ -21,7 +21,7 @@ export class VideogiocoService {
   addVideogioco(nuovoGioco: NewVideogioco) {
     return this.http.post(this.apiUrl, nuovoGioco);
   }
-
+  
   deleteVideogioco(id: string) {
     return this.http.delete(`${this.apiUrl}/${id}`);
   }

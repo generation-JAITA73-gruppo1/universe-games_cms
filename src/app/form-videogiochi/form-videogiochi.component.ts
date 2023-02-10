@@ -10,8 +10,8 @@ import { VideogiocoService } from '../service/videogioco.service';
   templateUrl: './form-videogiochi.component.html',
   styleUrls: ['./form-videogiochi.component.css'],
 })
+
 export class FormVideogiochiComponent implements OnInit {
-  dati$!: Observable<VideogiocoService[]>;
 
   form: FormGroup = new FormGroup({
     title: new FormControl('', [Validators.required]),
@@ -38,11 +38,9 @@ export class FormVideogiochiComponent implements OnInit {
     private router: Router
   ) {}
 
-  get abilitaFormArray(): FormArray {
-    return this.form.get('abilita') as FormArray;
-  }
-
   ngOnInit(): void {}
+
+
   get voiceFormArray() {
     return this.form.get('languages.voice') as FormArray;
   }
@@ -87,4 +85,21 @@ export class FormVideogiochiComponent implements OnInit {
       this.router.navigateByUrl('/lista/games');
     });
   }
+  
+
+  //   newGame: NewVideogioco = {
+  //     title: 'Fire Emblem Engage',
+  //     category: 'Nintendo Switch',
+  //     releaseDate: new Date('2023-01-20'),
+  //     genre: 'Tactical RPG',
+  //     softwareHouse: 'TK',
+  //     publisher: 'Nintendo',
+  //     numberOfPlayers: 1,
+  //     languages: {
+  //       voice: ['eng', 'jap', 'ch'],
+  //       text: ['eng', 'fr', 'de', 'sp', 'ita', 'jap'],
+  //     },
+  //     coverImage:
+  //       'https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/2x1_NSwitch_FireEmblemEngage_EU.jpg',
+  //   };
 }
