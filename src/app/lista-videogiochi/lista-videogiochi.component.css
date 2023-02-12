@@ -4,6 +4,17 @@
   padding: 1rem;
 }
 
-.gioco {
+.game {
   padding: 1rem;
+  margin: 1rem 0rem 1rem;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.game-cover-image {
+  width: 12rem;
+  height: 16rem;
 }

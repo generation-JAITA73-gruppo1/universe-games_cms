@@ -28,7 +28,7 @@ export class FormRecensioniComponent implements OnInit, OnDestroy {
   //  ListaGiochi mi serve a immagazzinare la lista di tutti i giochi registrati nel server,
   //  i cui valori vengono salvati in maniera ridotta (aka contenedo solo id).
   // Questi poi mi servono per fare il select che associa un gioco ad ogni recensione (legato al FormControl "reviewedGame")
-  listaGiochiSkimmed: VideogiocoSkimmed[] = [];
+  listaGiochiSkimmed: Array<VideogiocoSkimmed> = [];
 
   // reviewedGAmeIdChange. Questa variabile controlla la sottoscrizione al cambiamento del valore inserito nel form.
   //   Si chiude da sola una volta distrutto il componente
@@ -64,7 +64,10 @@ export class FormRecensioniComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     // Questa sottoscrizione mi permette di recuperare i dati dei giochi in forma ridotta, grazie al pipe contenuto in vidoegiochi service
     this.videogiocoService.getVideogiochi().subscribe((gamesData) => {
-      this.listaGiochiSkimmed = gamesData.map((a) => a as VideogiocoSkimmed);
+      this.listaGiochiSkimmed = gamesData.map((a) => ({
+        _id: a._id,
+        title: a.title,
+      }));
       console.log(this.listaGiochiSkimmed);
     });
 
