@@ -1,4 +1,10 @@
-<div class="form-container">
+<div
+  class="form-container"
+  *ngIf="
+    !isEditMode || (noModifiable == false && isEditMode == true);
+    else noMod
+  "
+>
   <form [formGroup]="form" (ngSubmit)="onSubmit()">
     <h2>Inserisci un nuovo videogioco:</h2>
     <br />
@@ -71,3 +77,11 @@
     <button type="submit">Salva</button>
   </form>
 </div>
+
+<ng-template #noMod>
+  <p style="text-align: center">
+    L'elemento selezionato non è disponibile<br /><button routerLink="/">
+      Torna alla home
+    </button>
+  </p>
+</ng-template>

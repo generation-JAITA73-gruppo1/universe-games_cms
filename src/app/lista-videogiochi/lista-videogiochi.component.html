@@ -13,6 +13,9 @@
       <b>Lingua testi:</b> {{ v.languages.text }} <br />
       <b>Immagine di copertina</b> <img [src]="v.coverImage" /><br />
       <button (click)="onClickDelete(v._id)">Elimina</button>
+      <td>
+        <button [routerLink]="'/modifica/games/' + v._id">Modifica</button>
+      </td>
     </div>
   </div>
 </div>
