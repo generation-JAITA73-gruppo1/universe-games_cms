@@ -18,11 +18,24 @@ export class VideogiocoService {
     return this.http.get<Videogioco[]>(this.apiUrl);
   }
 
+  getVideogioco(id: string) {
+    return this.http.get<Videogioco>(`${this.apiUrl}/${id}`, {});
+  }
+
   addVideogioco(nuovoGioco: NewVideogioco) {
     return this.http.post(this.apiUrl, nuovoGioco);
   }
 
   deleteVideogioco(id: string) {
     return this.http.delete(`${this.apiUrl}/${id}`);
+  }
+
+  putVideogioco(id: string, oldData: NewVideogioco, __v: number) {
+    const newData: Videogioco = {
+      ...oldData,
+      _id: id,
+      __v,
+    };
+    return this.http.put(`${this.apiUrl}/${id}`, newData);
   }
 }

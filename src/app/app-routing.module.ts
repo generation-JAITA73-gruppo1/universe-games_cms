@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'nuovo/:cat_name',
     component: InserimentoComponent,
   },
+  {
+    path: 'modifica/:cat_name/:id',
+    component: InserimentoComponent,
+  },
 ];
 
 @NgModule({

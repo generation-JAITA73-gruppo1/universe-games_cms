@@ -5,14 +5,15 @@
       <div class="game-text-flex">
         <h3>{{ v.title }}</h3>
         <b>Categoria:</b> {{ v.category }} <br />
-        <b>Data di rilascio:</b>{{ v.releaseDate }} <br />
+        <b>Data di uscita:</b>{{ v.releaseDate }} <br />
         <b>Genere:</b> {{ v.genre }} <br />
-        <b>Software House:</b>{{ v.softwareHouse }} <br />
+        <b>Sviluppatore:</b>{{ v.softwareHouse }} <br />
         <b>Publisher:</b> {{ v.publisher }} <br />
-        <b>Numero di Giocatori:</b> {{ v.numberOfPlayers }} <br />
+        <b>Numero di giocatori:</b> {{ v.numberOfPlayers }} <br />
         <b>Doppiaggio:</b> {{ v.languages.voice }} <br />
         <b>Lingua testi:</b> {{ v.languages.text }} <br />
         <button (click)="onClickDelete(v._id)">Elimina</button>
+        <button [routerLink]="'/modifica/games/' + v._id">Modifica</button>
       </div>
       <div class="game-cover-image">
         <img
