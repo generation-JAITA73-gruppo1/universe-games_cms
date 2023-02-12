@@ -3,6 +3,7 @@ import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { max, Observable, Subscription } from 'rxjs';
 import { NewVideogioco } from '../model/videogioco';
+import { CategoriaService } from '../service/categoria.service';
 import { VideogiocoService } from '../service/videogioco.service';
 
 @Component({
@@ -30,16 +31,22 @@ export class FormVideogiochiComponent implements OnInit {
     coverImage: new FormControl('', [Validators.required]),
   });
 
+
   isEditMode: boolean = false;
   idModifiable: string = '';
   noModifiable = false;
   __vModifiable = 0;
+  
+  // lista delle categorie/console che servirà nel slect del template per scegliere la console giusta
+  categoryList: string[] = [];
 
   constructor(
     private videogiochiService: VideogiocoService,
+    private categoriaService: CategoriaService,
     private route: ActivatedRoute,
     private router: Router
   ) {}
+
 
   reset() {
     this.form.reset();
@@ -50,6 +57,11 @@ export class FormVideogiochiComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  
+    this.categoriaService.getCategorie().subscribe((list) => {
+      this.categoryList = list.map((obj) => obj.name as string);
+    });
+  
     this.route.params.subscribe((params) => {
       const id = params['id'];
       if (id !== undefined) {
@@ -110,8 +122,7 @@ export class FormVideogiochiComponent implements OnInit {
           },
         });
       }
-    });
-  }
+
 
   get voiceFormArray() {
     return this.form.get('languages.voice') as FormArray;
@@ -173,4 +184,5 @@ export class FormVideogiochiComponent implements OnInit {
       });
     }
   }
+
 }
