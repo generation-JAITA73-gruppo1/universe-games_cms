@@ -1,19 +1,27 @@
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
-    <input type="text" placeholder="Titolo" formControlName="title" />
-    <input type="date" placeholder="Data di pubblicazione" formControlName="publicationDate" />
-    <input type="text" placeholder="Contenuto" formControlName="content" />
-    <input type="number" placeholder="Punteggio" formControlName="score" />
-    <input type="text" placeholder="Autore" formControlName="reviewerName" />
-    <div formArrayName = "imageUrls">
-        <div *ngFor="let _ of imageFormArray.controls;let i = index">
-            <input type="text" placeholder="URL Immagine" [formControlName]="i" />
-            <button type="button" (click)="onClickAddTags()">+</button>
-            <button type="button" (click)="onRemoveTags(i)" *ngIf="i > 0">-</button>
-        </div>        
+  <input type="text" placeholder="Titolo" formControlName="title" />
+  <input
+    type="date"
+    placeholder="Data di pubblicazione"
+    formControlName="publicationDate"
+  />
+  <input type="text" placeholder="Contenuto" formControlName="content" />
+  <input type="number" placeholder="Punteggio" formControlName="score" />
+  <input type="text" placeholder="Autore" formControlName="reviewerName" />
+  <div formArrayName="imageUrls">
+    <div *ngFor="let _ of imageFormArray.controls; let i = index">
+      <input type="text" placeholder="URL Immagine" [formControlName]="i" />
+      <button type="button" (click)="onClickAddTags()">+</button>
+      <button type="button" (click)="onRemoveTags(i)" *ngIf="i > 0">-</button>
     </div>
-    <div formGroupName = "reviewedGame">
-        <input type="text" placeholder="ID" formControlName="id" />
-        <input type="text" placeholder="Nome" formControlName="name" />
-    </div>
+  </div>
+  <div formGroupName="reviewedGame">
+    <select formControlName="id">
+      <option *ngFor="let v of listaGiochiSkimmed" [value]="v._id">
+        {{ v.title }}
+        /> -->
+      </option>
+    </select>
+  </div>
   <button type="submit">Salva</button>
 </form>

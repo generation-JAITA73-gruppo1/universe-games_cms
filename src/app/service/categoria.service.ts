@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, Subject } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { Categoria, NewCategoria } from '../model/categoria';
 
 @Injectable({ providedIn: 'root' })
@@ -10,9 +10,9 @@ export class CategoriaService {
 
   constructor(private http: HttpClient) {}
 
-  private categoriaSubject = new Subject<Categoria[]>();
+  //   private categoriaSubject = new Subject<Categoria[]>();
 
-  categorie$ = this.categoriaSubject.asObservable();
+  //   categorie$ = this.categoriaSubject.asObservable();
 
   getCategorie(): Observable<Categoria[]> {
     return this.http.get<Categoria[]>(this.apiUrl);
