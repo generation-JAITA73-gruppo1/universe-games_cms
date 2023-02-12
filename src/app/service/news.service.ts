@@ -4,23 +4,24 @@ import { NewNews, News } from '../model/news';
 import { Subject } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class NewsService {
-  private apiUrl = 'https://project-works-rest-api.onrender.com/api/v1/GROUP-I/news'
+  private apiUrl =
+    'https://project-works-rest-api.onrender.com/api/v1/GROUP-I/news';
 
   constructor(private http: HttpClient) {}
 
-  private newsSubject = new Subject<News[]>();
+  //   private newsSubject = new Subject<News[]>();
 
-  news$ = this.newsSubject.asObservable();
+  //   news$ = this.newsSubject.asObservable();
 
   getNews() {
-    return this.http.get<News[]>(this.apiUrl)
+    return this.http.get<News[]>(this.apiUrl);
   }
-  
+
   postNews(newNews: Omit<News, 'id'>) {
-    return this.http.post(this.apiUrl, newNews)
+    return this.http.post(this.apiUrl, newNews);
   }
 
   // putNews(id: string, oldData: NewNews) {
@@ -32,6 +33,6 @@ export class NewsService {
   // }
 
   deleteNews(id: string) {
-    return this.http.delete(`${this.apiUrl}/${id}`)
+    return this.http.delete(`${this.apiUrl}/${id}`);
   }
 }

@@ -4,7 +4,12 @@
     <br />
     <input type="text" placeholder="Titolo" formControlName="title" />
     <br />
-    <input type="text" placeholder="Categoria" formControlName="category" />
+    <select formControlName="category">
+      <option selected hidden disabed value="">Seleziona una console...</option>
+      <option *ngFor="let c of categoryList" [value]="c">
+        {{ c | uppercase }}
+      </option>
+    </select>
     <br />
     <input
       type="date"

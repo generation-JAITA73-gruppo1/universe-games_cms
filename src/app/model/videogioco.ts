@@ -13,6 +13,18 @@ export interface Videogioco {
 }
 
 export type NewVideogioco = Omit<Videogioco, '_id' | '__v'>;
+export type VideogiocoSkimmed = Omit<
+  Videogioco,
+  | '__v'
+  | 'category'
+  | 'releaseDate'
+  | 'genre'
+  | 'softwareHouse'
+  | 'publisher'
+  | 'numberOfPlayers'
+  | 'languages'
+  | 'coverImage'
+>;
 
 export interface Lingua {
   voice: string[];

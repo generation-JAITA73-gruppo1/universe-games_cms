@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { max, Observable } from 'rxjs';
 import { NewVideogioco } from '../model/videogioco';
+import { CategoriaService } from '../service/categoria.service';
 import { VideogiocoService } from '../service/videogioco.service';
 
 @Component({
@@ -10,9 +10,7 @@ import { VideogiocoService } from '../service/videogioco.service';
   templateUrl: './form-videogiochi.component.html',
   styleUrls: ['./form-videogiochi.component.css'],
 })
-
 export class FormVideogiochiComponent implements OnInit {
-
   form: FormGroup = new FormGroup({
     title: new FormControl('', [Validators.required]),
     category: new FormControl('', [Validators.required]),
@@ -32,14 +30,20 @@ export class FormVideogiochiComponent implements OnInit {
     coverImage: new FormControl('', [Validators.required]),
   });
 
+  categoryList: string[] = [];
+
   constructor(
     private videogiochiService: VideogiocoService,
+    private categoriaService: CategoriaService,
     private route: ActivatedRoute,
     private router: Router
   ) {}
 
-  ngOnInit(): void {}
-
+  ngOnInit(): void {
+    this.categoriaService.getCategorie().subscribe((list) => {
+      this.categoryList = list.map((obj) => obj.name as string);
+    });
+  }
 
   get voiceFormArray() {
     return this.form.get('languages.voice') as FormArray;
@@ -85,7 +89,6 @@ export class FormVideogiochiComponent implements OnInit {
       this.router.navigateByUrl('/lista/games');
     });
   }
-  
 
   //   newGame: NewVideogioco = {
   //     title: 'Fire Emblem Engage',

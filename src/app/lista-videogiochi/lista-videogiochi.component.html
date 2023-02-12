@@ -1,18 +1,25 @@
 <div class="lista-videogiochi">
   <h1 class="title">Lista Videogiochi</h1>
-  <div class="">
-    <div class="gioco" *ngFor="let v of videogiochi$ | async">
-      <b>Titolo:</b> {{ v.title }} <br />
-      <b>Categoria:</b>{{ v.category }} <br />
-      <b>Data di rilascio:</b>{{ v.releaseDate }} <br />
-      <b>Genere:</b> {{ v.genre }} <br />
-      <b>Software House:</b>{{ v.softwareHouse }} <br />
-      <b>Publisher:</b> {{ v.publisher }} <br />
-      <b>Numero di Giocatori:</b> {{ v.numberOfPlayers }} <br />
-      <b>Doppiaggio:</b> {{ v.languages.voice }} <br />
-      <b>Lingua testi:</b> {{ v.languages.text }} <br />
-      <b>Immagine di copertina</b> <img [src]="v.coverImage" /><br />
-      <button (click)="onClickDelete(v._id)">Elimina</button>
+  <div class="game-list">
+    <div class="game" *ngFor="let v of videogiochi$ | async">
+      <div class="game-text-flex">
+        <h3>{{ v.title }}</h3>
+        <b>Categoria:</b> {{ v.category }} <br />
+        <b>Data di rilascio:</b>{{ v.releaseDate }} <br />
+        <b>Genere:</b> {{ v.genre }} <br />
+        <b>Software House:</b>{{ v.softwareHouse }} <br />
+        <b>Publisher:</b> {{ v.publisher }} <br />
+        <b>Numero di Giocatori:</b> {{ v.numberOfPlayers }} <br />
+        <b>Doppiaggio:</b> {{ v.languages.voice }} <br />
+        <b>Lingua testi:</b> {{ v.languages.text }} <br />
+        <button (click)="onClickDelete(v._id)">Elimina</button>
+      </div>
+      <div class="game-cover-image">
+        <img
+          [src]="v.coverImage"
+          (error)="v.coverImage = '/assets/images/no-cover.png'"
+        />
+      </div>
     </div>
   </div>
 </div>
