@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { max, Observable, Subscription } from 'rxjs';
 import { NewVideogioco } from '../model/videogioco';
 import { CategoriaService } from '../service/categoria.service';
 import { VideogiocoService } from '../service/videogioco.service';
