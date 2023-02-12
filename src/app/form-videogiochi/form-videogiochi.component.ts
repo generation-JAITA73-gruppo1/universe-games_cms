@@ -31,12 +31,11 @@ export class FormVideogiochiComponent implements OnInit {
     coverImage: new FormControl('', [Validators.required]),
   });
 
-
   isEditMode: boolean = false;
   idModifiable: string = '';
   noModifiable = false;
   __vModifiable = 0;
-  
+
   // lista delle categorie/console che servirà nel slect del template per scegliere la console giusta
   categoryList: string[] = [];
 
@@ -47,7 +46,6 @@ export class FormVideogiochiComponent implements OnInit {
     private router: Router
   ) {}
 
-
   reset() {
     this.form.reset();
     this.isEditMode = false;
@@ -57,11 +55,10 @@ export class FormVideogiochiComponent implements OnInit {
   }
 
   ngOnInit(): void {
-  
     this.categoriaService.getCategorie().subscribe((list) => {
       this.categoryList = list.map((obj) => obj.name as string);
     });
-  
+
     this.route.params.subscribe((params) => {
       const id = params['id'];
       if (id !== undefined) {
@@ -122,7 +119,8 @@ export class FormVideogiochiComponent implements OnInit {
           },
         });
       }
-
+    });
+  }
 
   get voiceFormArray() {
     return this.form.get('languages.voice') as FormArray;
@@ -184,5 +182,4 @@ export class FormVideogiochiComponent implements OnInit {
       });
     }
   }
-
 }
