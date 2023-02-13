@@ -6,9 +6,9 @@ import { CategoriaService } from '../service/categoria.service';
 @Component({
   selector: 'app-lista-categorie',
   templateUrl: './lista-categorie.component.html',
-  styleUrls: ['./lista-categorie.component.css']
+  styleUrls: ['./lista-categorie.component.css'],
 })
-export class ListaCategorieComponent implements OnInit{
+export class ListaCategorieComponent implements OnInit {
   categoria!: Categoria[];
   categoria$!: Observable<Categoria[]>;
   categorieSubscription!: Subscription;
@@ -17,5 +17,11 @@ export class ListaCategorieComponent implements OnInit{
 
   ngOnInit(): void {
     this.categoria$ = this.categoriaService.getCategorie();
+  }
+
+  onClickDelete(id: string) {
+    this.categoriaService.deleteCategoria(id).subscribe(() => {
+      this.categoria$ = this.categoriaService.getCategorie();
+    });
   }
 }

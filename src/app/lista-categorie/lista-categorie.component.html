@@ -1,10 +1,9 @@
-<main>
-  <div class="">
-    <h1 class="title">Lista Categorie</h1>
-    <ul>
-      <li class="categoria" *ngFor="let c of categoria$ | async">
-        categoria: {{ c.name }}
-      </li>
-    </ul>
-  </div>
-</main>
+<div class="">
+  <h1 class="title">Lista Categorie</h1>
+  <ul>
+    <li class="categoria" *ngFor="let c of categoria$ | async">
+      categoria: {{ c.name }}
+      <button (click)="onClickDelete(c._id)">Elimina</button>
+    </li>
+  </ul>
+</div>
