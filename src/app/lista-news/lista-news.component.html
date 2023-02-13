@@ -10,6 +10,7 @@
             <b>Nome Autore: </b> {{ n.authorName }} <br />
             <b>Tags: </b> {{ n.tags }} <br />
             <button (click)="onClickDelete(n._id)">X</button>
+            <button [routerLink]="'/modifica/news/' + n._id">Modifica</button>
         </div>
     </div>
 </div>
