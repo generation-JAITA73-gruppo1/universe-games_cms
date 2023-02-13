@@ -1,11 +1,18 @@
-.homepage {
-  width: 100%;
-}
-
 .error-message {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #ff7f50;
   min-width: 30%;
+}
+
+.inserimento {
+  width: 100%;
+  padding: 4rem 12vw 4rem 12vw;
+}
+
+.inserimento-form {
+  width: 100%;
+  background-color: white;
+  padding: 2rem 4rem;
 }

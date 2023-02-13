@@ -4,6 +4,12 @@
   padding: 1rem;
 }
 
+.title {
+  background-color: white;
+  margin: 2rem;
+  padding: 1rem 2rem;
+}
+
 .game {
   padding: 1rem;
   margin: 1rem 0rem 1rem;
