@@ -14,15 +14,15 @@ import { VideogiocoService } from '../service/videogioco.service';
 })
 export class FormRecensioniComponent implements OnInit, OnDestroy {
   form: FormGroup = new FormGroup({
-    title: new FormControl(''),
-    publicationDate: new FormControl(''),
-    content: new FormControl(''),
+    title: new FormControl('', [Validators.required]),
+    publicationDate: new FormControl('', [Validators.required]),
+    content: new FormControl('null', [Validators.required]),
     score: new FormControl(0),
-    reviewerName: new FormControl(''),
-    imageUrls: new FormArray([new FormControl('')]),
+    reviewerName: new FormControl('', [Validators.required]),
+    imageUrls: new FormArray([new FormControl('', [Validators.required])]),
     reviewedGame: new FormGroup({
-      id: new FormControl(),
-      name: new FormControl(''),
+      id: new FormControl([Validators.required]),
+      name: new FormControl('', [Validators.required]),
     }),
   });
 
@@ -87,7 +87,7 @@ export class FormRecensioniComponent implements OnInit, OnDestroy {
   }
 
   onClickAddTags() {
-    this.imageFormArray.push(new FormControl('', [Validators.required]));
+    this.imageFormArray.push(new FormControl(''));
   }
 
   onRemoveTags(index: number): void {

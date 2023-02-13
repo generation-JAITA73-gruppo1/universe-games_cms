@@ -10,7 +10,7 @@ import { CategoriaService } from '../service/categoria.service';
 })
 export class FormCategorieComponent {
   form: FormGroup = new FormGroup({
-    name: new FormControl(''),
+    name: new FormControl('', [Validators.required]),
   });
 
   isEditMode: boolean = false;

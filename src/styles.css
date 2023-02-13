@@ -19,7 +19,8 @@ img {
   height: 100%;
 }
 
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: rgb(142, 141, 141);
   font-style: italic;
   opacity: 1;
@@ -32,4 +33,12 @@ input {
 select {
   margin-bottom: 0.5rem;
   padding: 0.7rem;
+}
+.text-area-row {
+  padding-top: 0.5rem;
+  vertical-align: top;
+}
+.text-area-row textarea {
+  min-height: 10rem;
+  min-width: 20rem;
 }

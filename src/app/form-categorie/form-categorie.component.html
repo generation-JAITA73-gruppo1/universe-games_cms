@@ -6,9 +6,23 @@
   "
 >
   <div class="form-categorie">
+    <h2>Inserisci una nuova categoria/console:</h2>
     <form [formGroup]="form" (ngSubmit)="onSubmit()">
-      <input type="text" placeholder="" formControlName="name" />
-      <button type="submit">Salva</button>
+      <table>
+        <tr>
+          <td>
+            <input
+              type="text"
+              placeholder=""
+              formControlName="name"
+              placeholder="Nome categoria..."
+            />
+          </td>
+          <td class="submit-button">
+            <button type="submit" class="submit-button">Salva</button>
+          </td>
+        </tr>
+      </table>
     </form>
   </div>
 </div>

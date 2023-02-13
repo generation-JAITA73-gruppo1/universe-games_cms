@@ -87,7 +87,7 @@
         </td>
       </tr>
 
-      <tr>
+      <tbody>
         <div formGroupName="languages">
           <tr>
             <h3>Lingue doppiate:</h3>
@@ -138,10 +138,10 @@
                     +
                   </button>
                   <button
+                    *ngIf="i > 0"
                     class="bottoneArrayRemove"
                     type="button"
                     (click)="onClickRemoveText(i)"
-                    *ngIf="i > 0"
                   >
                     -
                   </button>
@@ -150,7 +150,7 @@
             </div>
           </tr>
         </div>
-      </tr>
+      </tbody>
 
       <td>
         <button type="submit">Salva</button>

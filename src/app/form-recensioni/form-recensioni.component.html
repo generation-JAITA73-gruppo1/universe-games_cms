@@ -15,7 +15,7 @@
         </td>
       </tr>
       <tr>
-        <td>Data di pubblicazione:</td>
+        <td>Data di pubblicazione: (giorno/mese/anno)</td>
         <td>
           <input
             type="date"
@@ -24,10 +24,13 @@
           />
         </td>
       </tr>
-      <tr>
+      <tr class="text-area-row">
         <td>Contenuto:</td>
         <td>
-          <textarea formControlName="content"></textarea>
+          <textarea
+            formControlName="content"
+            placeholder="Contenuto"
+          ></textarea>
         </td>
       </tr>
       <tr>
@@ -37,7 +40,11 @@
             type="number"
             placeholder="Punteggio"
             formControlName="score"
+            style="width: 20%"
+            min="1"
+            max="10"
           />
+          <b> / 10</b>
         </td>
       </tr>
       <tr>
