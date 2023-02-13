@@ -10,11 +10,22 @@
 .categoria-name {
   padding-right: 10rem;
   width: 100%;
+  text-align: center;
+}
+
+.tr {
+  border: solid 1px lightgray;
+}
+
+.categoria-buttons{
+  padding: 1rem;
+  padding-right: 5rem;
 }
 
 .categoria-table {
   border: solid 1px lightgray;
   box-shadow: lightgray;
+  align-self: center;
 }
 .categoria-table tr {
   border: solid 1px lightgray;
