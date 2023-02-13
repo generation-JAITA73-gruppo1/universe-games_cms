@@ -23,3 +23,10 @@
   width: 12rem;
   height: 16rem;
 }
+
+.list-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.5rem 0rem 0.5rem;
+}
