@@ -14,7 +14,7 @@
 }
 
 .immagine {
-  width: 5rem;
+  width: 20rem;
 }
 .immagine > img {
   width: 100%;
@@ -29,3 +29,19 @@
 .immagine:hover > .img-url {
   display: absolute;
 }
+
+.button {
+  display: flex;
+  padding-top: 1rem;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.text {
+  width: 100%;
+}
+
