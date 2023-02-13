@@ -1,17 +1,44 @@
 <div class="lista-videogiochi">
   <h1 class="title">Lista Videogiochi</h1>
   <div class="game-list">
+    <hr />
     <div class="game" *ngFor="let v of videogiochi$ | async">
       <div class="game-text-flex">
         <h3>{{ v.title }}</h3>
-        <b>Categoria:</b> {{ v.category }} <br />
-        <b>Data di uscita:</b>{{ v.releaseDate }} <br />
-        <b>Genere:</b> {{ v.genre }} <br />
-        <b>Sviluppatore:</b>{{ v.softwareHouse }} <br />
-        <b>Publisher:</b> {{ v.publisher }} <br />
-        <b>Numero di giocatori:</b> {{ v.numberOfPlayers }} <br />
-        <b>Doppiaggio:</b> {{ v.languages.voice }} <br />
-        <b>Lingua testi:</b> {{ v.languages.text }} <br />
+        <table>
+          <tr>
+            <td class="prima-colonna"><b>Categoria:</b></td>
+            <td>{{ v.category }}</td>
+          </tr>
+          <tr>
+            <td><b>Data di uscita:</b></td>
+            <td>{{ v.releaseDate }}</td>
+          </tr>
+          <tr>
+            <td><b>Genere:</b></td>
+            <td>{{ v.genre }}</td>
+          </tr>
+          <tr>
+            <td><b>Sviluppatore:</b></td>
+            <td>{{ v.softwareHouse }}</td>
+          </tr>
+          <tr>
+            <td><b>Publisher:</b></td>
+            <td>{{ v.publisher }}</td>
+          </tr>
+          <tr>
+            <td><b>Numero di giocatori:</b></td>
+            <td>{{ v.numberOfPlayers }}</td>
+          </tr>
+          <tr>
+            <td><b>Doppiaggio:</b></td>
+            <td>{{ v.languages.voice }}</td>
+          </tr>
+          <tr>
+            <td><b>Lingua testi:</b></td>
+            <td>{{ v.languages.text }}</td>
+          </tr>
+        </table>
         <hr />
         <div class="list-buttons">
           <button (click)="onClickDelete(v._id)">Elimina</button>

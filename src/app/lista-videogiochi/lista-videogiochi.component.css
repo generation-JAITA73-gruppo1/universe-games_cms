@@ -7,10 +7,11 @@
 .title {
   margin: 2rem;
   padding: 1rem 2rem;
+  text-align: center;
 }
 
 .game {
-  padding: 1rem;
+  padding: 1rem 4rem;
   width: 100%;
   background-color: white;
   display: flex;
@@ -20,8 +21,17 @@
 }
 
 .game-cover-image {
-  width: 12rem;
-  height: 16rem;
+  width: 15rem;
+  height: 20rem;
+  border: solid 1px lightgrey;
+}
+
+.prima-colonna {
+  min-width: 25rem;
+}
+
+.game-text-flex {
+  padding-left: 5rem;
 }
 
 .list-buttons {
