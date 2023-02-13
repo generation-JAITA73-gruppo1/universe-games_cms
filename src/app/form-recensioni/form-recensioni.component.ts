@@ -124,6 +124,7 @@ export class FormRecensioniComponent implements OnInit, OnDestroy {
               ]),
               score: new FormControl(datoRecensione.score, [
                 Validators.required,
+                Validators.max(10),
               ]),
               reviewerName: new FormControl(datoRecensione.reviewerName, [
                 Validators.required,

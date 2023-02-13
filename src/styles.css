@@ -24,3 +24,12 @@ input::placeholder {
   font-style: italic;
   opacity: 1;
 }
+
+input {
+  padding: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+select {
+  margin-bottom: 0.5rem;
+  padding: 0.7rem;
+}
