@@ -6,9 +6,9 @@ import { NewsService } from '../service/news.service';
 @Component({
   selector: 'app-lista-news',
   templateUrl: './lista-news.component.html',
-  styleUrls: ['./lista-news.component.css']
+  styleUrls: ['./lista-news.component.css'],
 })
-export class ListaNewsComponent implements OnInit{
+export class ListaNewsComponent implements OnInit {
   news!: News[];
   news$!: Observable<News[]>;
   newsSubscription!: Subscription;
@@ -21,7 +21,8 @@ export class ListaNewsComponent implements OnInit{
 
   onClickDelete(id: string) {
     this.newsService.deleteNews(id).subscribe(() => {
-      this.news$ = this.newsService.getNews()
-    })
+      this.news$ = this.newsService.getNews();
+      alert('Elemento eliminato');
+    });
   }
 }

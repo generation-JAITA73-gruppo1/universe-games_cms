@@ -5,10 +5,12 @@
 }
 
 .recensione {
-    padding: 1rem;
+    margin: 2rem;
+    padding: 1rem 2rem;
 }
 .recensione-img {
-    width: 100%;
+    width: 12rem;
+    height: 16rem;
 }
 
 .recensione-img-list {
@@ -21,5 +23,11 @@
 .recensione-img > img {
     width: 100%;
     object-fit: cover;
-    max-width: 5vw;
+    max-width: 12vw;
+}
+
+.container {
+    width: 1000px;
+    height:250px;
+    border:1px solid #000;
 }

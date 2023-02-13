@@ -22,6 +22,7 @@ export class ListaCategorieComponent implements OnInit {
   onClickDelete(id: string) {
     this.categoriaService.deleteCategoria(id).subscribe(() => {
       this.categoria$ = this.categoriaService.getCategorie();
+      alert('Elemento eliminato');
     });
   }
 }
