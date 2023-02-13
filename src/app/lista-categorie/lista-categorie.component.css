@@ -3,3 +3,19 @@
   height: 100%;
   background-color: white;
 }
+.title {
+  text-align: center;
+  width: 100%;
+}
+
+.categoria-name {
+  padding-right: 10rem;
+  border: solid;
+  width: 100%;
+}
+
+.categoria-table {
+  border: solid;
+  border-collapse: collapse;
+  box-shadow: lightgray;
+}

@@ -1,10 +1,23 @@
 <main>
   <div class="">
     <h1 class="title">Lista Categorie</h1>
-    <ul>
-      <li class="categoria" *ngFor="let c of categoria$ | async">
-        categoria: {{ c.name }}
-      </li>
-    </ul>
+
+    <table class="categoria-table">
+      <tr class="categoria" *ngFor="let c of categoria$ | async">
+        <td class="categoria-name">
+          {{ c.name }}
+        </td>
+        <td>
+          <button>
+            <span class="material-symbols-outlined"> delete </span>
+          </button>
+        </td>
+        <td>
+          <button>
+            <span class="material-symbols-outlined"> edit </span>
+          </button>
+        </td>
+      </tr>
+    </table>
   </div>
 </main>
