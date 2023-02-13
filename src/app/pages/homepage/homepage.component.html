@@ -33,7 +33,7 @@
     <app-lista-recensioni></app-lista-recensioni>
   </div>
 
-  <div class="toTopButton" *ngIf="!showHomePage && !showListaCategories">
-    <button routerLink="#pageTop">Torna in cima</button>
+  <div class="toTopButton" (click)="scrollToTop()" *ngIf="!showHomePage && !showListaCategories">
+    <button routerLink="#pageTop">Torna in cima</button> 
   </div>
 </div>
