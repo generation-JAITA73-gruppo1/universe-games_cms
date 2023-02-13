@@ -1,10 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Observable, Subscription } from 'rxjs';
+import { Subscription } from 'rxjs';
 import { NewRecensione } from '../model/recensione';
 import { VideogiocoSkimmed } from '../model/videogioco';
-import { CategoriaService } from '../service/categoria.service';
 import { RecensioneService } from '../service/recensione.service';
 import { VideogiocoService } from '../service/videogioco.service';
 
@@ -22,7 +21,7 @@ export class FormRecensioniComponent implements OnInit, OnDestroy {
     reviewerName: new FormControl(''),
     imageUrls: new FormArray([new FormControl('')]),
     reviewedGame: new FormGroup({
-      id: new FormControl(''),
+      id: new FormControl(),
       name: new FormControl(''),
     }),
   });
@@ -43,7 +42,7 @@ export class FormRecensioniComponent implements OnInit, OnDestroy {
 
   constructor(
     private recensioneService: RecensioneService,
-    private categoriaService: CategoriaService,
+    private videogiocoService: VideogiocoService,
     private route: ActivatedRoute,
     private router: Router
   ) {}
@@ -55,8 +54,6 @@ export class FormRecensioniComponent implements OnInit, OnDestroy {
     this.idModifiable = '';
     this.__vModifiable = 0;
   }
-
-  categoryList: string[] = [];
 
   onSubmit() {
     if (this.form.invalid) {
@@ -75,13 +72,13 @@ export class FormRecensioniComponent implements OnInit, OnDestroy {
           alert('record aggiornato');
         });
     } else {
-      console.log('AGGIUNTA RECORD')
-    
-    this.recensioneService
-      .addRecensione(this.form.getRawValue())
-      .subscribe(() => {
-        this.router.navigateByUrl('/lista/reviews');
-      });
+      console.log('AGGIUNTA RECORD');
+
+      this.recensioneService
+        .addRecensione(this.form.getRawValue())
+        .subscribe(() => {
+          this.router.navigateByUrl('/lista/reviews');
+        });
     }
   }
 
@@ -98,8 +95,11 @@ export class FormRecensioniComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.categoriaService.getCategorie().subscribe((list) => {
-      this.categoryList = list.map((obj) => obj.name as string);
+    this.videogiocoService.getVideogiochi().subscribe((list) => {
+      this.listaGiochiSkimmed = list.map((obj) => ({
+        _id: obj._id,
+        title: obj.title,
+      }));
     });
 
     this.route.params.subscribe((params) => {
@@ -113,7 +113,9 @@ export class FormRecensioniComponent implements OnInit, OnDestroy {
             const datoRecensione = reviewData;
             this.__vModifiable = datoRecensione.__v;
             this.form = new FormGroup({
-              title: new FormControl(datoRecensione.title, [Validators.required]),
+              title: new FormControl(datoRecensione.title, [
+                Validators.required,
+              ]),
               publicationDate: new FormControl(datoRecensione.publicationDate, [
                 Validators.required,
               ]),
@@ -127,11 +129,10 @@ export class FormRecensioniComponent implements OnInit, OnDestroy {
                 Validators.required,
               ]),
               imageUrls: new FormArray(
-                  datoRecensione.imageUrls.map(
-                    (t) =>
-                      new FormControl(t, [Validators.required])
-                  )
-                ),
+                datoRecensione.imageUrls.map(
+                  (t) => new FormControl(t, [Validators.required])
+                )
+              ),
               reviewedGame: new FormGroup({
                 id: new FormControl(datoRecensione.reviewedGame.id, [
                   Validators.required,
@@ -139,7 +140,7 @@ export class FormRecensioniComponent implements OnInit, OnDestroy {
                 name: new FormControl(datoRecensione.reviewedGame.name, [
                   Validators.required,
                 ]),
-              })
+              }),
             });
           },
           error: (error) => {
