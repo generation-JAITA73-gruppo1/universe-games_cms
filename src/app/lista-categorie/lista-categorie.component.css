@@ -1,7 +1,6 @@
-.lista-categoria {
+.lista-categorie {
   width: 100%;
-  height: 100%;
-  background-color: white;
+  padding: 1rem 4rem;
 }
 .title {
   text-align: center;
@@ -10,12 +9,19 @@
 
 .categoria-name {
   padding-right: 10rem;
-  border: solid;
   width: 100%;
 }
 
 .categoria-table {
-  border: solid;
-  border-collapse: collapse;
+  border: solid 1px lightgray;
   box-shadow: lightgray;
+}
+.categoria-table tr {
+  border: solid 1px lightgray;
+  padding: 1rem 2rem;
+}
+
+.edit-delete-button {
+  border-radius: 1rem;
+  border: 2px #7c7cf8;
 }
