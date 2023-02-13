@@ -1,6 +1,11 @@
-<form [formGroup]="form" (ngSubmit)="onSubmit()">
-  <h2>Inserisci una nuova videogioco:</h2>
-  <br />
+<div 
+  class="form-container"
+  *ngIf=" !isEditMode || (noModifiable == false && isEditMode == true);
+    else noMod
+">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <h2>Inserisci una nuova recensione:</h2>
+
   <input type="text" placeholder="Titolo" formControlName="title" />
   <input
     type="date"
@@ -17,12 +22,14 @@
       <button type="button" (click)="onRemoveTags(i)" *ngIf="i > 0">-</button>
     </div>
   </div>
-  <div formGroupName="reviewedGame">
-    <select formControlName="id">
-      <option *ngFor="let v of listaGiochiSkimmed" [value]="v._id">
-        {{ v.title }}
-      </option>
-    </select>
-  </div>
   <button type="submit">Salva</button>
 </form>
+</div>
+
+<ng-template #noMod>
+  <p style="text-align: center">
+    L'elemento selezionato non è disponibile<br /><button routerLink="/">
+      Torna alla home
+    </button>
+  </p>
+</ng-template>

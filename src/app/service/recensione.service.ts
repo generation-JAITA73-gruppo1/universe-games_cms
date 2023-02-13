@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
-import { Recensione } from '../model/recensione';
+import { NewRecensione, Recensione } from '../model/recensione';
 
 @Injectable({ providedIn: 'root' })
 export class RecensioneService {
@@ -19,6 +19,9 @@ export class RecensioneService {
   getRecensioni(): Observable<Recensione[]> {
     return this.http.get<Recensione[]>(this.apiUrl);
   }
+  getRecensione(id: string) {
+    return this.http.get<Recensione>(`${this.apiUrl}/${id}`, {});
+  }
   addRecensione(nuovaRecensione: Observable<Recensione[]>) {
     return this.http.post<Recensione[]>(this.apiUrl, nuovaRecensione);
   }
@@ -30,5 +33,13 @@ export class RecensioneService {
 
   deleteRecensione(id: string) {
     return this.http.delete(`${this.apiUrl}/${id}`)
+  }
+  putRecensione(id: string, oldData: NewRecensione, __v: number) {
+    const newData: Recensione = {
+      ...oldData,
+      _id: id,
+      __v,
+    };
+    return this.http.put(`${this.apiUrl}/${id}`, newData);
   }
 }
