@@ -4,18 +4,18 @@
     <p>Nessuna categoria selezionata, torna alla <a routerLink="">home</a></p>
   </div>
 
-  <div *ngIf="showFormGames">
+  <div *ngIf="showFormGames" class="inserimento-form">
     <app-form-videogiochi></app-form-videogiochi>
   </div>
 
-  <div *ngIf="showFormCategories">
+  <div *ngIf="showFormCategories" class="inserimento-form">
     <app-form-categorie></app-form-categorie>
   </div>
 
-  <div *ngIf="showFormNews">
+  <div *ngIf="showFormNews" class="inserimento-form">
     <app-form-news></app-form-news>
   </div>
-  <div *ngIf="showFormReviews">
+  <div *ngIf="showFormReviews" class="inserimento-form">
     <app-form-recensioni></app-form-recensioni>
   </div>
 </div>

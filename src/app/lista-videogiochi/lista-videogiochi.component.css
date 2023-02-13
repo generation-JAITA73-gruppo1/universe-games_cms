@@ -4,14 +4,19 @@
   padding: 1rem;
 }
 
+.title {
+  margin: 2rem;
+  padding: 1rem 2rem;
+}
+
 .game {
   padding: 1rem;
-  margin: 1rem 0rem 1rem;
   width: 100%;
   background-color: white;
   display: flex;
   gap: 2rem;
   justify-content: space-between;
+  border-bottom: solid 1px lightgray;
 }
 
 .game-cover-image {

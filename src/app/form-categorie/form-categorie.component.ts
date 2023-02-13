@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CategoriaService } from '../service/categoria.service';
 
 @Component({
@@ -13,7 +13,25 @@ export class FormCategorieComponent {
     name: new FormControl(''),
   });
 
-  constructor(private service: CategoriaService, private router: Router) {}
+  isEditMode: boolean = false;
+  idModifiable: string = '';
+  noModifiable = false;
+  __vModifiable = 0;
+
+  constructor(
+    private service: CategoriaService,
+    private router: Router,
+    private route: ActivatedRoute,
+    private categorieService: CategoriaService
+  ) {}
+  reset() {
+    this.form.reset();
+    this.isEditMode = false;
+    this.noModifiable = false;
+    this.idModifiable = '';
+    this.__vModifiable = 0;
+  }
+
   onSubmit() {
     this.service.addCategorie(this.form.getRawValue()).subscribe(() => {
       alert('Nuova categoria aggiunta');

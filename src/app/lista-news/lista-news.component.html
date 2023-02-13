@@ -14,8 +14,10 @@
         </p>
         <p class="news-body-text">{{ n.content }}</p>
         <b>Tags: </b> {{ n.tags }} <br />
+
         <div class="button">
           <button (click)="onClickDelete(n._id)">Elimina</button>
+          <button [routerLink]="'/modifica/news/' + n._id">Modifica</button>
         </div>
       </div>
     </div>
