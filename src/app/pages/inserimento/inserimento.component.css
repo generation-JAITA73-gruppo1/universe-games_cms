@@ -13,6 +13,8 @@
 
 .inserimento-form {
   width: 100%;
-  background-color: white;
+  border: solid 1px lightgrey;
+  box-shadow: 0.5rem 0.5rem 0.5rem lightgrey;
+  border-radius: 1rem;
   padding: 2rem 4rem;
 }
