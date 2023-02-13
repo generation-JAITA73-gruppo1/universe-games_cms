@@ -76,7 +76,7 @@ export class FormVideogiochiComponent implements OnInit {
               releaseDate: new FormControl(datoGioco.releaseDate, [
                 Validators.required,
               ]),
-              genre: new FormControl(datoGioco.title, [Validators.required]),
+              genre: new FormControl(datoGioco.genre, [Validators.required]),
               softwareHouse: new FormControl(datoGioco.softwareHouse, [
                 Validators.required,
               ]),

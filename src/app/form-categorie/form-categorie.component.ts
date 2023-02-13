@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
-import { Router } from '@angular/router';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CategoriaService } from '../service/categoria.service';
 
 @Component({
@@ -13,11 +13,68 @@ export class FormCategorieComponent {
     name: new FormControl(''),
   });
 
-  constructor(private service: CategoriaService, private router: Router) {}
+  isEditMode: boolean = false;
+  idModifiable: string = '';
+  noModifiable = false;
+  __vModifiable = 0;
+
+  constructor(
+    private service: CategoriaService,
+    private router: Router,
+    private route: ActivatedRoute,
+    private categorieService: CategoriaService
+  ) {}
+  reset() {
+    this.form.reset();
+    this.isEditMode = false;
+    this.noModifiable = false;
+    this.idModifiable = '';
+    this.__vModifiable = 0;
+  }
+
   onSubmit() {
-    this.service.addCategorie(this.form.getRawValue()).subscribe(() => {
-      alert('Nuova categoria aggiunta');
-      this.form.reset(), this.router.navigateByUrl('/lista/categories');
+    if (this.form.invalid) {
+      alert('Compila tutti i campi in modo corretto.');
+      return;
+    }
+
+    if (this.isEditMode) {
+      console.log('AGGIORNAMENTO RECORD');
+      const modGioco = this.form.getRawValue();
+
+      this.categorieService
+        .putCategoria(this.idModifiable, modGioco, this.__vModifiable)
+        .subscribe(() => {
+          this.reset();
+          this.router.navigateByUrl('lista/categories');
+          alert('record aggiornato');
+        });
+    } else {
+      this.categorieService
+        .addCategorie(this.form.getRawValue())
+        .subscribe(() => {
+          this.router.navigateByUrl('/lista/categories');
+        });
+    }
+  }
+
+  ngOnInit(): void {
+    this.route.params.subscribe((params) => {
+      const id = params['id'];
+      if (id !== undefined) {
+        //console.log('id check passed');
+        this.isEditMode = true;
+        this.idModifiable = id;
+        this.categorieService.getCategoria(id).subscribe({
+          next: (categoriaData) => {
+            const datoCategoria = categoriaData;
+            this.__vModifiable = datoCategoria.__v;
+            this.form = new FormGroup({
+              name: new FormControl(datoCategoria.name, [Validators.required]),
+            });
+          },
+        });
+      }
     });
   }
 }

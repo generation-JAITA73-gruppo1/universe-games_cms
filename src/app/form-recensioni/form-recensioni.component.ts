@@ -1,7 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Observable, Subscription } from 'rxjs';
+import { Subscription } from 'rxjs';
+import { NewRecensione } from '../model/recensione';
 import { VideogiocoSkimmed } from '../model/videogioco';
 import { RecensioneService } from '../service/recensione.service';
 import { VideogiocoService } from '../service/videogioco.service';
@@ -20,10 +21,15 @@ export class FormRecensioniComponent implements OnInit, OnDestroy {
     reviewerName: new FormControl(''),
     imageUrls: new FormArray([new FormControl('')]),
     reviewedGame: new FormGroup({
-      id: new FormControl(''),
+      id: new FormControl(),
       name: new FormControl(''),
     }),
   });
+
+  isEditMode: boolean = false;
+  idModifiable: string = '';
+  noModifiable = false;
+  __vModifiable = 0;
 
   //  ListaGiochi mi serve a immagazzinare la lista di tutti i giochi registrati nel server,
   //  i cui valori vengono salvati in maniera ridotta (aka contenedo solo id).
@@ -41,12 +47,39 @@ export class FormRecensioniComponent implements OnInit, OnDestroy {
     private router: Router
   ) {}
 
+  reset() {
+    this.form.reset();
+    this.isEditMode = false;
+    this.noModifiable = false;
+    this.idModifiable = '';
+    this.__vModifiable = 0;
+  }
+
   onSubmit() {
-    this.recensioneService
-      .addRecensione(this.form.getRawValue())
-      .subscribe(() => {
-        this.router.navigateByUrl('/lista/reviews');
-      });
+    if (this.form.invalid) {
+      alert('Compila tutti i campi in modo corretto.');
+      return;
+    }
+    if (this.isEditMode) {
+      console.log('AGGIORNAMENTO RECORD');
+      const modGioco = this.form.getRawValue();
+
+      this.recensioneService
+        .putRecensione(this.idModifiable, modGioco, this.__vModifiable)
+        .subscribe(() => {
+          this.reset();
+          this.router.navigateByUrl('lista/reviews');
+          alert('record aggiornato');
+        });
+    } else {
+      console.log('AGGIUNTA RECORD');
+
+      this.recensioneService
+        .addRecensione(this.form.getRawValue())
+        .subscribe(() => {
+          this.router.navigateByUrl('/lista/reviews');
+        });
+    }
   }
 
   get imageFormArray() {
@@ -62,13 +95,60 @@ export class FormRecensioniComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    // Questa sottoscrizione mi permette di recuperare i dati dei giochi in forma ridotta, grazie al pipe contenuto in vidoegiochi service
-    this.videogiocoService.getVideogiochi().subscribe((gamesData) => {
-      this.listaGiochiSkimmed = gamesData.map((a) => ({
-        _id: a._id,
-        title: a.title,
+    this.videogiocoService.getVideogiochi().subscribe((list) => {
+      this.listaGiochiSkimmed = list.map((obj) => ({
+        _id: obj._id,
+        title: obj.title,
       }));
-      console.log(this.listaGiochiSkimmed);
+    });
+
+    this.route.params.subscribe((params) => {
+      const id = params['id'];
+      if (id !== undefined) {
+        //console.log('id check passed');
+        this.isEditMode = true;
+        this.idModifiable = id;
+        this.recensioneService.getRecensione(id).subscribe({
+          next: (reviewData) => {
+            const datoRecensione = reviewData;
+            this.__vModifiable = datoRecensione.__v;
+            this.form = new FormGroup({
+              title: new FormControl(datoRecensione.title, [
+                Validators.required,
+              ]),
+              publicationDate: new FormControl(datoRecensione.publicationDate, [
+                Validators.required,
+              ]),
+              content: new FormControl(datoRecensione.content, [
+                Validators.required,
+              ]),
+              score: new FormControl(datoRecensione.score, [
+                Validators.required,
+              ]),
+              reviewerName: new FormControl(datoRecensione.reviewerName, [
+                Validators.required,
+              ]),
+              imageUrls: new FormArray(
+                datoRecensione.imageUrls.map(
+                  (t) => new FormControl(t, [Validators.required])
+                )
+              ),
+              reviewedGame: new FormGroup({
+                id: new FormControl(datoRecensione.reviewedGame.id, [
+                  Validators.required,
+                ]),
+                name: new FormControl(datoRecensione.reviewedGame.name, [
+                  Validators.required,
+                ]),
+              }),
+            });
+          },
+          error: (error) => {
+            console.log(error);
+            this.noModifiable = true;
+          },
+        });
+      }
     });
 
     // Qui sto facendo una subscribe che mi avvisa ogni volta che l'id del reviewdGame selezionato cambia

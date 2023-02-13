@@ -1,16 +1,35 @@
 .homepage {
   width: 100%;
-  padding: 4rem 12vw 4rem 12vw;
+  padding: 4rem 5vw 4rem 5vw;
 }
 
-.homepage-default {
+.default-homepage {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 30%;
+}
+
+.homepage-default-image {
+  width: 30vw;
+  align-self: center;
+}
+
+.homepage-default-text {
+  width: 100%;
+  text-align: center;
 }
 
 .homepage-body {
   width: 100%;
-  border: solid 1px blue;
+  border: solid 1px lightgrey;
+  box-shadow: 0.5rem 0.5rem 0.5rem lightgrey;
+  border-radius: 1rem;
+}
+
+.toTopButton {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
 }

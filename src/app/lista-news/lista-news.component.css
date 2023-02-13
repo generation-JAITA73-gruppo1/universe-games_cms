@@ -1,9 +1,47 @@
 .lista-news {
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-  }
-  
-  .news {
-    padding: 1rem;
-  }
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.news {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  justify-content: flex-start;
+  width: 100%;
+  border-bottom: solid 1px lightgray;
+}
+
+.immagine {
+  width: 20rem;
+}
+.immagine > img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.img-url {
+  display: none;
+  z-index: 3;
+}
+
+.immagine:hover > .img-url {
+  display: absolute;
+}
+
+.button {
+  display: flex;
+  padding-top: 1rem;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.text {
+  width: 100%;
+}
+

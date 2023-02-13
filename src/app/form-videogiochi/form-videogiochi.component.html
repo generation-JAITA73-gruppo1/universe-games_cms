@@ -11,7 +11,9 @@
     <input type="text" placeholder="Titolo" formControlName="title" />
     <br />
     <select formControlName="category">
-      <option selected hidden disabed value="">Seleziona una console...</option>
+      <option selected hidden disabled value="">
+        Seleziona una console...
+      </option>
       <option *ngFor="let c of categoryList" [value]="c">
         {{ c | uppercase }}
       </option>

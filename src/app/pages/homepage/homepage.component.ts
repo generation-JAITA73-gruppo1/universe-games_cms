@@ -1,4 +1,5 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { SelectParams } from 'src/app/model/selection';
 
@@ -14,7 +15,18 @@ export class HomepageComponent implements OnInit, OnDestroy {
   showListaNews: boolean = false;
   showListaReviews: boolean = false;
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(
+    private route: ActivatedRoute,
+    @Inject(DOCUMENT) private document: Document
+    ) {}
+
+    scrollToTop(): void {
+      return this.document.body.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'start'
+      });
+    }
 
   ngOnInit(): void {
     this.route.params.subscribe((params) => {

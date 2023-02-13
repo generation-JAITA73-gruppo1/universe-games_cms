@@ -1,5 +1,4 @@
-<main>
-  <div class="">
+  <div class="lista-categorie">
     <h1 class="title">Lista Categorie</h1>
 
     <table class="categoria-table">
@@ -8,16 +7,15 @@
           {{ c.name }}
         </td>
         <td>
-          <button>
+          <button (click)="onClickDelete(c._id)>
             <span class="material-symbols-outlined"> delete </span>
           </button>
         </td>
         <td>
-          <button>
+          <button [routerLink]="'/modifica/categories/' + c._id">
             <span class="material-symbols-outlined"> edit </span>
           </button>
         </td>
       </tr>
     </table>
-  </div>
-</main>
+    </div>

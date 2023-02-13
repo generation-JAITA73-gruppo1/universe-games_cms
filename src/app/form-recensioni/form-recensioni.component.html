@@ -1,26 +1,47 @@
-<form [formGroup]="form" (ngSubmit)="onSubmit()">
-  <input type="text" placeholder="Titolo" formControlName="title" />
-  <input
-    type="date"
-    placeholder="Data di pubblicazione"
-    formControlName="publicationDate"
-  />
-  <input type="text" placeholder="Contenuto" formControlName="content" />
-  <input type="number" placeholder="Punteggio" formControlName="score" />
-  <input type="text" placeholder="Autore" formControlName="reviewerName" />
-  <div formArrayName="imageUrls">
-    <div *ngFor="let _ of imageFormArray.controls; let i = index">
-      <input type="text" placeholder="URL Immagine" [formControlName]="i" />
-      <button type="button" (click)="onClickAddTags()">+</button>
-      <button type="button" (click)="onRemoveTags(i)" *ngIf="i > 0">-</button>
+<div
+  class="form-container"
+  *ngIf="
+    !isEditMode || (noModifiable == false && isEditMode == true);
+    else noMod
+  "
+>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <h2>Inserisci una nuova recensione:</h2>
+
+    <input type="text" placeholder="Titolo" formControlName="title" />
+    <input
+      type="date"
+      placeholder="Data di pubblicazione"
+      formControlName="publicationDate"
+    />
+    <input type="text" placeholder="Contenuto" formControlName="content" />
+    <input type="number" placeholder="Punteggio" formControlName="score" />
+    <input type="text" placeholder="Autore" formControlName="reviewerName" />
+    <div formArrayName="imageUrls">
+      <div *ngFor="let _ of imageFormArray.controls; let i = index">
+        <input type="text" placeholder="URL Immagine" [formControlName]="i" />
+        <button type="button" (click)="onClickAddTags()">+</button>
+        <button type="button" (click)="onRemoveTags(i)" *ngIf="i > 0">-</button>
+      </div>
     </div>
-  </div>
-  <div formGroupName="reviewedGame">
-    <select formControlName="id">
-      <option *ngFor="let v of listaGiochiSkimmed" [value]="v._id">
-        {{ v.title }}
-      </option>
-    </select>
-  </div>
-  <button type="submit">Salva</button>
-</form>
+    <div formGroupName="reviewedGame">
+      <select formControlName="id">
+        <option hidden selected disabled value="">
+          Seleziona un videogioco da recensire
+        </option>
+        <option *ngFor="let g of listaGiochiSkimmed" [value]="g._id">
+          {{ g.title }}
+        </option>
+      </select>
+    </div>
+    <button type="submit">Salva</button>
+  </form>
+</div>
+
+<ng-template #noMod>
+  <p style="text-align: center">
+    L'elemento selezionato non è disponibile<br /><button routerLink="/">
+      Torna alla home
+    </button>
+  </p>
+</ng-template>

@@ -1,0 +1,14 @@
+.news {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.immagine {
+  width: 5rem;
+}
+.immagine > img {
+  width: 100%;
+  object-fit: contain;
+}
