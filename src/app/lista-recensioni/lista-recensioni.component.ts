@@ -6,9 +6,9 @@ import { RecensioneService } from '../service/recensione.service';
 @Component({
   selector: 'app-lista-recensioni',
   templateUrl: './lista-recensioni.component.html',
-  styleUrls: ['./lista-recensioni.component.css']
+  styleUrls: ['./lista-recensioni.component.css'],
 })
-export class ListaRecensioniComponent implements OnInit{
+export class ListaRecensioniComponent implements OnInit {
   recensioni!: Recensione[];
   recensioni$!: Observable<Recensione[]>;
   recensioniSubscription!: Subscription;
@@ -20,7 +20,8 @@ export class ListaRecensioniComponent implements OnInit{
   }
   onClickDelete(id: string) {
     this.recensioneService.deleteRecensione(id).subscribe(() => {
-      this.recensioni$ = this.recensioneService.getRecensioni()
-    })
-}
+      this.recensioni$ = this.recensioneService.getRecensioni();
+      alert('Elemento eliminato');
+    });
+  }
 }

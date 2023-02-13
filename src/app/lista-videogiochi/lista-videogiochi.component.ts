@@ -22,6 +22,7 @@ export class ListaVideogiochiComponent implements OnInit {
   onClickDelete(id: string) {
     this.videogiocoService.deleteVideogioco(id).subscribe(() => {
       this.videogiochi$ = this.videogiocoService.getVideogiochi();
+      alert('Elemento eliminato');
     });
   }
 }
