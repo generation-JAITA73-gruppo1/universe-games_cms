@@ -1,6 +1,24 @@
 <div class="homepage">
-  <div *ngIf="showHomePage" class="homepage-body">
-    <h2>homepage</h2>
+  <a id="pageTop"></a>
+  <div
+    *ngIf="showHomePage"
+    class="homepage-body"
+    class="default-homepage homepage-body"
+  >
+    <div class="homepage-default-image">
+      <img src="/assets/images/universe-games_logo.png" />
+    </div>
+
+    <div class="default-homepage-text">
+      <h2>Ti diamo il benvenuto al CMS di Universe Games</h2>
+      <li>
+        Naviga nelle varie sezione "Lista Contenuti" per visualizzare,
+        modificare o eliminare i dati presenti nel sito.
+      </li>
+      <li>
+        Vai nella sezione "Crea Contenuto" per aggingere nuovi dati al server.
+      </li>
+    </div>
   </div>
   <div *ngIf="showListaGames" class="homepage-body">
     <app-lista-videogiochi></app-lista-videogiochi>
@@ -13,5 +31,9 @@
   </div>
   <div *ngIf="showListaReviews" class="homepage-body">
     <app-lista-recensioni></app-lista-recensioni>
+  </div>
+
+  <div class="toTopButton" *ngIf="!showHomePage && !showListaCategories">
+    <button routerLink="#pageTop">Torna in cima</button>
   </div>
 </div>

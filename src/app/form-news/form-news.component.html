@@ -1,26 +1,33 @@
 <div class="form-news">
-    <form [formGroup]="form" (ngSubmit)="onSubmit()">
-        Titolo: <input type="text" placeholder="Titolo" formControlName="title">
-        <br>
-        Categoria: <input type="text" placeholder="Categoria" formControlName="category"> 
-        <br>
-        Immagine: <input type="text" placeholder="URL immagine" formControlName="imageUrl"> 
-        <br>
-        Contenuto: <input type="text" placeholder="Contenuto" formControlName="content"> 
-        <br>
-        Data: <input type="date" placeholder="Data" formControlName="publicationDate"> 
-        <br>
-        Nome Autore: <input type="text" placeholder="Nome Autore" formControlName="authorName"> 
-        <br>
-        <div formArrayName="tags">
-            <div *ngFor="let t of tagsFormArray.controls; let i = index">
-                Tag: <input type="text" placeholder="Tag" [formControlName]="i">
-                <button type="button" (click)="onClickAddTags()">+</button>
-                <button type="button" (click)="onRemoveTags(i)" *ngIf="i > 0">-</button> 
-                <br>
-            </div>
-        </div> 
-        <br>
-        <button type="submit">Salva</button>
-    </form>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <h2>Inserisci una nuova recensione:</h2>
+    <br />
+    Titolo: <input type="text" placeholder="Titolo" formControlName="title" />
+    <br />
+    Categoria:
+    <input type="text" placeholder="Categoria" formControlName="category" />
+    <br />
+    Immagine:
+    <input type="text" placeholder="URL immagine" formControlName="imageUrl" />
+    <br />
+    Contenuto:
+    <input type="text" placeholder="Contenuto" formControlName="content" />
+    <br />
+    Data:
+    <input type="date" placeholder="Data" formControlName="publicationDate" />
+    <br />
+    Nome Autore:
+    <input type="text" placeholder="Nome Autore" formControlName="authorName" />
+    <br />
+    <div formArrayName="tags">
+      <div *ngFor="let t of tagsFormArray.controls; let i = index">
+        Tag: <input type="text" placeholder="Tag" [formControlName]="i" />
+        <button type="button" (click)="onClickAddTags()">+</button>
+        <button type="button" (click)="onRemoveTags(i)" *ngIf="i > 0">-</button>
+        <br />
+      </div>
+    </div>
+    <br />
+    <button type="submit">Salva</button>
+  </form>
 </div>
