@@ -16,7 +16,7 @@ export class FormRecensioniComponent implements OnInit, OnDestroy {
   form: FormGroup = new FormGroup({
     title: new FormControl('', [Validators.required]),
     publicationDate: new FormControl('', [Validators.required]),
-    content: new FormControl('null', [Validators.required]),
+    content: new FormControl('', [Validators.required]),
     score: new FormControl(0),
     reviewerName: new FormControl('', [Validators.required]),
     imageUrls: new FormArray([new FormControl('', [Validators.required])]),
@@ -161,7 +161,7 @@ export class FormRecensioniComponent implements OnInit, OnDestroy {
           (obj) => obj._id === gameID
         )!.title;
         this.form.get('reviewedGame.name')?.setValue(reviewedGameName);
-        console.log(reviewedGameName);
+        // console.log(reviewedGameName);
       });
   }
 

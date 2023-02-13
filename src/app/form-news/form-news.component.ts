@@ -100,11 +100,6 @@ export class FormNewsComponent implements OnInit {
   }
 
   onSubmit() {
-    this.newsService.postNews(this.form.getRawValue()).subscribe(() => {
-      this.router.navigateByUrl('lista/news'),
-        console.log(this.form.getRawValue());
-    });
-
     if (this.form.invalid) {
       alert('Compila tutti i campi!');
       return;
@@ -125,6 +120,8 @@ export class FormNewsComponent implements OnInit {
       console.log('AGGIUNTA RECORD');
 
       this.newsService.postNews(this.form.getRawValue()).subscribe(() => {
+        alert('record aggiunto');
+        this.reset();
         this.router.navigateByUrl('/lista/news');
       });
     }

@@ -13,7 +13,10 @@
           {{ n.category }} | {{ n.publicationDate }} | {{ n.authorName }}
         </p>
         <p class="news-body-text">{{ n.content }}</p>
-        <b>Tags: </b> {{ n.tags }} <br />
+        <p>
+          <b>Tags: </b>
+          <span *ngFor="let t of n.tags">#{{ t }} </span>
+        </p>
 
         <div class="button">
           <button (click)="onClickDelete(n._id)">Elimina</button>
