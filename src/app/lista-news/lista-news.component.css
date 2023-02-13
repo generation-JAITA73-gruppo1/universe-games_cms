@@ -23,7 +23,6 @@
 
 .img-url {
   display: none;
-  z-index: 3;
 }
 
 .immagine:hover > .img-url {
@@ -44,4 +43,3 @@
 .text {
   width: 100%;
 }
-

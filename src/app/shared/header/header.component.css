@@ -2,6 +2,7 @@
   left: 0;
   top: 0;
   width: 17rem;
+  overflow: visible;
 }
 
 nav {
@@ -9,48 +10,58 @@ nav {
   display: flex;
   flex-direction: column;
   position: relative;
-  min-height: 100vh;
-  height: 100%;
+  height: 100vh;
   color: white;
   position: fixed;
   top: 0;
   width: 17rem;
-  z-index: 3;
   overflow: visible;
+  box-shadow: 0.2rem 0rem 0.2rem lightgray;
 }
 
 .header ul {
   display: none;
+  position: absolute;
   top: 0;
+  left: 100%;
   flex-direction: column;
   align-items: end;
   list-style-type: none;
-  padding-left: 100%;
+  padding-left: 0;
   margin: 0;
   width: 17rem;
   height: 0;
 }
 
+.crea-contenuti,
+.lista-contenuti {
+  display: flex;
+  height: max-content;
+  position: relative;
+}
+
 .crea-contenuti:hover > ul,
 .lista-contenuti:hover > ul {
   display: flex;
-  background-color: #7c7cf8;
   height: max-content;
 }
 
 .navbar-item {
   border-bottom: solid 1px #babaf8;
+  border-right: solid 1px #babaf8;
   padding: 1rem 2rem;
   border-radius: 3px;
   width: 100%;
 }
 
 li.navbar-item {
+  width: 100%;
   padding: 0;
   background-color: #3e3f83;
 }
 
-div.navbar-item {
+.home-element,
+.list-head-element {
   background-color: transparent;
 }
 
@@ -61,10 +72,16 @@ div.navbar-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #7c7cf8;
 }
 
-div.navbar-item:hover {
-  background-color: #7c7cf8;
+.navbar-item > a > p {
+  margin: 0;
+}
+
+.home-element:hover,
+.list-head-element:hover {
+  background-color: #4a4ada;
 }
 
 div.navbar-item:active {
