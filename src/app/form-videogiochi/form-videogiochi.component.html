@@ -7,81 +7,155 @@
 >
   <form [formGroup]="form" (ngSubmit)="onSubmit()">
     <h2>Inserisci un nuovo videogioco:</h2>
-    <br />
-    <input type="text" placeholder="Titolo" formControlName="title" />
-    <br />
-    <select formControlName="category">
-      <option selected hidden disabled value="">
-        Seleziona una console...
-      </option>
-      <option *ngFor="let c of categoryList" [value]="c">
-        {{ c | uppercase }}
-      </option>
-    </select>
-    <br />
-    <input
-      type="date"
-      placeholder="Data di rilascio"
-      formControlName="releaseDate"
-    />
-    <br />
-    <input type="text" placeholder="Genere" formControlName="genre" />
-    <br />
-    <input
-      type="text"
-      placeholder="Software House"
-      formControlName="softwareHouse"
-    />
-    <br />
-    <input type="text" placeholder="Publisher" formControlName="publisher" />
-    <br />
-    <input
-      type="number"
-      placeholder="Numero di giocatori"
-      formControlName="numberOfPlayers"
-    />
-    <br />
+    <table class="tabella-videogiochi">
+      <tr>
+        <td class="primaColonna">Titolo:</td>
+        <td>
+          <input type="text" placeholder="Titolo" formControlName="title" />
+        </td>
+      </tr>
+      <tr>
+        <td>Categoria:</td>
+        <td>
+          <select formControlName="category">
+            <option selected hidden disabed value="">
+              Seleziona una console...
+            </option>
+            <option *ngFor="let c of categoryList" [value]="c">
+              {{ c | uppercase }}
+            </option>
+          </select>
+        </td>
+      </tr>
 
-    <div formGroupName="languages">
-      <div formArrayName="voice">
-        <h3>Lingue doppiate:</h3>
-        <div *ngFor="let _ of voiceFormArray.controls; let i = index">
+      <tr>
+        <td>Data:(giorno/mese/anno)</td>
+        <td>
+          <input
+            type="date"
+            placeholder="Data di rilascio"
+            formControlName="releaseDate"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>Genere:</td>
+        <td>
+          <input type="text" placeholder="Genere" formControlName="genre" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>Software House:</td>
+        <td>
           <input
             type="text"
-            placeholder="Lingua Voce: ita , ecc."
-            [formControlName]="i"
+            placeholder="Software House"
+            formControlName="softwareHouse"
           />
-          <button type="button" (click)="onClickAddVoice()">+</button>
-          <button type="button" (click)="onClickRemoveVoice(i)" *ngIf="i > 0">
-            -
-          </button>
-        </div>
-      </div>
-
-      <div formArrayName="text">
-        <h3>Lingue di testo:</h3>
-        <div *ngFor="let _ of textFormArray.controls; let i = index">
+        </td>
+      </tr>
+      <tr>
+        <td>Publisher:</td>
+        <td>
           <input
             type="text"
-            placeholder="Testo tradotto in: ita, ecc."
-            [formControlName]="i"
+            placeholder="Publisher"
+            formControlName="publisher"
           />
-          <button type="button" (click)="onClickAddText()">+</button>
-          <button type="button" (click)="onClickRemoveText(i)" *ngIf="i > 0">
-            -
-          </button>
-        </div>
-      </div>
-    </div>
-    <br />
-    <input
-      type="text"
-      placeholder="Link URL all'Immagine di copertina"
-      formControlName="coverImage"
-    />
-    <br />
+        </td>
+      </tr>
 
-    <button type="submit">Salva</button>
+      <tr>
+        <td>Numero di giocatori:</td>
+        <td>
+          <input
+            type="number"
+            placeholder="Numero di giocatori"
+            formControlName="numberOfPlayers"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>URL immagine:</td>
+        <td>
+          <input
+            type="text"
+            placeholder="Link URL all'Immagine di copertina"
+            formControlName="coverImage"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <div formGroupName="languages">
+          <tr>
+            <h3>Lingue doppiate:</h3>
+
+            <div formArrayName="voice">
+              <div *ngFor="let _ of voiceFormArray.controls; let i = index">
+                <td>
+                  <input
+                    type="text"
+                    placeholder="Lingua Voce: ita , ecc."
+                    [formControlName]="i"
+                  />
+                  <button
+                    class="bottoneArrayAdd"
+                    type="button"
+                    (click)="onClickAddVoice()"
+                  >
+                    +
+                  </button>
+                  <button
+                    class="bottoneArrayRemove"
+                    type="button"
+                    (click)="onClickRemoveVoice(i)"
+                    *ngIf="i > 0"
+                  >
+                    -
+                  </button>
+                </td>
+              </div>
+            </div>
+          </tr>
+          <tr>
+            <h3>Lingue sottotitolate:</h3>
+
+            <div formArrayName="text">
+              <div *ngFor="let _ of textFormArray.controls; let i = index">
+                <td>
+                  <input
+                    type="text"
+                    placeholder="Testo tradotto in: ita, ecc."
+                    [formControlName]="i"
+                  />
+                  <button
+                    class="bottoneArrayAdd"
+                    type="button"
+                    (click)="onClickAddText()"
+                  >
+                    +
+                  </button>
+                  <button
+                    class="bottoneArrayRemove"
+                    type="button"
+                    (click)="onClickRemoveText(i)"
+                    *ngIf="i > 0"
+                  >
+                    -
+                  </button>
+                </td>
+              </div>
+            </div>
+          </tr>
+        </div>
+      </tr>
+
+      <td>
+        <button type="submit">Salva</button>
+      </td>
+    </table>
   </form>
 </div>
 
