@@ -1,9 +1,14 @@
-<div class="">
+<div class="lista-categorie">
   <h1 class="title">Lista Categorie</h1>
-  <ul>
-    <li class="categoria" *ngFor="let c of categoria$ | async">
-      categoria: {{ c.name }}
-      <button (click)="onClickDelete(c._id)">Elimina</button>
-    </li>
-  </ul>
+  <div class="category-list">
+    <div class="categoria" *ngFor="let c of categoria$ | async">
+      <div class="category-text-flex">
+        <h3>{{ c.name }}</h3>
+      </div>
+      <div class="list-buttons">
+        <button (click)="onClickDelete(c._id)">Elimina</button>
+        <button [routerLink]="'/modifica/categories/' + c._id">Modifica</button>
+      </div>
+    </div>
+  </div>
 </div>
