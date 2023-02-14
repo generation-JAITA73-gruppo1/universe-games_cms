@@ -102,14 +102,18 @@
         </div>
       </tr>
 
-      <button type="submit">Salva</button>
+      <button type="submit" mat-flat-button color="primary">Salva</button>
     </table>
   </form>
 </div>
 
 <ng-template #noMod>
   <p style="text-align: center">
-    L'elemento selezionato non è disponibile<br /><button routerLink="/">
+    L'elemento selezionato non è disponibile<br /><button
+      mat-flat-button
+      color="primary"
+      routerLink="/"
+    >
       Torna alla home
     </button>
   </p>

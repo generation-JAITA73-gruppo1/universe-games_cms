@@ -42,3 +42,6 @@ select {
   min-height: 10rem;
   min-width: 20rem;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

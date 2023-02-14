@@ -19,7 +19,14 @@
             />
           </td>
           <td class="submit-button">
-            <button type="submit" class="submit-button">Salva</button>
+            <button
+              mat-flat-button
+              color="primary"
+              type="submit"
+              class="submit-button"
+            >
+              Salva
+            </button>
           </td>
         </tr>
       </table>
@@ -29,7 +36,11 @@
 
 <ng-template #noMod>
   <p style="text-align: center">
-    L'elemento selezionato non è disponibile<br /><button routerLink="/">
+    L'elemento selezionato non è disponibile<br /><button
+      mat-flat-button
+      color="primary"
+      routerLink="/"
+    >
       Torna alla home
     </button>
   </p>

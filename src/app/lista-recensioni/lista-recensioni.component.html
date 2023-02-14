@@ -18,8 +18,16 @@
       <br />
       <b>Codice gioco:</b>{{ r.reviewedGame.id }} <br />
       <b>Nome gioco:</b>{{ r.reviewedGame.name }} <br />
-      <button (click)="onClickDelete(r._id)">Elimina</button>
-      <button [routerLink]="'/modifica/reviews/' + r._id">Modifica</button>
+      <button (click)="onClickDelete(r._id)" mat-flat-button color="primary">
+        Elimina
+      </button>
+      <button
+        [routerLink]="'/modifica/reviews/' + r._id"
+        mat-flat-button
+        color="primary"
+      >
+        Modifica
+      </button>
     </div>
   </div>
 </div>

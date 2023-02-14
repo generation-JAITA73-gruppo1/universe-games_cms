@@ -16,6 +16,8 @@ import { ListaNewsComponent } from './lista-news/lista-news.component';
 import { ListaRecensioniComponent } from './lista-recensioni/lista-recensioni.component';
 import { FormRecensioniComponent } from './form-recensioni/form-recensioni.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
   ],
 })
 export class AppModule {}

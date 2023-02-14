@@ -19,8 +19,20 @@
         </p>
 
         <div class="button">
-          <button (click)="onClickDelete(n._id)">Elimina</button>
-          <button [routerLink]="'/modifica/news/' + n._id">Modifica</button>
+          <button
+            mat-flat-button
+            color="primary"
+            (click)="onClickDelete(n._id)"
+          >
+            Elimina
+          </button>
+          <button
+            mat-flat-button
+            color="primary"
+            [routerLink]="'/modifica/news/' + n._id"
+          >
+            Modifica
+          </button>
         </div>
       </div>
     </div>
