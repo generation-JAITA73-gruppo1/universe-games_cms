@@ -20,7 +20,10 @@ export class ListaVideogiochiComponent implements OnInit {
   ngOnInit(): void {
     this.videogiocoService.getVideogiochi().subscribe((list) => {
       this.videogiochi = list;
-      this.videogiochiSlice = this.videogiochi.slice(0, 5);
+      this.videogiochiSlice = this.videogiochi.slice(
+        this.startIndex,
+        this.endIndex
+      );
     });
   }
 
@@ -28,18 +31,27 @@ export class ListaVideogiochiComponent implements OnInit {
     this.videogiocoService.deleteVideogioco(id).subscribe(() => {
       this.videogiocoService.getVideogiochi().subscribe((list) => {
         this.videogiochi = list;
-        this.videogiochiSlice = this.videogiochi.slice(0, 5);
+        this.videogiochiSlice = this.videogiochi.slice(
+          this.startIndex,
+          this.endIndex
+        );
       });
       alert('Elemento eliminato');
     });
   }
 
+  startIndex = 0;
+  endIndex = 5;
+
   onPageChange(event: PageEvent) {
-    const startIndex = event.pageIndex * event.pageSize;
-    let endIndex = startIndex + event.pageSize;
-    if (endIndex > event.length) {
-      endIndex = event.length;
+    this.startIndex = event.pageIndex * event.pageSize;
+    this.endIndex = this.startIndex + event.pageSize;
+    if (this.endIndex > event.length) {
+      this.endIndex = event.length;
     }
-    this.videogiochiSlice = this.videogiochi.slice(startIndex, endIndex);
+    this.videogiochiSlice = this.videogiochi.slice(
+      this.startIndex,
+      this.endIndex
+    );
   }
 }
