@@ -18,6 +18,7 @@ import { FormRecensioniComponent } from './form-recensioni/form-recensioni.compo
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { MatButtonModule } from '@angular/material/button';
     FormsModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    MatPaginatorModule,
   ],
 })
 export class AppModule {}

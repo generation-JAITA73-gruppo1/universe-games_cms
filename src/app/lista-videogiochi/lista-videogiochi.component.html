@@ -2,7 +2,7 @@
   <h1 class="title">Lista Videogiochi</h1>
   <div class="game-list">
     <hr />
-    <div class="game" *ngFor="let v of videogiochi$ | async">
+    <div class="game" *ngFor="let v of videogiochiSlice">
       <div class="game-text-flex">
         <h3>{{ v.title }}</h3>
         <table>
@@ -64,5 +64,11 @@
         />
       </div>
     </div>
+    <mat-paginator
+      [length]="videogiochi.length"
+      [pageSize]="5"
+      [pageSizeOptions]="[5, 10, 20]"
+      (page)="onPageChange($event)"
+    ></mat-paginator>
   </div>
 </div>

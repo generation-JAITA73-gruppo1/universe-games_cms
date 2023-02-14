@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PageEvent } from '@angular/material/paginator';
 import { Observable, Subscription } from 'rxjs';
 import { Videogioco } from '../model/videogioco';
 import { VideogiocoService } from '../service/videogioco.service';
@@ -10,19 +11,35 @@ import { VideogiocoService } from '../service/videogioco.service';
 })
 export class ListaVideogiochiComponent implements OnInit {
   videogiochi!: Videogioco[];
+  videogiochiSlice!: Videogioco[];
   videogiochi$!: Observable<Videogioco[]>;
   videogiochiSubscription!: Subscription;
 
   constructor(private videogiocoService: VideogiocoService) {}
 
   ngOnInit(): void {
-    this.videogiochi$ = this.videogiocoService.getVideogiochi();
+    this.videogiocoService.getVideogiochi().subscribe((list) => {
+      this.videogiochi = list;
+      this.videogiochiSlice = this.videogiochi.slice(0, 5);
+    });
   }
 
   onClickDelete(id: string) {
     this.videogiocoService.deleteVideogioco(id).subscribe(() => {
-      this.videogiochi$ = this.videogiocoService.getVideogiochi();
+      this.videogiocoService.getVideogiochi().subscribe((list) => {
+        this.videogiochi = list;
+        this.videogiochiSlice = this.videogiochi.slice(0, 5);
+      });
       alert('Elemento eliminato');
     });
+  }
+
+  onPageChange(event: PageEvent) {
+    const startIndex = event.pageIndex * event.pageSize;
+    let endIndex = startIndex + event.pageSize;
+    if (endIndex > event.length) {
+      endIndex = event.length;
+    }
+    this.videogiochiSlice = this.videogiochi.slice(startIndex, endIndex);
   }
 }
