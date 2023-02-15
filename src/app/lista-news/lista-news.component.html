@@ -10,7 +10,8 @@
         <h3>{{ n.title }}</h3>
 
         <p class="date-category-info">
-          {{ n.category }} | {{ n.publicationDate }} | {{ n.authorName }}
+          {{ n.category }} | {{ n.publicationDate | date : "dd/MM/yyyy" }} |
+          {{ n.authorName }}
         </p>
         <p class="news-body-text">{{ n.content }}</p>
         <p>
@@ -37,10 +38,10 @@
       </div>
     </div>
     <mat-paginator
-        [length]="news.length"
-        [pageSize]="5"
-        [pageSizeOptions]="[5, 10, 20]"
-        (page)="onPageChange($event)"
-      ></mat-paginator>
+      [length]="news.length"
+      [pageSize]="5"
+      [pageSizeOptions]="[5, 10, 20]"
+      (page)="onPageChange($event)"
+    ></mat-paginator>
   </div>
 </div>
