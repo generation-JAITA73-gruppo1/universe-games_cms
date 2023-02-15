@@ -1,7 +1,7 @@
 <div class="lista-recensioni">
   <h1 class="title">Lista Recensioni</h1>
   <div class="">
-    <div class="recensione" *ngFor="let r of recensioni$ | async">
+    <div class="recensione" *ngFor="let r of recensioniSlice">
       <h3>{{ r.title }}</h3> <br />
       <b>Data di pubblicazione:</b>{{ r.publicationDate }} <br />
       <b>Contenuto:</b>{{ r.content }} <br />
@@ -27,5 +27,11 @@
         Modifica
       </button></div>
     </div>
+    <mat-paginator
+    [length]="recensioni.length"
+    [pageSize]="5"
+    [pageSizeOptions]="[5, 10, 20]"
+    (page)="onPageChange($event)"
+  ></mat-paginator>
   </div>
 </div>
