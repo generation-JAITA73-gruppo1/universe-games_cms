@@ -3,19 +3,20 @@
   <div class="">
     <div class="recensione" *ngFor="let r of recensioni$ | async">
       <h3>{{ r.title }}</h3> <br />
+      <b>Nome gioco:</b>{{ r.reviewedGame.name }} <br />
       <b>Data di pubblicazione:</b>{{ r.publicationDate }} <br />
       <b>Contenuto:</b>{{ r.content }} <br />
       <b>Punteggio:</b>{{ r.score }} <br />
       <b>Recensore:</b>{{ r.reviewerName }} <br />
       <b>Immagini:</b>
-      <div class="recensione-img-list">
+      <div class="recensione-img-list" [ngClass]="{'flex_center': r.imageUrls.length <=3}">
         <div class="recensione-img" *ngFor="let i of r.imageUrls"> 
             <img [src]="i" [alt]="i" [title]="i" />
          </div>
       </div>
       <br />
    <!--   <b>Codice gioco:</b>{{ r.reviewedGame.id }} <br />      -->
-      <b>Nome gioco:</b>{{ r.reviewedGame.name }} <br />
+      
       <div class="centro"><button (click)="onClickDelete(r._id)" mat-flat-button color="primary">
         Elimina
       </button>
