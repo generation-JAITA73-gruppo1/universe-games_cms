@@ -4,30 +4,44 @@
   padding: 1rem;
 }
 
+.title {
+  margin: 2rem;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
 .recensione {
   margin: 2rem;
   padding: 1rem 2rem;
+  border-bottom: solid 1px lightgray;
 }
+
 .recensione-img {
-  width: 12rem;
-  height: 16rem;
+  width: 32rem;
+  height: 18rem;
+  justify-content: center;
+  border: 5px black solid;
+
 }
 
 .recensione-img-list {
   width: 100%;
   display: flex;
   gap: 2rem;
-  justify-content: space-around;
+  justify-content: space-around;  
 }
 
 .recensione-img > img {
   width: 100%;
+  height: 100%;
+  flex-direction: row;
   object-fit: cover;
-  max-width: 12vw;
+  overflow-x: scroll;
 }
 
-.container {
-  width: 1000px;
-  height: 250px;
-  border: 1px solid #000;
+.centro {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;  
 }
