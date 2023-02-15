@@ -21,14 +21,13 @@
   height: 18rem;
   justify-content: center;
   border: 5px black solid;
-
 }
 
 .recensione-img-list {
   width: 100%;
   display: flex;
   gap: 2rem;
-  justify-content: space-around;  
+  justify-content: space-around;
 }
 
 .recensione-img > img {
@@ -43,5 +42,5 @@
   margin: 0;
   display: flex;
   justify-content: center;
-  gap: 1rem;  
+  gap: 1rem;
 }
