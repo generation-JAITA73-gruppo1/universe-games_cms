@@ -1,10 +1,92 @@
 .header {
-  background-color: chartreuse;
-  display: flex;
+  left: 0;
+  top: 0;
+  width: 17rem;
+  overflow: visible;
 }
 
-.header > ul {
+nav {
+  background-color: #00007c;
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 17rem;
+  overflow: visible;
+  box-shadow: 0.2rem 0rem 0.2rem lightgray;
+}
+
+.header ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  flex-direction: column;
+  align-items: end;
   list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  width: 17rem;
+  height: 0;
+}
+
+.crea-contenuti,
+.lista-contenuti {
+  display: flex;
+  height: max-content;
+  position: relative;
+}
+
+.crea-contenuti:hover > ul,
+.lista-contenuti:hover > ul {
+  display: flex;
+  height: max-content;
+}
+
+.navbar-item {
+  border-bottom: solid 1px #babaf8;
+  border-right: solid 1px #babaf8;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  width: 100%;
+}
+
+li.navbar-item {
+  width: 100%;
+  padding: 0;
+  background-color: #3e3f83;
+}
+
+.home-element,
+.list-head-element {
+  background-color: transparent;
+}
+
+.navbar-item > a {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7c7cf8;
+}
+
+.navbar-item > a > p {
+  margin: 0;
+}
+
+.home-element:hover,
+.list-head-element:hover {
+  background-color: #4a4ada;
+}
+
+div.navbar-item:active {
+  background-color: #7c7cf8;
+}
+.navbar-item > a:hover {
+  background-color: #babaf8;
 }

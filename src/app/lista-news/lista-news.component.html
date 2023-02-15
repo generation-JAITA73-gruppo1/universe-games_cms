@@ -1,1 +1,40 @@
-<p>lista-news works!</p>
+<div class="lista-news">
+  <h1 class="title">Lista News</h1>
+  <div class="">
+    <div class="news" *ngFor="let n of news$ | async">
+      <div class="immagine">
+        <img [src]="n.imageUrl" />
+        <p class="img-url">{{ n.imageUrl }}</p>
+      </div>
+      <div class="text">
+        <h3>{{ n.title }}</h3>
+
+        <p class="date-category-info">
+          {{ n.category }} | {{ n.publicationDate }} | {{ n.authorName }}
+        </p>
+        <p class="news-body-text">{{ n.content }}</p>
+        <p>
+          <b>Tags: </b>
+          <span *ngFor="let t of n.tags">#{{ t }} </span>
+        </p>
+
+        <div class="button">
+          <button
+            mat-flat-button
+            color="primary"
+            (click)="onClickDelete(n._id)"
+          >
+            Elimina
+          </button>
+          <button
+            mat-flat-button
+            color="primary"
+            [routerLink]="'/modifica/news/' + n._id"
+          >
+            Modifica
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

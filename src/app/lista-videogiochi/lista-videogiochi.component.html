@@ -1,1 +1,74 @@
-<p>lista-videogiochi works!</p>
+<div class="lista-videogiochi">
+  <h1 class="title">Lista Videogiochi</h1>
+  <div class="game-list">
+    <hr />
+    <div class="game" *ngFor="let v of videogiochiSlice">
+      <div class="game-text-flex">
+        <h3>{{ v.title }}</h3>
+        <table>
+          <tr>
+            <td class="prima-colonna"><b>Categoria:</b></td>
+            <td>{{ v.category }}</td>
+          </tr>
+          <tr>
+            <td><b>Data di uscita:</b></td>
+            <td>{{ v.releaseDate }}</td>
+          </tr>
+          <tr>
+            <td><b>Genere:</b></td>
+            <td>{{ v.genre }}</td>
+          </tr>
+          <tr>
+            <td><b>Sviluppatore:</b></td>
+            <td>{{ v.softwareHouse }}</td>
+          </tr>
+          <tr>
+            <td><b>Publisher:</b></td>
+            <td>{{ v.publisher }}</td>
+          </tr>
+          <tr>
+            <td><b>Numero di giocatori:</b></td>
+            <td>{{ v.numberOfPlayers }}</td>
+          </tr>
+          <tr>
+            <td><b>Doppiaggio:</b></td>
+            <td>{{ v.languages.voice }}</td>
+          </tr>
+          <tr>
+            <td><b>Lingua testi:</b></td>
+            <td>{{ v.languages.text }}</td>
+          </tr>
+        </table>
+        <hr />
+        <div class="list-buttons">
+          <button
+            mat-flat-button
+            color="primary"
+            (click)="onClickDelete(v._id)"
+          >
+            Elimina
+          </button>
+          <button
+            mat-flat-button
+            color="primary"
+            [routerLink]="'/modifica/games/' + v._id"
+          >
+            Modifica
+          </button>
+        </div>
+      </div>
+      <div class="game-cover-image">
+        <img
+          [src]="v.coverImage"
+          (error)="v.coverImage = '/assets/images/no-cover.png'"
+        />
+      </div>
+    </div>
+    <mat-paginator
+      [length]="videogiochi.length"
+      [pageSize]="5"
+      [pageSizeOptions]="[5, 10, 20]"
+      (page)="onPageChange($event)"
+    ></mat-paginator>
+  </div>
+</div>

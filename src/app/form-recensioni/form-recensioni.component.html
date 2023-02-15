@@ -1,1 +1,120 @@
-<p>form-recensioni works!</p>
+<div
+  class="form-container"
+  *ngIf="
+    !isEditMode || (noModifiable == false && isEditMode == true);
+    else noMod
+  "
+>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <h2>Inserisci una nuova recensione:</h2>
+    <table class="tabella-recensioni">
+      <tr>
+        <td class="primaColonna">Titolo:</td>
+        <td>
+          <input type="text" placeholder="Titolo" formControlName="title" />
+        </td>
+      </tr>
+      <tr>
+        <td>Data di pubblicazione: (giorno/mese/anno)</td>
+        <td>
+          <input
+            type="date"
+            placeholder="Data di pubblicazione"
+            formControlName="publicationDate"
+          />
+        </td>
+      </tr>
+      <tr class="text-area-row">
+        <td>Contenuto:</td>
+        <td>
+          <textarea
+            formControlName="content"
+            placeholder="Contenuto"
+          ></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>Punteggio:</td>
+        <td>
+          <input
+            type="number"
+            placeholder="Punteggio"
+            formControlName="score"
+            style="width: 20%"
+            min="1"
+            max="10"
+          />
+          <b> / 10</b>
+        </td>
+      </tr>
+      <tr>
+        <td>Autore:</td>
+        <td>
+          <input
+            type="text"
+            placeholder="Autore"
+            formControlName="reviewerName"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>Seleziona il gioco associato:</td>
+        <div formGroupName="reviewedGame">
+          <select formControlName="id">
+            <option hidden selected disabled value="">
+              Seleziona un videogioco da recensire
+            </option>
+            <option *ngFor="let g of listaGiochiSkimmed" [value]="g._id">
+              {{ g.title }}
+            </option>
+          </select>
+        </div>
+      </tr>
+      <tr>
+        <h3>URL Immagine:</h3>
+
+        <div formArrayName="imageUrls">
+          <div *ngFor="let _ of imageFormArray.controls; let i = index">
+            <td>
+              <input
+                type="text"
+                placeholder="URL Immagine"
+                [formControlName]="i"
+              />
+
+              <button
+                class="bottoneArrayAdd"
+                type="button"
+                (click)="onClickAddTags()"
+              >
+                +
+              </button>
+              <button
+                class="bottoneArrayRemove"
+                type="button"
+                (click)="onRemoveTags(i)"
+                *ngIf="i > 0"
+              >
+                -
+              </button>
+            </td>
+          </div>
+        </div>
+      </tr>
+
+      <button type="submit" mat-flat-button color="primary">Salva</button>
+    </table>
+  </form>
+</div>
+
+<ng-template #noMod>
+  <p style="text-align: center">
+    L'elemento selezionato non è disponibile<br /><button
+      mat-flat-button
+      color="primary"
+      routerLink="/"
+    >
+      Torna alla home
+    </button>
+  </p>
+</ng-template>

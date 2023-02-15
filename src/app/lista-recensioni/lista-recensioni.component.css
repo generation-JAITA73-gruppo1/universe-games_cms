@@ -1,0 +1,33 @@
+.lista-recensioni {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.recensione {
+  margin: 2rem;
+  padding: 1rem 2rem;
+}
+.recensione-img {
+  width: 12rem;
+  height: 16rem;
+}
+
+.recensione-img-list {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+}
+
+.recensione-img > img {
+  width: 100%;
+  object-fit: cover;
+  max-width: 12vw;
+}
+
+.container {
+  width: 1000px;
+  height: 250px;
+  border: 1px solid #000;
+}

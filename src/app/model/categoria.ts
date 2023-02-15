@@ -1,7 +1,7 @@
 export interface Categoria {
   _id: string;
   name: string;
-  v: number;
+  __v: number;
 }
 
-export type NewCategoria = Omit<Categoria, '_id' | 'v'>;
+export type NewCategoria = Omit<Categoria, '_id' | '__v'>;

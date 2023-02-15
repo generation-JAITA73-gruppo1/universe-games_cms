@@ -1,5 +1,5 @@
 export interface News {
-    id: string,
+    _id: string,
     title: string,
     category: string,
     imageUrl: string,
@@ -11,3 +11,14 @@ export interface News {
 }
 
 export type NewNews = Omit<News, '_id' | '__v'>;
+
+export type VideogiocoSkimmed = Omit<
+  News,
+  | '__v'
+  | 'category'
+  | 'imageUrl'
+  | 'content'
+  | 'publicationDate'
+  | 'authorName'
+  | 'tags'
+>;

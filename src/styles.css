@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  margin: 0;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(142, 141, 141);
+  font-style: italic;
+  opacity: 1;
+}
+
+input {
+  padding: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+select {
+  margin-bottom: 0.5rem;
+  padding: 0.7rem;
+}
+.text-area-row {
+  padding-top: 0.5rem;
+  vertical-align: top;
+}
+.text-area-row textarea {
+  min-height: 10rem;
+  min-width: 20rem;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

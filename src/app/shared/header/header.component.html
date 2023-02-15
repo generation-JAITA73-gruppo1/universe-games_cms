@@ -1,27 +1,70 @@
 <div class="header">
-  <ul class="navbar-liste">
-    <!-- <li>
-      <h1>Lista contenuti</h1>
-    </li> -->
-    <li>
-      <a routerLink="/lista/games">Lista videogiochi</a>
-    </li>
-    <li>
-      <a routerLink="/lista/categories">Lista categorie</a>
-    </li>
-    <li>
-      <a routerLink="/lista/reviews">Lista recensioni</a>
-    </li>
-    <li>
-      <a routerLink="/lista/news">Lista notizie</a>
-    </li>
-  </ul>
-
-  <ul class="navabr-inserimento">
-    <!-- <li><h1>Crea contenuti</h1></li> -->
-    <li><a routerLink="/nuovo/games">Nuovo videogioco</a></li>
-    <li><a routerLink="/nuovo/categories">Nuova categoria</a></li>
-    <li><a routerLink="/nuovo/reviews">Nuova recensione</a></li>
-    <li><a routerLink="/nuovo/news">Nuova notizia</a></li>
-  </ul>
+  <nav>
+    <div class="navbar-item">
+      <h3>Universe Games CMS</h3>
+    </div>
+    <div class="navbar-item home-element">
+      <b> <a routerLink="/">Home</a> </b>
+    </div>
+    <div class="lista-contenuti list-head-element">
+      <div class="navbar-item">
+        <b>Lista contenuti</b>
+      </div>
+      <ul>
+        <li class="navbar-item">
+          <a routerLink="/lista/games">
+            <p>Lista videogiochi</p>
+            <span class="material-symbols-outlined"> arrow_right_alt </span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a routerLink="/lista/categories">
+            <p>Lista categorie</p>
+            <span class="material-symbols-outlined"> arrow_right_alt </span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a routerLink="/lista/reviews">
+            <p>Lista recensioni</p>
+            <span class="material-symbols-outlined"> arrow_right_alt </span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a routerLink="/lista/news">
+            <p>Lista notizie</p>
+            <span class="material-symbols-outlined"> arrow_right_alt </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="crea-contenuti list-head-element">
+      <div class="navbar-item"><b>Crea contenuti</b></div>
+      <ul>
+        <li class="navbar-item">
+          <a routerLink="/nuovo/games">
+            <p>Nuovo videogioco</p>
+            <span class="material-symbols-outlined"> arrow_right_alt </span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a routerLink="/nuovo/categories">
+            <p>Nuova categoria/<br />console</p>
+            <span class="material-symbols-outlined"> arrow_right_alt </span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a routerLink="/nuovo/reviews">
+            <p>Nuova recensione</p>
+            <span class="material-symbols-outlined"> arrow_right_alt </span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a routerLink="/nuovo/news">
+            <p>Nuova notizia</p>
+            <span class="material-symbols-outlined"> arrow_right_alt </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </div>

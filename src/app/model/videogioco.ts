@@ -8,11 +8,23 @@ export interface Videogioco {
   publisher: string;
   numberOfPlayers: number;
   languages: Lingua;
-  _v: number;
+  __v: number;
   coverImage: string;
 }
 
 export type NewVideogioco = Omit<Videogioco, '_id' | '__v'>;
+export type VideogiocoSkimmed = Omit<
+  Videogioco,
+  | '__v'
+  | 'category'
+  | 'releaseDate'
+  | 'genre'
+  | 'softwareHouse'
+  | 'publisher'
+  | 'numberOfPlayers'
+  | 'languages'
+  | 'coverImage'
+>;
 
 export interface Lingua {
   voice: string[];

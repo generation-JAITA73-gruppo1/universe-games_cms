@@ -1,1 +1,171 @@
-<p>form-videogiochi works!</p>
+<div
+  class="form-container"
+  *ngIf="
+    !isEditMode || (noModifiable == false && isEditMode == true);
+    else noMod
+  "
+>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <h2>Inserisci un nuovo videogioco:</h2>
+    <table class="tabella-videogiochi">
+      <tr>
+        <td class="primaColonna">Titolo:</td>
+        <td>
+          <input type="text" placeholder="Titolo" formControlName="title" />
+        </td>
+      </tr>
+      <tr>
+        <td>Categoria:</td>
+        <td>
+          <select formControlName="category">
+            <option selected hidden disabled value="">
+              Seleziona una console...
+            </option>
+            <option *ngFor="let c of categoryList" [value]="c">
+              {{ c | uppercase }}
+            </option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Data:(giorno/mese/anno)</td>
+        <td>
+          <input
+            type="date"
+            placeholder="Data di rilascio"
+            formControlName="releaseDate"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>Genere:</td>
+        <td>
+          <input type="text" placeholder="Genere" formControlName="genre" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>Software House:</td>
+        <td>
+          <input
+            type="text"
+            placeholder="Software House"
+            formControlName="softwareHouse"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>Publisher:</td>
+        <td>
+          <input
+            type="text"
+            placeholder="Publisher"
+            formControlName="publisher"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>Numero di giocatori:</td>
+        <td>
+          <input
+            type="number"
+            placeholder="Numero di giocatori"
+            formControlName="numberOfPlayers"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>URL immagine:</td>
+        <td>
+          <input
+            type="text"
+            placeholder="Link URL all'Immagine di copertina"
+            formControlName="coverImage"
+          />
+        </td>
+      </tr>
+
+      <tbody>
+        <div formGroupName="languages">
+          <tr>
+            <h3>Lingue doppiate:</h3>
+
+            <div formArrayName="voice">
+              <div *ngFor="let _ of voiceFormArray.controls; let i = index">
+                <td>
+                  <input
+                    type="text"
+                    placeholder="Lingua Voce: ita , ecc."
+                    [formControlName]="i"
+                  />
+                  <button
+                    class="bottoneArrayAdd"
+                    type="button"
+                    (click)="onClickAddVoice()"
+                  >
+                    +
+                  </button>
+                  <button
+                    class="bottoneArrayRemove"
+                    type="button"
+                    (click)="onClickRemoveVoice(i)"
+                    *ngIf="i > 0"
+                  >
+                    -
+                  </button>
+                </td>
+              </div>
+            </div>
+          </tr>
+          <tr>
+            <h3>Lingue sottotitolate:</h3>
+
+            <div formArrayName="text">
+              <div *ngFor="let _ of textFormArray.controls; let i = index">
+                <td>
+                  <input
+                    type="text"
+                    placeholder="Testo tradotto in: ita, ecc."
+                    [formControlName]="i"
+                  />
+                  <button
+                    class="bottoneArrayAdd"
+                    type="button"
+                    (click)="onClickAddText()"
+                  >
+                    +
+                  </button>
+                  <button
+                    *ngIf="i > 0"
+                    class="bottoneArrayRemove"
+                    type="button"
+                    (click)="onClickRemoveText(i)"
+                  >
+                    -
+                  </button>
+                </td>
+              </div>
+            </div>
+          </tr>
+        </div>
+      </tbody>
+
+      <td>
+        <button mat-flat-button color="primary" type="submit">Salva</button>
+      </td>
+    </table>
+  </form>
+</div>
+
+<ng-template #noMod>
+  <p style="text-align: center">
+    L'elemento selezionato non è disponibile<br /><button
+      mat-flat-button
+      routerLink="/"
+    >
+      Torna alla home
+    </button>
+  </p>
+</ng-template>

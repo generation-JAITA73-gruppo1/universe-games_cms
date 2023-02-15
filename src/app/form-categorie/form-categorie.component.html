@@ -1,1 +1,47 @@
-<p>form-categorie works!</p>
+<div
+  class="form-container"
+  *ngIf="
+    !isEditMode || (noModifiable == false && isEditMode == true);
+    else noMod
+  "
+>
+  <div class="form-categorie">
+    <h2>Inserisci una nuova categoria/console:</h2>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <table>
+        <tr>
+          <td>
+            <input
+              type="text"
+              placeholder=""
+              formControlName="name"
+              placeholder="Nome categoria..."
+            />
+          </td>
+          <td class="submit-button">
+            <button
+              mat-flat-button
+              color="primary"
+              type="submit"
+              class="submit-button"
+            >
+              Salva
+            </button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+
+<ng-template #noMod>
+  <p style="text-align: center">
+    L'elemento selezionato non è disponibile<br /><button
+      mat-flat-button
+      color="primary"
+      routerLink="/"
+    >
+      Torna alla home
+    </button>
+  </p>
+</ng-template>

@@ -15,6 +15,10 @@ import { FormNewsComponent } from './form-news/form-news.component';
 import { ListaNewsComponent } from './lista-news/lista-news.component';
 import { ListaRecensioniComponent } from './lista-recensioni/lista-recensioni.component';
 import { FormRecensioniComponent } from './form-recensioni/form-recensioni.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -38,6 +42,11 @@ import { FormRecensioniComponent } from './form-recensioni/form-recensioni.compo
     RouterModule,
     SharedModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatPaginatorModule,
   ],
 })
 export class AppModule {}

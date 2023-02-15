@@ -1,0 +1,38 @@
+.lista-categorie {
+  width: 100%;
+  padding: 1rem 4rem;
+}
+.title {
+  text-align: center;
+  width: 100%;
+}
+
+.categoria-name {
+  padding-right: 10rem;
+  width: 100%;
+  text-align: center;
+}
+
+.tr {
+  border: solid 1px lightgray;
+}
+
+.categoria-buttons{
+  padding: 1rem;
+  padding-right: 5rem;
+}
+
+.categoria-table {
+  border: solid 1px lightgray;
+  box-shadow: lightgray;
+  align-self: center;
+}
+.categoria-table tr {
+  border: solid 1px lightgray;
+  padding: 1rem 2rem;
+}
+
+.edit-delete-button {
+  border-radius: 1rem;
+  border: 2px #7c7cf8;
+}
