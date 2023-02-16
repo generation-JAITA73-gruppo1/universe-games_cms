@@ -1,7 +1,7 @@
 <div class="lista-news">
   <h1 class="title">Lista News</h1>
   <div class="">
-    <div class="news" *ngFor="let n of news$ | async">
+    <div class="news" *ngFor="let n of newsSlice">
       <div class="immagine">
         <img [src]="n.imageUrl" />
         <p class="img-url">{{ n.imageUrl }}</p>
@@ -10,7 +10,8 @@
         <h3>{{ n.title }}</h3>
 
         <p class="date-category-info">
-          {{ n.category }} | {{ n.publicationDate }} | {{ n.authorName }}
+          {{ n.category }} | {{ n.publicationDate | date : "dd/MM/yyyy" }} |
+          {{ n.authorName }}
         </p>
         <p class="news-body-text">{{ n.content }}</p>
         <p>
@@ -36,5 +37,11 @@
         </div>
       </div>
     </div>
+    <mat-paginator
+      [length]="news.length"
+      [pageSize]="5"
+      [pageSizeOptions]="[5, 10, 20]"
+      (page)="onPageChange($event)"
+    ></mat-paginator>
   </div>
 </div>

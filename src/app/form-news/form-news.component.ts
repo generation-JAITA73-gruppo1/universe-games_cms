@@ -132,7 +132,7 @@ export class FormNewsComponent implements OnInit {
   }
 
   onClickAddTags() {
-    this.tagsFormArray.push(new FormControl(''));
+    this.tagsFormArray.push(new FormControl('', [Validators.required]));
   }
 
   onRemoveTags(index: number): void {

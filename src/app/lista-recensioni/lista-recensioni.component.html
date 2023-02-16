@@ -1,10 +1,11 @@
 <div class="lista-recensioni">
   <h1 class="title">Lista Recensioni</h1>
   <div class="">
-    <div class="recensione" *ngFor="let r of recensioni$ | async">
+    <div class="recensione" *ngFor="let r of recensioniSlice">
       <h3>{{ r.title }}</h3> <br />
       <b>Nome gioco:</b>{{ r.reviewedGame.name }} <br />
-      <b>Data di pubblicazione:</b>{{ r.publicationDate }} <br />
+      <b>Data di pubblicazione:</b>
+      {{ r.publicationDate | date : "dd/MM/yyyy" }} <br />
       <b>Contenuto:</b>{{ r.content }} <br />
       <b>Punteggio:</b>{{ r.score }} <br />
       <b>Recensore:</b>{{ r.reviewerName }} <br />
@@ -17,7 +18,8 @@
       <br />
    <!--   <b>Codice gioco:</b>{{ r.reviewedGame.id }} <br />      -->
       
-      <div class="centro"><button (click)="onClickDelete(r._id)" mat-flat-button color="primary">
+      <div class="centro">
+        <button (click)="onClickDelete(r._id)" mat-flat-button color="primary">
         Elimina
       </button>
       <button
@@ -28,5 +30,12 @@
         Modifica
       </button></div>
     </div>
+
+    <mat-paginator
+      [length]="recensioni.length"
+      [pageSize]="5"
+      [pageSizeOptions]="[5, 10, 20]"
+      (page)="onPageChange($event)"
+    ></mat-paginator>
   </div>
 </div>
