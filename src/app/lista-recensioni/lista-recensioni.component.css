@@ -20,7 +20,6 @@
   width: 28rem;
   height: fit-content;
   justify-content: center;
-  border: 5px blue solid;
   flex-shrink: 0;
 }
 
