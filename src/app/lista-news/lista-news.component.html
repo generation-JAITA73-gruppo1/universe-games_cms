@@ -13,7 +13,12 @@
           {{ n.category }} | {{ n.publicationDate | date : "dd/MM/yyyy" }} |
           {{ n.authorName }}
         </p>
-        <p class="news-body-text">{{ n.content }}</p>
+        <mat-slide-toggle color="primary" [(ngModel)]="showMore">
+          Espandi tutto
+        </mat-slide-toggle>
+        <div class="mucho-texto" [ngClass]="{ showMore: showMore }">
+          <p><b>Contenuto: </b>{{ n.content }}</p>
+        </div>
         <p>
           <b>Tags: </b>
           <span *ngFor="let t of n.tags">#{{ t }} </span>

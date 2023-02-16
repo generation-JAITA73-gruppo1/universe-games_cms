@@ -15,15 +15,15 @@ export class ListaNewsComponent implements OnInit {
   news$!: Observable<News[]>;
   newsSubscription!: Subscription;
 
+  showMore = false;
+
   constructor(private newsService: NewsService) {}
 
   ngOnInit(): void {
     this.newsService.getNews().subscribe((list) => {
       this.news = list;
-      this.newsSlice = this.news.slice(
-        this.startIndex,
-        this.endIndex
-      );
+      console.log(this.news);
+      this.newsSlice = this.news.slice(this.startIndex, this.endIndex);
     });
   }
 
@@ -31,28 +31,22 @@ export class ListaNewsComponent implements OnInit {
     this.newsService.deleteNews(id).subscribe(() => {
       this.newsService.getNews().subscribe((list) => {
         this.news = list;
-        this.newsSlice = this.news.slice(
-          this.startIndex,
-          this.endIndex
-        );
+        this.newsSlice = this.news.slice(this.startIndex, this.endIndex);
       });
       alert('Elemento eliminato');
     });
   }
 
-
   startIndex = 0;
   endIndex = 5;
 
   onPageChange(event: PageEvent) {
+    this.showMore = false;
     this.startIndex = event.pageIndex * event.pageSize;
     this.endIndex = this.startIndex + event.pageSize;
     if (this.endIndex > event.length) {
       this.endIndex = event.length;
     }
-    this.newsSlice = this.news.slice(
-      this.startIndex,
-      this.endIndex
-    );
+    this.newsSlice = this.news.slice(this.startIndex, this.endIndex);
   }
 }

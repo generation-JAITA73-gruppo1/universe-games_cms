@@ -1,36 +1,46 @@
-<div class="lista-recensioni">
+<div class="lista-recensioni-component">
   <h1 class="title">Lista Recensioni</h1>
-  <div class="">
+  <div class="review-list">
     <div class="recensione" *ngFor="let r of recensioniSlice">
-      <h3>{{ r.title }}</h3> <br />
-      <b>Nome gioco:</b>{{ r.reviewedGame.name }} <br />
-      <b>Data di pubblicazione:</b>
-      {{ r.publicationDate | date : "dd/MM/yyyy" }} <br />
-      <b>Contenuto:</b>{{ r.content }} <br />
-      <b>Punteggio:</b>{{ r.score }} <br />
-      <b>Recensore:</b>{{ r.reviewerName }} <br />
-      <b>Immagini:</b>
-      <div class="recensione-img-list" [ngClass]="{'flex_center': r.imageUrls.length <=3}">
-        <div class="recensione-img" *ngFor="let i of r.imageUrls"> 
-            <img [src]="i" [alt]="i" [title]="i" />
-         </div>
-      </div>
-      <br />
-   <!--   <b>Codice gioco:</b>{{ r.reviewedGame.id }} <br />      -->
-      
-      <div class="centro">
-        <button (click)="onClickDelete(r._id)" mat-flat-button color="primary">
-        Elimina
-      </button>
-      <button
-        [routerLink]="'/modifica/reviews/' + r._id"
-        mat-flat-button
-        color="primary"
-      >
-        Modifica
-      </button></div>
-    </div>
+      <div class="review-text-flex">
+        <h3>{{ r.title }}</h3>
+        <br />
+        <p>
+          <b>Nome gioco: </b>{{ r.reviewedGame.name }} <br />
+          <b>Data di pubblicazione: </b>
+          {{ r.publicationDate | date : "dd/MM/yyyy" }} <br />
+          <b>Punteggio: </b>{{ r.score }} <br />
+          <b>Recensore: </b>{{ r.reviewerName }} <br />
+        </p>
 
+        <mat-slide-toggle color="primary" [(ngModel)]="showMore">
+          Espandi tutto
+        </mat-slide-toggle>
+        <div class="mucho-texto" [ngClass]="{ showMore: showMore }">
+          <p><b>Contenuto: </b>{{ r.content }}</p>
+        </div>
+      </div>
+      <div
+        class="recensione-img-list"
+        [ngClass]="{ flex_center: r.imageUrls.length <= 3 }"
+      >
+        <div class="recensione-img" *ngFor="let i of r.imageUrls">
+          <img [src]="i" [alt]="i" [title]="i" />
+        </div>
+      </div>
+      <div class="buttons">
+        <button (click)="onClickDelete(r._id)" mat-flat-button color="primary">
+          Elimina
+        </button>
+        <button
+          [routerLink]="'/modifica/reviews/' + r._id"
+          mat-flat-button
+          color="primary"
+        >
+          Modifica
+        </button>
+      </div>
+    </div>
     <mat-paginator
       [length]="recensioni.length"
       [pageSize]="5"

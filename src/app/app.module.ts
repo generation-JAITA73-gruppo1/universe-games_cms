@@ -19,6 +19,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     BrowserAnimationsModule,
     MatButtonModule,
     MatPaginatorModule,
+    MatSlideToggleModule,
   ],
 })
 export class AppModule {}

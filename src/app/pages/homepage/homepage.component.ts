@@ -18,15 +18,15 @@ export class HomepageComponent implements OnInit, OnDestroy {
   constructor(
     private route: ActivatedRoute,
     @Inject(DOCUMENT) private document: Document
-    ) {}
+  ) {}
 
-    scrollToTop(): void {
-      return this.document.body.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-        inline: 'start'
-      });
-    }
+  scrollToTop(): void {
+    return this.document.getElementById('pageTop')!.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'start',
+    });
+  }
 
   ngOnInit(): void {
     this.route.params.subscribe((params) => {

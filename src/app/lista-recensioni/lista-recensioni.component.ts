@@ -15,6 +15,8 @@ export class ListaRecensioniComponent implements OnInit {
   recensioni$!: Observable<Recensione[]>;
   recensioniSubscription!: Subscription;
 
+  showMore = false;
+
   constructor(private recensioneService: RecensioneService) {}
 
   ngOnInit(): void {
@@ -43,6 +45,7 @@ export class ListaRecensioniComponent implements OnInit {
   endIndex = 5;
 
   onPageChange(event: PageEvent) {
+    this.showMore = false;
     this.startIndex = event.pageIndex * event.pageSize;
     this.endIndex = this.startIndex + event.pageSize;
     if (this.endIndex > event.length) {
