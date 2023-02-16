@@ -87,7 +87,7 @@ export class FormRecensioniComponent implements OnInit, OnDestroy {
   }
 
   onClickAddTags() {
-    this.imageFormArray.push(new FormControl(''));
+    this.imageFormArray.push(new FormControl('', [Validators.required]));
   }
 
   onRemoveTags(index: number): void {

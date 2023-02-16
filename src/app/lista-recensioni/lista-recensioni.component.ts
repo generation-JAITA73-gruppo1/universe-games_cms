@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PageEvent } from '@angular/material/paginator';
 import { Observable, Subscription } from 'rxjs';
 import { Recensione } from '../model/recensione';
 import { RecensioneService } from '../service/recensione.service';
@@ -10,18 +11,49 @@ import { RecensioneService } from '../service/recensione.service';
 })
 export class ListaRecensioniComponent implements OnInit {
   recensioni!: Recensione[];
+  recensioniSlice!: Recensione[];
   recensioni$!: Observable<Recensione[]>;
   recensioniSubscription!: Subscription;
+
+  showMore = false;
 
   constructor(private recensioneService: RecensioneService) {}
 
   ngOnInit(): void {
-    this.recensioni$ = this.recensioneService.getRecensioni();
+    this.recensioneService.getRecensioni().subscribe((list) => {
+      this.recensioni = list;
+      this.recensioniSlice = this.recensioni.slice(
+        this.startIndex,
+        this.endIndex
+      );
+    });
   }
   onClickDelete(id: string) {
     this.recensioneService.deleteRecensione(id).subscribe(() => {
-      this.recensioni$ = this.recensioneService.getRecensioni();
+      this.recensioneService.getRecensioni().subscribe((list) => {
+        this.recensioni = list;
+        this.recensioniSlice = this.recensioni.slice(
+          this.startIndex,
+          this.endIndex
+        );
+      });
       alert('Elemento eliminato');
     });
+  }
+
+  startIndex = 0;
+  endIndex = 5;
+
+  onPageChange(event: PageEvent) {
+    this.showMore = false;
+    this.startIndex = event.pageIndex * event.pageSize;
+    this.endIndex = this.startIndex + event.pageSize;
+    if (this.endIndex > event.length) {
+      this.endIndex = event.length;
+    }
+    this.recensioniSlice = this.recensioni.slice(
+      this.startIndex,
+      this.endIndex
+    );
   }
 }

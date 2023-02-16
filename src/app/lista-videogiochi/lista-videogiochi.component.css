@@ -31,12 +31,13 @@
 }
 
 .game-text-flex {
-  padding-left: 5rem;
+  padding-left: 4rem;
+  padding-bottom: 1rem;
 }
 
 .list-buttons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 2rem;
-  padding: 0.5rem 0rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem;
 }

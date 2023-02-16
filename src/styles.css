@@ -43,5 +43,23 @@ select {
   min-width: 20rem;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mucho-texto {
+  max-height: 10rem;
+  text-overflow: ellipsis;
+  line-height: 1.5rem;
+  overflow-y: hidden;
+  text-align: justify;
+}
+
+.showMore {
+  max-height: fit-content;
+}
