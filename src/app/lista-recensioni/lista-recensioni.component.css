@@ -17,30 +17,38 @@
 }
 
 .recensione-img {
-  width: 32rem;
-  height: 18rem;
+  width: 28rem;
+  height: fit-content;
   justify-content: center;
-  border: 5px black solid;
+  border: 5px blue solid;
+  flex-shrink: 0;
 }
 
 .recensione-img-list {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   width: 100%;
   display: flex;
-  gap: 2rem;
-  justify-content: space-around;
+  gap: 3rem;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto;
+  
+}
+
+.flex_center {
+  justify-content: center;
 }
 
 .recensione-img > img {
   width: 100%;
   height: 100%;
-  flex-direction: row;
-  object-fit: cover;
-  overflow-x: scroll;
+  object-fit: contain;
 }
 
 .centro {
   margin: 0;
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 1rem;  
 }
