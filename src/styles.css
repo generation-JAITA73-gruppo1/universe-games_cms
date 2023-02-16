@@ -53,7 +53,7 @@ body {
 }
 
 .mucho-texto {
-  height: 10rem;
+  max-height: 10rem;
   text-overflow: ellipsis;
   line-height: 1.5rem;
   overflow-y: hidden;
@@ -61,5 +61,5 @@ body {
 }
 
 .showMore {
-  height: fit-content;
+  max-height: fit-content;
 }
