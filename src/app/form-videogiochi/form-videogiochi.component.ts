@@ -20,9 +20,7 @@ export class FormVideogiochiComponent implements OnInit {
     publisher: new FormControl('', [Validators.required]),
     numberOfPlayers: new FormControl('', [Validators.required]),
     languages: new FormGroup({
-      voice: new FormArray([
-        new FormControl('', [Validators.required, Validators.maxLength(3)]),
-      ]),
+      voice: new FormArray([new FormControl('', [Validators.maxLength(3)])]),
       text: new FormArray([
         new FormControl('', [Validators.required, Validators.maxLength(3)]),
       ]),
@@ -89,11 +87,7 @@ export class FormVideogiochiComponent implements OnInit {
               languages: new FormGroup({
                 voice: new FormArray(
                   datoGioco.languages.voice.map(
-                    (l) =>
-                      new FormControl(l, [
-                        Validators.required,
-                        Validators.maxLength(3),
-                      ])
+                    (l) => new FormControl(l, [Validators.maxLength(3)])
                   )
                 ),
 
@@ -126,7 +120,7 @@ export class FormVideogiochiComponent implements OnInit {
   }
 
   onClickAddVoice() {
-    this.voiceFormArray.push(new FormControl());
+    this.voiceFormArray.push(new FormControl('', [Validators.required]));
   }
 
   onClickRemoveVoice(index: number) {
@@ -138,7 +132,7 @@ export class FormVideogiochiComponent implements OnInit {
   }
 
   onClickAddText() {
-    this.textFormArray.push(new FormControl());
+    this.textFormArray.push(new FormControl('', [Validators.required]));
   }
 
   onClickRemoveText(index: number) {
