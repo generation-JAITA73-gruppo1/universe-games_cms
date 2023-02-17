@@ -120,7 +120,7 @@ export class FormVideogiochiComponent implements OnInit {
   }
 
   onClickAddVoice() {
-    this.voiceFormArray.push(new FormControl([Validators.required]));
+    this.voiceFormArray.push(new FormControl('', [Validators.required]));
   }
 
   onClickRemoveVoice(index: number) {
@@ -132,7 +132,7 @@ export class FormVideogiochiComponent implements OnInit {
   }
 
   onClickAddText() {
-    this.textFormArray.push(new FormControl([Validators.required]));
+    this.textFormArray.push(new FormControl('', [Validators.required]));
   }
 
   onClickRemoveText(index: number) {
