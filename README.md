@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-HOW TO STARTUP THE JSON SERVER (necessary to make the API calls work)
+HOW TO STARTUP THE JSON SERVER (necessary to make the API calls work):
 Run `npm run server` inside the project terminal. This will start the local json server with all the scaffolding data. (NOTE: this operation is also required in order to see the data in the "universe-games_sito" application.)
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
