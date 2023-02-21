@@ -1,0 +1,987 @@
+{
+  "category": [
+    {
+      "id": "63e269516a62243363259191",
+      "name": "PS3",
+      "__v": 0
+    },
+    {
+      "id": "63e269546a62243363259194",
+      "name": "PS4",
+      "__v": 0
+    },
+    {
+      "id": "63e269566a62243363259197",
+      "name": "PS5",
+      "__v": 0
+    },
+    {
+      "id": "63e2695a6a6224336325919a",
+      "name": "Nintendo Switch",
+      "__v": 0
+    },
+    {
+      "id": "63e2695c6a6224336325919d",
+      "name": "PC",
+      "__v": 0
+    },
+    {
+      "id": "63ecbcbb4b6c1ded042b8991",
+      "name": "PS2",
+      "__v": 0
+    },
+    {
+      "id": "63ecbccb4b6c1ded042b899f",
+      "name": "PSP",
+      "__v": 0
+    },
+    {
+      "id": "63ecbcd34b6c1ded042b89ab",
+      "name": "GAMECUBE",
+      "__v": 0
+    },
+    {
+      "id": "63ecbd614b6c1ded042b89e4",
+      "name": "Dreamcast",
+      "__v": 0
+    },
+    {
+      "id": "63ecbf044b6c1ded042b8a89",
+      "name": "Xbox Series X|S",
+      "__v": 0
+    },
+    {
+      "id": "63ecfbe34b6c1ded042ba36a",
+      "name": "Android",
+      "__v": 0
+    },
+    {
+      "id": "63ecfbec4b6c1ded042ba372",
+      "name": "IOS",
+      "__v": 0
+    }
+  ],
+  "videogame": [
+    {
+      "id": "63e26b5516952167414879d0",
+      "title": "Fire Emblem Engage Anniversary",
+      "category": "Nintendo Switch",
+      "releaseDate": "2023-01-20",
+      "genre": "Fire Emblem Engage Editedz",
+      "softwareHouse": "TK",
+      "publisher": "Nintendo",
+      "numberOfPlayers": 1,
+      "languages": {
+        "voice": [
+          "eng",
+          "jap",
+          "ch",
+          "br",
+          "CAT"
+        ],
+        "text": [
+          "eng",
+          "fr",
+          "sp",
+          "ita",
+          "jap"
+        ]
+      },
+      "__v": 0,
+      "coverImage": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/81WKCCLk6nL.jpg"
+    },
+    {
+      "id": "63e632d0816aa16a42c763c2",
+      "title": "Fiamma Ossidrica: Blowtorch weapon",
+      "category": "PS3",
+      "releaseDate": "2023-02-23",
+      "genre": "Blow torch weapon 2",
+      "softwareHouse": "Torch & Blow 2",
+      "publisher": "Torch & Blow 2",
+      "numberOfPlayers": 7,
+      "languages": {
+        "voice": [
+          "eng",
+          "jp"
+        ],
+        "text": [
+          "ita",
+          "eng"
+        ]
+      },
+      "__v": 0,
+      "coverImage": "https://m.media-amazon.com/images/I/61hVUO2FwAL.jpg"
+    },
+    {
+      "id": "63e651ca9c2630e3884110bc",
+      "title": "CJ & Smoke aaa",
+      "category": "Grove Street",
+      "releaseDate": "1982-01-02",
+      "genre": "CJ & Smoke",
+      "softwareHouse": "Rockstar",
+      "publisher": "Rockstar",
+      "numberOfPlayers": 1,
+      "languages": {
+        "voice": [
+          "ENG"
+        ],
+        "text": [
+          "ENG",
+          "ITA",
+          "ESP",
+          "DEU",
+          "FR"
+        ]
+      },
+      "coverImage": "https://m.media-amazon.com/images/M/MV5BMTAyYWYyOTMtNmUzNS00NzNjLTkyZTUtZjhlZjMzYzJmNzM5XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_.jpg",
+      "__v": 0
+    },
+    {
+      "id": "63e68f429c2630e38841196a",
+      "title": "Metal Gear Solid V: The Phantom Pain",
+      "category": "PS5",
+      "releaseDate": "2015-09-01",
+      "genre": "Azione/Stealth",
+      "softwareHouse": "Kojima Productions",
+      "publisher": "Konami Digital Entertainment",
+      "numberOfPlayers": 1,
+      "languages": {
+        "voice": [
+          "jp",
+          "eng"
+        ],
+        "text": [
+          "ita",
+          "jp",
+          "eng",
+          "fr",
+          "ger"
+        ]
+      },
+      "coverImage": "https://static.posters.cz/image/750/poster/metal-gear-solid-v-the-phantom-pain-cover-i26603.jpg",
+      "__v": 0
+    },
+    {
+      "id": "63eaab4ce0b244db953d8f06",
+      "title": "Ryse: Son of Rome",
+      "category": "PC",
+      "releaseDate": "2013-11-22",
+      "genre": "Action",
+      "softwareHouse": "Crytek",
+      "publisher": "XBOX",
+      "numberOfPlayers": 2,
+      "languages": {
+        "voice": [
+          "ita",
+          "eng",
+          "deu",
+          "esp",
+          "fr"
+        ],
+        "text": [
+          "ita",
+          "eng",
+          "deu",
+          "esp",
+          "fr"
+        ]
+      },
+      "coverImage": "https://www.gamesource.it/wp-content/uploads/2014/08/jpg.jpg",
+      "__v": 0
+    },
+    {
+      "id": "63eaae85e0b244db953d8f34",
+      "title": "Shadow of the Colossus Remastered",
+      "category": "PS3",
+      "releaseDate": "2011-09-22",
+      "genre": "Avventura",
+      "softwareHouse": "Bluepoint Games",
+      "publisher": "Sony",
+      "numberOfPlayers": 1,
+      "languages": {
+        "voice": [
+          ""
+        ],
+        "text": [
+          "jp",
+          "eng",
+          "ita",
+          "fr",
+          "esp"
+        ]
+      },
+      "coverImage": "https://upload.wikimedia.org/wikipedia/en/f/f8/Shadow_of_the_Colossus_%282005%29_cover.jpg",
+      "__v": 0
+    },
+    {
+      "id": "63eaafa1e0b244db953d8f4c",
+      "title": "Monster Hunter Generations Ultimate",
+      "category": "Nintendo Switch",
+      "releaseDate": "2017-03-18",
+      "genre": "Action RPG",
+      "softwareHouse": "CAPCOM",
+      "publisher": "CAPCOM",
+      "numberOfPlayers": 4,
+      "languages": {
+        "voice": [
+          "eng"
+        ],
+        "text": [
+          "eng",
+          "ita",
+          "jp"
+        ]
+      },
+      "coverImage": "https://i.kym-cdn.com/photos/images/facebook/002/117/350/963.jpg",
+      "__v": 0
+    },
+    {
+      "id": "63eab040e0b244db953d8f59",
+      "title": "Sonic Adventure",
+      "category": "Dreamcast",
+      "releaseDate": "1998-12-23",
+      "genre": "Platformer",
+      "softwareHouse": "Sonic Team",
+      "publisher": "SEGA",
+      "numberOfPlayers": 1,
+      "languages": {
+        "voice": [
+          "eng"
+        ],
+        "text": [
+          "ita",
+          "eng",
+          "jp",
+          "fr"
+        ]
+      },
+      "coverImage": "https://upload.wikimedia.org/wikipedia/en/6/60/Sonic_Adventure.PNG",
+      "__v": 0
+    },
+    {
+      "id": "63ebcbb031a23cdcffdaa1dd",
+      "title": "Resident Evil 4",
+      "category": "PS5",
+      "releaseDate": "2023-07-20",
+      "genre": "Survival Horror",
+      "softwareHouse": "CAPCOM",
+      "publisher": "CAPCOM",
+      "numberOfPlayers": 1,
+      "languages": {
+        "voice": [
+          "eng",
+          "jp"
+        ],
+        "text": [
+          "ita",
+          "eng",
+          "jp"
+        ]
+      },
+      "coverImage": "https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Resident_Evil_4_remake_cover_art.jpg/220px-Resident_Evil_4_remake_cover_art.jpg",
+      "__v": 0
+    },
+    {
+      "id": "63ecb2a34b6c1ded042b8589",
+      "title": "Marvel’s Spider-Man: Miles Morales",
+      "category": "PS4",
+      "releaseDate": "2022-11-18",
+      "genre": "Giocatore singolo, Azione, Avventura",
+      "softwareHouse": "Insomniac Games, Nixxes Software",
+      "publisher": "PlayStation PC LLC",
+      "numberOfPlayers": 1,
+      "languages": {
+        "voice": [
+          "eng"
+        ],
+        "text": [
+          "ita",
+          "spa",
+          "md",
+          "slo",
+          "fra"
+        ]
+      },
+      "coverImage": "https://static.posters.cz/image/750/stampa-su-tela-spider-man-miles-morales-electric-fist-swing-i102943.jpg",
+      "__v": 0
+    },
+    {
+      "id": "63ecb3984b6c1ded042b85b9",
+      "title": "God of War: Ragnarök",
+      "category": "PS5",
+      "releaseDate": "2022-11-09",
+      "genre": "Azione, Avventura",
+      "softwareHouse": "Santa Monica Studio",
+      "publisher": "PlayStation PC LLC",
+      "numberOfPlayers": 1,
+      "languages": {
+        "voice": [
+          "eng",
+          "ita",
+          "spa"
+        ],
+        "text": [
+          "fra",
+          "ung"
+        ]
+      },
+      "coverImage": "https://upload.wikimedia.org/wikipedia/en/e/ee/God_of_War_Ragnar%C3%B6k_cover.jpg",
+      "__v": 0
+    },
+    {
+      "id": "63ecb45c4b6c1ded042b85f8",
+      "title": "The Last of Us Part I",
+      "category": "PS3",
+      "releaseDate": "2015-11-19",
+      "genre": "Azione, Horror, Avventura",
+      "softwareHouse": "Naughty Dog LLC",
+      "publisher": "PlayStation PC LLC, Sony Interactive Entertainment",
+      "numberOfPlayers": 1,
+      "languages": {
+        "voice": [
+          "eng",
+          "ita"
+        ],
+        "text": [
+          "slo"
+        ]
+      },
+      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/zhGgq29AdgwsNEVImar3m716.png",
+      "__v": 0
+    },
+    {
+      "id": "63ecbc074b6c1ded042b891f",
+      "title": "The Last of Us Part II",
+      "category": "PS5",
+      "releaseDate": "2023-01-13",
+      "genre": "Azione, Horror, Avventura",
+      "softwareHouse": "Naughty Dog LLC",
+      "publisher": "PlayStation PC LLC, Sony Interactive Entertainment",
+      "numberOfPlayers": 1,
+      "languages": {
+        "voice": [
+          "eng",
+          "fra",
+          "ita",
+          "rus",
+          "pol"
+        ],
+        "text": [
+          "sve",
+          "ol",
+          "spa",
+          "ung",
+          "dan"
+        ]
+      },
+      "coverImage": "https://images.everyeye.it/img-cover/the-last-of-us-2-v33-35676.jpg",
+      "__v": 0
+    },
+    {
+      "id": "63ecbe6b4b6c1ded042b8a3d",
+      "title": "FIFA 23 ",
+      "category": "PS5",
+      "releaseDate": "2022-09-30",
+      "genre": "Sport",
+      "softwareHouse": "EA Swiss Sarl",
+      "publisher": "EA SPORTS™",
+      "numberOfPlayers": 4,
+      "languages": {
+        "voice": [
+          "fra",
+          "eng",
+          "ita"
+        ],
+        "text": [
+          "dan",
+          "arabo",
+          "nor",
+          "spa",
+          "sve",
+          "ol"
+        ]
+      },
+      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202301/0312/GU1vXFJpbzGYNV6UN3U0Cnnb.png",
+      "__v": 0
+    },
+    {
+      "id": "63ecf1ff4b6c1ded042b9f7a",
+      "title": "Devolver Tumble Time",
+      "category": "Android",
+      "releaseDate": "2023-02-15",
+      "genre": "Rompicapo",
+      "softwareHouse": "Devolver Digital",
+      "publisher": "Devolver Digital",
+      "numberOfPlayers": 1,
+      "languages": {
+        "voice": [
+          "ita",
+          "eng"
+        ],
+        "text": [
+          "ita",
+          "eng"
+        ]
+      },
+      "coverImage": "https://i.ytimg.com/vi/SG4nb-aajLc/maxresdefault.jpg",
+      "__v": 0
+    },
+    {
+      "id": "63ecf3a04b6c1ded042ba00c",
+      "title": "SpongeBob SquarePants: The Cosmic Shake",
+      "category": "Nintendo Switch",
+      "releaseDate": "2023-02-06",
+      "genre": "Avventura",
+      "softwareHouse": " Purple Lamp",
+      "publisher": " THQ Nordic",
+      "numberOfPlayers": 4,
+      "languages": {
+        "voice": [
+          "ita",
+          "eng",
+          "spa"
+        ],
+        "text": [
+          "ita",
+          "eng",
+          "spa"
+        ]
+      },
+      "coverImage": "https://multiplayer.net-cdn.it/thumbs/images/2023/01/30/spongebob-squarepants-cosmic-shake_jpg_1280x720_crop_q85.jpg",
+      "__v": 0
+    },
+    {
+      "id": "63ecf6e44b6c1ded042ba156",
+      "title": "HI-FI Rush",
+      "category": "PC",
+      "releaseDate": "2022-11-25",
+      "genre": "Hack & Slash",
+      "softwareHouse": " Tango Gameworks",
+      "publisher": " Bethesda Softworks",
+      "numberOfPlayers": 1,
+      "languages": {
+        "voice": [
+          "ita",
+          "eng"
+        ],
+        "text": [
+          "ita",
+          "eng"
+        ]
+      },
+      "coverImage": "https://multiplayer.net-cdn.it/thumbs/images/2023/01/30/hi-fi-rush-recensione_jpg_1280x720_crop_q85.jpg",
+      "__v": 0
+    },
+    {
+      "id": "63ecf8fa4b6c1ded042ba1fe",
+      "title": "Kartrider: Drift",
+      "category": "PC",
+      "releaseDate": "2022-10-12",
+      "genre": "Corse",
+      "softwareHouse": " Nexon Korea Corporation",
+      "publisher": " Nexon America Inc.",
+      "numberOfPlayers": 4,
+      "languages": {
+        "voice": [
+          "eng"
+        ],
+        "text": [
+          "eng"
+        ]
+      },
+      "coverImage": "https://multiplayer.net-cdn.it/thumbs/images/2023/01/22/kartrider_jpeg_1280x720_crop_q85.jpg",
+      "__v": 0
+    },
+    {
+      "id": "63ecfadd4b6c1ded042ba30b",
+      "title": "Persona 3 Portable",
+      "category": "PSP",
+      "releaseDate": "2019-04-12",
+      "genre": "JRPG",
+      "softwareHouse": "Atlus",
+      "publisher": "Atlus",
+      "numberOfPlayers": 1,
+      "languages": {
+        "voice": [
+          "eng",
+          "jap"
+        ],
+        "text": [
+          "eng",
+          "jap"
+        ]
+      },
+      "coverImage": "https://multiplayer.net-cdn.it/thumbs/images/2023/01/17/static-assets-upload2987448397527732121_cropped_-1_35_2000_1155_jpeg_1280x720_crop_q85.jpg",
+      "__v": 0
+    },
+    {
+      "id": "63ed05894b6c1ded042ba7a0",
+      "title": "Perfect Grind",
+      "category": "Android",
+      "releaseDate": "2023-02-10",
+      "genre": "Arcade",
+      "softwareHouse": "Noodlecake",
+      "publisher": "Google",
+      "numberOfPlayers": 1,
+      "languages": {
+        "voice": [
+          "eng"
+        ],
+        "text": [
+          "eng"
+        ]
+      },
+      "coverImage": "https://multiplayer.net-cdn.it/thumbs/images/2023/01/19/perfect-grind_jpg_1280x720_crop_q85.jpg",
+      "__v": 0
+    },
+    {
+      "id": "63ed0a1e4b6c1ded042ba9b0",
+      "title": "Romancelvania",
+      "category": "PC",
+      "releaseDate": "2022-10-04",
+      "genre": "Dating Sim",
+      "softwareHouse": " The Deep End Games",
+      "publisher": " 2124 Publishing",
+      "numberOfPlayers": 1,
+      "languages": {
+        "voice": [
+          "eng"
+        ],
+        "text": [
+          "eng"
+        ]
+      },
+      "coverImage": "https://cdn.akamai.steamstatic.com/steam/apps/1192810/capsule_616x353.jpg?t=1676410757",
+      "__v": 0
+    },
+    {
+      "id": "63ee7137d77e4e1e612c7123",
+      "title": "Blowtorch weapon: the second gas",
+      "category": "PS2",
+      "releaseDate": "2023-02-16",
+      "genre": "Shooter",
+      "softwareHouse": "Universe-Games",
+      "publisher": "Universe-Games",
+      "numberOfPlayers": 4,
+      "languages": {
+        "voice": [
+          "eng"
+        ],
+        "text": [
+          "eng"
+        ]
+      },
+      "coverImage": "adahsuoidfhiugfheruiofgnoiufcj9pawjdhp9ahfpoaq",
+      "__v": 0
+    }
+  ],
+  "review": [
+    {
+      "id": "63eab275e0b244db953d8f85",
+      "title": "Un porcospino tridimensionale",
+      "publicationDate": "2023-02-13",
+      "content": "Sonic Adventure è stato uno dei titoli di punta del mai dimenticato Dreamcast, la sfortunata e purtroppo sottovalutata console di SEGA. Anzi, a volerla dire tutta, è stato anche uno dei migliori, se non probabilmente il migliore a detta dei più, dei titoli tridimensionali dedicati al popolare porcospino blu. Almeno fino al recente Sonic Colours per Nintendo Wii. Proprio in virtù di quanto scritto, la software house nipponica ha deciso di riproporlo, come altri suoi titoli di successo degli anni '90, in alta definizione per gli utenti PlayStation 3 e Xbox 360 attraverso i rispettivi servizi online.",
+      "score": 7,
+      "reviewerName": "Me Medesimo",
+      "imageUrls": [
+        "https://multiplayer.net-cdn.it/thumbs/images/2010/06/16/315639.sonic-adventure-per-ps3.zkovs_jpg_800x0_crop_upscale_q85.jpg",
+        "https://multiplayer.net-cdn.it/thumbs/images/2010/06/16/315641.sonic-adventure-per-ps3.wyqnm_jpg_800x0_crop_upscale_q85.jpg",
+        "https://multiplayer.net-cdn.it/thumbs/images/2010/06/16/315640.sonic-adventure-per-ps3.sjfbl_jpg_800x0_crop_upscale_q85.jpg",
+        "https://cdn.vox-cdn.com/thumbor/f3Y8ApY97ZhRL8qxAGsxVeaYIGI=/0x53:640x480/1200x800/filters:focal(0x53:640x480)/cdn.vox-cdn.com/uploads/chorus_image/image/3622431/sonic_adventure_2.0.jpg",
+        "https://www.xboxtavern.com/wp-content/uploads/2018/07/SonicAd3RBBB.jpg",
+        "https://static.kinguin.net/cdn-cgi/image/w=1140,q=80,fit=scale-down,f=auto/media/category/s/s/ss_4be4624b9d7f049129f83113074ebf335e193539.800x600.jpg",
+        "https://preview.redd.it/poky17fpyho41.jpg?auto=webp&s=b6726b0bea476253c9f2ed464613b9c364be87c9"
+      ],
+      "reviewedGame": {
+        "id": "63eab040e0b244db953d8f59",
+        "name": "Sonic Adventure"
+      },
+      "__v": 0
+    },
+    {
+      "id": "63eab344e0b244db953d8f8a",
+      "title": "I primi passi di sonic nel 3D",
+      "publicationDate": "2023-02-17",
+      "content": "Correva l’anno 1999, correva anche il nuovo capitolo 3D del famoso riccio blu di SEGA, correva per inaugurare la nuova avventura in ambito home console della ex hardware house nipponica nella speranza di dimenticare la brutta sconfitta del Saturn. Sonic Adventure è stato il titolo di punta al lancio del neonato Dreamcast. Ai tempi la grafica e la velocità stratosferica di Sonic fecero gioire milioni di fan, nascondendo la maggior parte dei difetti strutturali già presenti allora. Oggi, dopo undici anni dal suo primo rilascio, ci si accorge delle magagne tecniche che affliggevano e affliggono tuttora il titolo del team Sonic: telecamera ballerina, gameplay riuscito solo a metà e un senso di smarrimento costante.",
+      "score": 6,
+      "reviewerName": "Lui Stesso",
+      "imageUrls": [
+        "https://assets.reedpopcdn.com/sonic.png/BROK/resize/1200x1200%3E/format/jpg/quality/70/sonic.png",
+        "https://i.ytimg.com/vi/20Hf7u2R0Lc/maxresdefault.jpg",
+        "https://i.ytimg.com/vi/wVQn1h3Rfmk/hqdefault.jpg"
+      ],
+      "reviewedGame": {
+        "id": "63eab040e0b244db953d8f59",
+        "name": "Sonic Adventure"
+      },
+      "__v": 0
+    },
+    {
+      "id": "63eab3b0e0b244db953d8f8f",
+      "title": "Capolavori dal passato",
+      "publicationDate": "2022-04-07",
+      "content": "Fumito Ueda è un (ancora) giovane game designer che ha davvero tanto da insegnare a tanti altri sedicenti sviluppatori che non riescono ad emergere nel mare magnum videoludico sempre più affollato. Nel 2002 se ne è infatti uscito su PlayStation 2 con un gioco chiamato Ico, platform adventure che ha fatto grandissima presa sulla critica e, purtroppo, un po' meno sul pubblico, ricevendo votazioni altissime e anche il tanto agognato 10 sulle pagine di Alternative-Reality.com, una delle due colonne portanti di Multiplayer.it che vedete oggi. Non contento di aver centrato l'obiettivo al primo tentativo, il timido sviluppatore giapponese (e ovviamente tutto il suo team!) ci ha regalato nel 2006 e sempre su PlayStation 2 Shadow of the Colossus, altro piccolo capolavoro ma forse meno all'unanimità del progetto originale. Il 2011 è invece l'anno giusto per riproporre su PlayStation 3, in versione riveduta e corretta dal punto di vista tecnico, questi due gioielli, con il beneficio dell'alta definizione e nel tentativo di mettere le basi \"culturali\" per The Last Guardian, il prossimo titolo di Ueda che invero si sta facendo attendere un po' troppo per i nostri gusti. Siccome i due titoli vengono trattati separatamente all'interno del Blu-Ray Disc in termini di menù e set di trofei, faremo altrettanto anche noi per questa Collection, lasciando un giudizio complessivo al commento in fondo alla recensione.",
+      "score": 9,
+      "reviewerName": "Egli Aglio",
+      "imageUrls": [
+        "https://multiplayer.net-cdn.it/thumbs/images/2011/08/17/19169img0075_jpg_800x0_crop_upscale_q85.jpg",
+        "https://multiplayer.net-cdn.it/thumbs/images/2011/06/08/img0264_jpg_800x0_crop_upscale_q85.jpg",
+        "https://multiplayer.net-cdn.it/thumbs/images/2011/06/08/img0233_jpg_800x0_crop_upscale_q85.jpg",
+        "https://multiplayer.net-cdn.it/thumbs/images/2011/08/17/19167ico_4_jpg_800x0_crop_upscale_q85.jpg"
+      ],
+      "reviewedGame": {
+        "id": "63eaae85e0b244db953d8f34",
+        "name": "The ICO and Shadow of the Colossus Collection"
+      },
+      "__v": 0
+    },
+    {
+      "id": "63eab4bce0b244db953d8fb5",
+      "title": "Blow Torch Weapon 2, la recensione finale del nuovo sparatutto di Infinity Ward",
+      "publicationDate": "2023-04-21",
+      "content": "Ci sono i Call of Duty, e poi ci sono i Modern Warfare. Non c'è niente da fare, è una legge fondamentale dell'universo quella che stabilisce che gli shooter sviluppati da Infinity Ward abbiano inevitabilmente un fascino maggiore, un'aura di grandezza capace di renderli totalmente distinguibili dagli altri realizzati da studi come Sledgehammer e Treyarch. La cosa è testimoniata dall'attenzione con la quale la community segue ogni pubblicazione appartenente alla saga, ma anche dalle risorse che Activision riserva a questi progetti, caratterizzati spesso da budget maggiori e da cicli di sviluppo più ampi.\n\nLo studio californiano raccoglie ancora oggi i frutti maturati da quella straordinaria trilogia di sparatutto, capace di segnare indelebilmente la giovinezza di almeno due generazioni di videogiocatori, ma l'altra faccia di questa pesantissima eredità è che ogni iterazione ha di fronte a sé una prova durissima, ovvero rivelarsi realmente degna del suo immenso lignaggio. Il reboot del 2019 aveva avuto il merito di volare vicinissimo alla luce emessa dai capitoli originali, e proprio per questa ragione Call of Duty: Modern Warfare 2 arriva oggi sul mercato sospinto da una quantità di aspettative difficilmente quantificabile, che trova ragione nell'incredibile opportunità che Infinity Ward ha avuto di rifinire l'esperienza di tre anni fa per confezionare adesso un Call of Duty ancora migliore.\n\n",
+      "score": 10,
+      "reviewerName": "Gatto Topao",
+      "imageUrls": [
+        "https://www.dhresource.com/0x0/f2/albu/g4/M01/9E/93/rBVaEFce8SGARKX7AABGRqLVEdc554.jpg"
+      ],
+      "reviewedGame": {
+        "id": "63e632d0816aa16a42c763c2",
+        "name": "Blow torch weapon"
+      },
+      "__v": 0
+    },
+    {
+      "id": "63ecc4a54b6c1ded042b8e01",
+      "title": "Good Game",
+      "publicationDate": "2023-02-15",
+      "content": "Resa grafica superiore al predecessore, ma perde facilmente per quanto riguarda la trama, colpi di scena e personaggi. Comunque buon titolo, divertente da giocare. Ringraziando il cielo c'è stata la rimozione di parti di spionaggio (quelle con MJ).",
+      "score": 7,
+      "reviewerName": "Senkal",
+      "imageUrls": [
+        "https://www.cdkeyit.it/wp-content/uploads/marvels-spider-man-miles-morales-800x500-1.jpg"
+      ],
+      "reviewedGame": {
+        "id": "63ecb2a34b6c1ded042b8589",
+        "name": "Marvel’s Spider-Man: Miles Morales"
+      },
+      "__v": 0
+    },
+    {
+      "id": "63ecca3e4b6c1ded042b9114",
+      "title": "Bad online game ",
+      "publicationDate": "2023-02-12",
+      "content": "Pessimo, giocare online è diventato veramente frustrante. A parte il pay to win continuo, ma è evidente di come diverse partite siano scriptate. Ultimo fifa della vita. Non lo consiglierei a nessuno, Ok le alternative sono scarne, ma qui si rasenta il ridicolo.",
+      "score": 2,
+      "reviewerName": "gamer-377",
+      "imageUrls": [
+        "https://www.spaziogames.it/images/images/2022/08/fifa-23-fut-49071.768x432.jpg"
+      ],
+      "reviewedGame": {
+        "id": "63ecbe6b4b6c1ded042b8a3d",
+        "name": "FIFA 23 "
+      },
+      "__v": 0
+    },
+    {
+      "id": "63eccbd34b6c1ded042b9137",
+      "title": "Best FIFA",
+      "publicationDate": "2023-02-13",
+      "content": "Miglior gioco di calcio sul mercato senza se e senza ma! \n\nRimane ancora il gioco più completo in circolazione , con tante modalità , tante licenze , tanti contenuti , e finalmente con la Next Gen su PC con Hypermotion 2.0 che migliora l’esperienza di gioco su tantissimi aspetti rispetto il 22.\n\nNext Gen su PC che non è una scelta scontata , visto che sono l’unico publisher in ambito di simulazione sportiva a fare questo passo ( konami e 2K che ancora campano scuse su scuse ) \n\nSe sei un’amante di Fifa il 23 Next Gen non puoi perdertelo.",
+      "score": 9,
+      "reviewerName": "Andrew",
+      "imageUrls": [
+        "https://assets.reedpopcdn.com/FIFA-23-review---header.jpg/BROK/thumbnail/1600x900/quality/100/FIFA-23-review---header.jpg"
+      ],
+      "reviewedGame": {
+        "id": "63ecbe6b4b6c1ded042b8a3d",
+        "name": "FIFA 23 "
+      },
+      "__v": 0
+    },
+    {
+      "id": "63ecf1ba4b6c1ded042b9f70",
+      "title": "Devolver Tumble Time, la recensione del puzzle game con i personaggi di Devolver",
+      "publicationDate": "2023-02-15",
+      "content": "Ne abbiamo parlato spesso: più un genere è inflazionato, più è necessario distinguersi. Ci sono fondamentalmente due modi per farlo: realizzare un prodotto di stampo tradizionale ma dannatamente ben fatto, oppure puntare su di un approccio originale ma non fine a se stesso, in parole povere qualcosa di fresco e al contempo efficace.\n\nÈ quest'ultima opzione che Devolver Digital ha scelto per la sua nuova produzione mobile: un puzzle game da giocare con un solo dito, tenendo il proprio dispositivo iOS o Android rigorosamente in verticale, che utilizza uno stile grafico a \"bordi spessi\", fumettoso e divertente, mentre attinge all'ampio roster di personaggi a disposizione del publisher.\n\nTutto perfetto, dunque? In verità qualche problema ci sarebbe:Avete presente la ruota del Bingo? Ecco, è proprio da lì che parte Devolver Tumble Time: selezionato uno fra i personaggi disponibili, tutti provenienti dalle serie di Devolver Digital (da Serious Sam a Hotline Miami, da GRIS ad Absolver, da Downwell a Minit, da Shadow Warrior a Observation...) e dotati di abilità speciali differenti, ci troveremo ad affrontare livelli man mano più complessi mentre guardiamo appunto la ruota che si riempie man mano di oggetti.\n\nA questo punto entrano in azione meccanismi in stile match-3 che tuttavia funzionano in una maniera diversa dal solito, estremamente intuitiva: se ci sono tre o più oggetti uguali che si sfiorano all'interno della ruota, ci basterà tenere premuto il pollice sul touch screen per selezionarli tutti e farli esplodere, inanellando eventualmente una combo in grado di far comparire una bomba che possa aiutarci nel nostro lavoro.\n\nL'obiettivo qual è? Effettuare le eliminazioni indicate nella parte alta dello schermo, rispettando però un tempo limite di appena sessanta secondi. Bisogna dunque toccare come dei forsennati alla ricerca delle combinazioni giuste, far salire l'indicatore del personaggio e sfruttarne la mossa speciale, oppure premere un pulsante per far girare la ruota laddove non ci sia alcuna possibilità di andare avanti.\n\nIl timer sulle prime appare comodo e tranquillo, ma verso il ventesimo livello, complici le richieste sempre più pressanti del gioco, diventa davvero difficile da rispettare. Ci si imbatte dunque nel game over e fanno capolino le possibili microtransazioni per continuare la partita oppure per ottenere cuori (i biglietti, in pratica) infiniti, così da non dover attendere che si ricarichino col tempo.Se l'impianto di Devolver Tumble Time risulta piacevole e simpatico, complice lo stile grafico fumettoso e le musiche dal piglio ipnotico, nonché i personaggi di casa Devolver e un gameplay semplice ma accattivante, in termini strutturali il titolo sviluppato da NOPOPO è purtroppo caratterizzato da una fastidiosa tendenza alla monetizzazione selvaggia che si manifesta davvero troppo in fretta.\n\nÈ vero, il prezzo da pagare per ottenere i cuori infiniti (e dunque i tentativi infiniti) è di appena 3,49€ laddove si voglia smettere di aspettarne la ricarica, ma scegliendo di fruire dell'esperienza in maniera gratuita si finisce per guardare pessimi trailer pubblicitari che ruotano quasi sempre attorno ad applicazioni-truffa e gioco d'azzardo, oppure annunci che cercano di proporci addirittura un acquisto in-app da 119,99€ per sbloccare tutto.",
+      "score": 5,
+      "reviewerName": "Diletta Leotta",
+      "imageUrls": [
+        "https://multiplayer.net-cdn.it/thumbs/images/2023/02/06/devolver-tumble-time_jpg_1280x720_crop_q85.jpg"
+      ],
+      "reviewedGame": {
+        "id": "63ecf1ff4b6c1ded042b9f7a",
+        "name": "Fire Emblem Engage Anniversary"
+      },
+      "__v": 0
+    },
+    {
+      "id": "63ecf4774b6c1ded042ba06d",
+      "title": "SpongeBob SquarePants: The Cosmic Shake, la recensione di una nuova avventura a piattaforme",
+      "publicationDate": "2022-12-30",
+      "content": "Se avete voglia di un tuffo in quegli action platform 3D classici che si vedono sempre meno di questi tempi, allora la recensione di SpongeBob SquarePants: The Cosmic Shake potrebbe darvi un buon consiglio su dove dirigervi. Il lavoro svolto da Purple Lamp sembra uscito dal manuale del perfetto tie-in del primo decennio degli anni 2000, proponendo azione a piattaforme con abilità, trasformazioni e variabili assortite come ci si potrebbe aspettare dalla tradizione più classica dei giochi su licenza Nickelodeon. E non è affatto una brutta cosa, anzi: considerando anche la scarsità di nuovi titoli di questo tipo sul mercato (almeno tra le produzioni di un certo spessore), accogliamo questa nuova avventura di SpongeBob a braccia aperte, non fosse altro che per immergersi nuovamente in Bikini Bottom, che è sempre un piacere.\n\nDopo una pausa stranamente lunga occorsa tra il 2015 e il 2020, abbiamo visto arrivare tutti insieme una notevole quantità di progetti legati a SpongeBob in ambito videoludico, tra i quali si sta affermando il filone di titoli da parte di Purple Lamp, che dopo SpongeBob SquarePants: Battle for Bikini Bottom - Rehydrated prosegue sulla sua strada lasciando sostanzialmente inalterata la struttura generale ma aggiungendoci un bel po' di originalità in questo nuovo The Cosmic Shake.\n\nD'altra parte, mentre il precedente era una sorta di remake, in questo caso ci troviamo di fronte a qualcosa di inedito e gli sviluppatori si sono potuti sbizzarrire nell'inserimento di alcune nuove meccaniche di gioco e nella costruzione di una nuova e folle storia da mettere in scena.\nNel volgere dei pochi minuti iniziali, il dinamico duo composto da SpongeBob e Patrick si ritrova in grado di sconvolgere addirittura il tessuto spazio-temporale, causando delle lacerazioni verso nuove dimensioni, tanto per dare un'idea della follia di questa storia. D'altra parte, se ai nostri due eroi vengono messe a disposizione delle lacrime di sirena in grado di esaudire qualsiasi desiderio, la distruzione del continuum dimensionale è praticamente il minimo che possiamo aspettarci, e così infatti accade. Durante una fiera di Bikini Bottom, i due amici si imbattono nella bancarella di antichi oggetti magici di Madame Kassandra, venendo immediatamente affascinati da una strana boccetta rilucente. La ben poco entusiasta negoziante non sembra dare gran peso alla scoperta, raccontando (con poca convinzione) che si tratta di una sostanza in grado di realizzare i desideri, creando bolle di sapone.\n\nSpongeBob e Patrick colgono l'occasione con il solito entusiasmo e cominciano ad esprimere desideri e creare palloncini a raffica. Purtroppo, si accorgono troppo tardi che l'oggetto appartiene al dio Nettuno e che funziona veramente, se chi lo utilizza è un puro di cuore, precisamente come il protagonista dalle mutande quadrate.\n\nQuello che segue è un cataclisma che squarcia la realtà di Bikini Bottom lasciando il paese in rovina e creando una serie di dimensioni alternative nelle quali si sono realizzati i vari desideri espressi, collegate da portali alla realtà standard. E, come se non bastasse, in tutto questo Patrick si ritrova trasformato in un palloncino, tra l'altro. La missione di SpongeBob, per cercare di rimettere a posto le cose, è esplorare i vari mondi portandone a termine le rispettive missioni, che solitamente coinvolgono varie sessioni di piattaforme, scontri con misteriosi nemici e anche battaglie finali contro vari boss. Non ultimo, il tutto viene effettuato indossando anche vari sgargianti costumi alternativi per il nostro eroe, \"gentilmente\" forniti da Madame Kassandra al prezzo di gelatina cosmica e dobloni d'oro.Per quanto riguarda il gameplay, SpongeBob SquarePants: The Cosmic Shake segue in maniera piuttosto fedele i canoni classici dell'action platform in 3D, tanto da sembrare uscito direttamente dalla prima decade degli anni 2000. Le meccaniche sono quelle che ci si aspetta da un titolo del genere: si tratta di saltare, combattere sfruttando alcune movenze d'attacco o evasive e interagire con personaggi ed elementi dello scenario in diverse situazioni. Per quanto la base fondamentale non possa far altro che essere derivativa e piuttosto lontana dai migliori esempi del gioco a piattaforme, la follia del mondo di SpongeBob viene in soccorso mettendo in scena una varietà di ambientazioni e situazioni veramente notevole, a dire il vero ottimamente sfruttata anche dal team Purple Lamp, che ha saputo costruire dei livelli piuttosto interessanti. Ognuno dei sette mondi esplorabili è caratterizzato da un tema dominante (il far west, il cinema, i pirati e quant'altro) che influenza la rappresentazione grafica ma anche alcuni specifici elementi del gameplay.\n\nIn questi strani contesti si innesta la progressione di Spongebob che si ritrova a imparare nuove abilità e sfruttarle nei diversi contesti, ma portandosele dietro anche negli altri mondi e ampliando così progressivamente le possibilità di spostamento, interazione ed esplorazione.La patente per il cavalluccio marino o il calcio volante in grado di sfondare pareti e saltare più in alto tornano dunque utili anche per raggiungere nuovi punti dello scenario e la costruzione dei livelli è generalmente abbastanza complessa e accattivante, presentando strade alternative e segreti da scoprire. Il combattimento con i nemici è forse l'elemento meno riuscito del pacchetto, ma anche questo replica un po' lo stile classico del genere, dato che funziona da collante tra le parti e come condizione per far aumentare il livello di sfida da integrare alla fase platform.\n\nInfine, un elemento molto convincente è dato dalla quantità di eventi e variazioni di meccanica che possiamo trovare all'interno dei diversi mondi. Seguendo anche i vari passi della narrazione, SpongeBob SquarePants: The Cosmic Shake trasforma più volte il gampeplay per alcuni minuti (corse su veicoli bizzarri, platform con struttura 2D, picchiaduro a scorrimento e quant'altro). Tutto questo, unito agli scontri con i boss, riesce a garantire un notevole assortimento.Basandosi su un cartone animato di questa portata, la caratterizzazione grafica non deve inventare molto, potendo contare già su personaggi e ambientazioni fortemente riconoscibili e carismatici. Il gioco fa un ottimo lavoro nel riprodurre storie e situazioni tipiche della serie in forma interattiva, anche grazie a un'ottima scrittura tra sceneggiatura e dialoghi (in inglese, sottotitolati in italiano). La premessa ha consentito poi a Purple Lamp di sbizzarrirsi, proponendo 7 ambientazioni diverse con tematiche specifiche, cosa che ha reso naturale una notevole varietà in termini di atmosfere, scenari e anche meccaniche di gioco, considerando gli elementi specifici di ogni missione. Il risultato è un platform che spinge all'esplorazione progressiva di ogni sua parte, almeno dal punto di vista della storia e della scoperta dei nuovi contenuti.\n\nPer quanto riguarda l'azione vera e propria, si rivelano i problemi che emergono spesso nei platform 3D di caratura non proprio eccelsa: la precisione nel sistema di controllo non è decisamente al livello delle migliori produzioni Nintendo, per fare un esempio semplice e forse anche un po' ingiusto.L'aggiunta del doppio salto e della planata servono anche a consentire un certo margine di errore ai movimenti che possono diventare ostici, anche perché l'inquadratura spesso non offre la migliore visione e necessita di essere costantemente corretta. Su Nintendo Switch, al di là di una risoluzione non proprio notevole, si rileva anche una certa inconsistenza delle performance, che sembrano fluttuare intorno ai 30 fps con qualche calo di troppo, ma sono difetti che si notano soprattutto con la console collegata alla TV, mentre diventano molto meno incisivi in portabilità.\n\nLe sequenze d'intermezzo sono curate e piacevoli, in linea con il cartone animato anche se riprodotte in 3D, mentre la colonna sonora è opportunamente tarata sulle diverse ambientazioni che ci troviamo ad attraversare. Per chi è abituato a seguire la serie in TV e si è affezionato alle voci della versione italiana, la mancanza del parlato nella nostra lingua può essere pesante ed è un peccato, soprattutto considerando che sono presenti numerosi idiomi di varie aree geografiche ma non l'italiano.",
+      "score": 7,
+      "reviewerName": "Clio MakeUp",
+      "imageUrls": [
+        "https://multiplayer.net-cdn.it/thumbs/images/2023/01/30/spongebob_squarepants_cosmic_shake_10_jpg_800x0_crop_upscale_q85.jpg",
+        "https://multiplayer.net-cdn.it/thumbs/images/2023/01/30/spongebob_squarepants_cosmic_shake_4_jpg_800x0_crop_upscale_q85.jpg",
+        "https://multiplayer.net-cdn.it/thumbs/images/2023/01/30/spongebob_squarepants_cosmic_shake_6_jpg_800x0_crop_upscale_q85.jpg"
+      ],
+      "reviewedGame": {
+        "id": "63ecf3a04b6c1ded042ba00c",
+        "name": "SpongeBob SquarePants: The Cosmic Shake"
+      },
+      "__v": 0
+    },
+    {
+      "id": "63ecf86c4b6c1ded042ba1c9",
+      "title": "Hi-Fi Rush, la recensione della sorprendente esclusiva Microsoft sviluppata da Tango Gameworks",
+      "publicationDate": "2023-02-10",
+      "content": "Nella storia della musica, ci sono state delle band che hanno conquistato il loro posto nell'olimpo del rock dopo un lungo processo di crescita e sperimentazione votato a far germogliare il loro talento, mentre altre, come un vietcong infuriato e armato fino ai denti, sono sbucate da un cespuglio e si sono prese da subito la cima della classifica senza che il pubblico, una settimana prima, ne avesse mai sentito parlare. In modo analogo a come fecero dischi come Ten e Appetite for Destruction nell'ambito della musica, da cinque giorni a questa parte Hi-Fi Rush ha monopolizzato tutte le frequenze del dibattito videoludico, diventando incontestabilmente il videogioco più ascoltato del momento.\n\nIl fatto di essere stato annunciato e lanciato durante il Developer_Direct di Microsoft della scorsa settimana ha contribuito a catalizzare l'attenzione dei curiosi sul nuovo action musicale di Tango Gameworks, ma la verità è che il tam-tam esploso di recente deriva in primo luogo dalla stellare personalità che il titolo ha saputo esibire durante quel trailer di presentazione, capace addirittura di mettere in secondo piano gli altri grandi protagonisti della serata come Forza Motorsport e Redfall. Le premesse suggerivano la possibilità d'imbattersi in un'altra produzione first-party dai valori simili a quelli di Pentiment, per questo ci siamo gettati all'ascolto del nuovo progetto di John Johanas subito dopo l'evento, rimanendoci incollati per tutto il fine settimana. Nella recensione di Hi-Fi Rush, ecco tutte le ragioni per cui la vostra playlist personale si arricchirà presto di un nuovo, splendido album.\nOsservando le vivaci sequenze di gameplay con le quali è stato presentato il gioco, era facile cadere nella tentazione di derubricare Hi-Fi Rush a un action dai valori produttivi modesti, capace di rimanere invisibile ai radar degli insider per le sue piccole dimensioni. In realtà, già dopo la prima ora di gioco è facile concepire la vera natura del nuovo esperimento di Tango Gameworks, che dopo diversi horror ha scelto di imboccare un sentiero del tutto inesplorato per mettersi alla prova con qualcosa di completamente inedito. Sebbene sia stato sviluppato parallelamente a Ghostwire: Tokyo, il titolo ha assorbito gli sforzi dello studio dal lontano 2017, dopo che Johanas, reduce dall'ottimo The Evil Within 2, propose il progetto ai vertici dell'azienda.\n\nIl gioco è quindi il frutto di un ciclo di sviluppo di tutto rispetto, e non ha assolutamente nulla di piccolo, se non la lista di \"contro\" che troverete alla fine della recensione. Scintillante, colorata e magnetica, Hi-Fi Rush è un'avventura in terza persona dall'anima squisitamente punk, che inserisce elementi da rhythm game in quel classico sistema di combattimento action tipico delle produzioni orientali e, soprattutto, di alcune opere create dallo Studio 4 diretto da Shinji Mikami, che qui si accontenta del ruolo di produttore esecutivo.Realizzata con un magnifico stile grafico a metà tra il cartone animato e il fumetto, che ricorda a grandissime linee la palette cromatica di quel capolavoro che è Jet Set Radio, la storia non si prende mai troppo sul serio per tutte le 13 ore che abbiamo impiegato a completarla, mentre racconta le vicende di Chai, un ragazzo di un futuro non molto distante che vuole a tutti costi diventare una rockstar. Cyberpunk 2077 ce l'ha insegnato, non sei un'icona del rock se non rimedi un braccio meccanico e combatti una megacorporazione, ed è proprio quello che Chai si troverà ad affrontare, supportato da un cast di personaggi secondari ben congegnato che viene lentamente integrato all'interno della storia nel corso del gioco.\n\nL'antefatto narrativo è legato a un incidente che vede Chai protagonista, e che gli porta ad avere il suo iPod impiantato nel petto. La Vandelay, un conglomerato che si occupa di protesi tecnologiche e robotica, vede il ragazzo come un difetto di produzione, e nel cercare di eliminarlo darà il via a un'avventura apertamente ispirata alla serie di fumetti Scott Pilgrim, naturalmente punteggiata da esilaranti boss fight contro i vertici dell'azienda, ognuno caratterizzato alla perfezione. La storia, come dicevamo, fa per lo più da collante tra un livello e l'altro e non ha alcuna velleità di tenervi col fiato sospeso, mentre scorre leggera e spensierata senza sbagliare una nota. Insomma, la trama è una placida band d'apertura che potrebbe scoraggiare chi è alla ricerca di esperienze più ritmate sul fronte narrativo, ma guai a lasciare il posto perché il gameplay, da solo, vale tutto il prezzo del biglietto parterre.Bastano solo pochissimi secondi alle prese con Hi-Fi Rush, per capire quanto funzioni l'esperimento ideato da Johanas. Di base, il gioco non si discosta molto da un normalissimo action alla Devil May Cry o alla Bayonetta, se non fosse che il suo protagonista ha impiantato nel petto un lettore musicale e, quindi, tutto il mondo che lo circonda pulsa a ritmo di musica. Sulle note di pezzi come Lonely Boy dei The Black Keys, Invaders Must Die dei Prodigy e Perfect Drug dei Nine Inch Nails, saremo costantemente invogliati a premere i pulsanti d'attacco a ritmo di musica, anche se non è obbligatorio, dal momento che il protagonista colpisce a ritmo pure se non si accompagna affatto l'andatura del brano.\n\nSe si segue con attenzione il tempo, però, tutto il combattimento assume l'aspetto di una meravigliosa coreografia ritmata, si fanno molti più danni alla grandissima varietà di antagonisti robotici messi in campo dalla Vandelay, e si ottengono punteggi decisamente migliori alla fine di uno scontro, cosa che si rivela fondamentale per chiunque non voglia terminare una battaglia con un pessimo voto. A dire il vero, cercare di ottenere una S alla fine di ogni lotta è il vero scopo di Hi-Fi Rush, anche perché sono tantissimi gli strumenti che il giocatore può sfruttare per riuscirci.Durante la prima ora di gioco, si può avere l'impressione di trovarsi di fronte a un gameplay tutto sommato semplice, anche limitato, in cui alternando un attacco rapido (della durata di un battito) e un attacco pesante (di due battiti) si possono concatenare una manciata di combo che facilitano di molto il lavoro di Chai. Tuttavia, ad ogni passo che il giocatore muove in direzione dei titoli di coda, il sistema di combattimento si trasforma, si rinforza e si arricchisce, spazzando via quella monotonia che poteva rendere facilmente nauseante l'esperienza offerta da Hi-Fi Rush. Prima di completare il primo livello si ottiene accesso agli attacchi Vai Così, dei colpi a tempo posti alla fine di una combo che permettono di infliggere danni extra, e in seguito si sbloccano le schivate, le parate e i parry, che non sono mosse secondarie riservate a un'elite di esperti, ma al contrario l'unico modo per eliminare i robot più avanzati. Ottenendo i rottami che sono disseminati per il mondo di gioco si possono comprare fino a 15 nuove combo, e altre varietà di attacchi speciali, una sorta di super che si ricarica colpendo i nemici o raccogliendo le batterie nascoste nell'area.e da un lato ci vorrebbero probabilmente quattro articoli per raccontarvi ogni piccola sfumatura del profondissimo e stratificato sistema di combattimento di Hi-Fi Rush, dall'altro siamo quasi sollevati dall'ammettere che almeno quando si ripongono le armi, la nuova fatica di Hi-Fi Rush si rivela ordinaria. Forse troppo ordinaria. Ogni livello è infatti straordinariamente lineare, ed è composto da un'aritmetica e freddissima alternanza tra arene e fasi platform che solo in alcuni rarissimi frangenti concede spazio a sezioni di gioco uniche. Fortunatamente, i livelli non si assomigliano gli uni agli altri quindi il difetto viene in qualche modo temperato da una buona varietà di ostacoli e pericoli ambientali, ma se dobbiamo trovare un difetto al nuovo titolo di Tango Gameworks, è sicuramente legato al suo level design.Nel caso in cui le tredici ore di trama principale non dovessero bastare a giustificare l'acquisto del gioco a 29,99€, vi farà piacere sapere che Hi-Fi Rush è supportato da un ricchissimo endgame colmo di nuove attività, in barba a chiunque pensasse di trovarsi di fronte a una piccola avventura doppia A. Raggiunti i titoli di coda, non solo sarà sempre possibile rigiocare un livello nel tentativo di ottenere una S per ogni combattimento del gioco, ma si sbloccheranno inoltre due tipi di contenuti inediti, in grado di proiettare alle stelle il contatore di ore del vostro salvataggio.\n\nIl primo è la Torre Ritmo, una modalità a tempo molto impegnativa in cui l'obiettivo è quello di scalarne i piani affrontando orde di nemici, combattendo al contempo contro il cronometro. Le uccisioni lo ricaricano, mentre i potenziamenti e le cure acquistabili in un negozio all'interno della torre costano secondi di gioco. È superfluo aggiungere che completarla rappresenterà una vera sfida anche per i giocatori più esperti, e non vediamo l'ora di scoprire quali risultati otterrà la community nel tentativo. La seconda novità, invece, è legata alla trama principale, e prevede di ripercorre ogni livello alla ricerca di porte segrete che durante il primo completamento erano sigillate. All'interno della porta è presente una sfida speciale, come ad esempio quella che ci ha richiesto di ripulire l'arena dai nemici senza toccare il terreno. Non abbiamo idea di cosa si celi dietro all'ultima porta, ma poco importa. L'avventura di Tango Gameworks ha una rigiocabilità smisurata se messa a confronto col prezzo di listino, senza contare che tramite il Game Pass è disponibile per tutti, senza costi aggiuntivi, su PC, Xbox e dispositivi compatibili con xCloud.",
+      "score": 9,
+      "reviewerName": "Paola Turani",
+      "imageUrls": [
+        "https://multiplayer.net-cdn.it/thumbs/images/2023/01/30/hi-fi_rush_animazione_jpg_800x0_crop_upscale_q85.jpg",
+        "https://multiplayer.net-cdn.it/thumbs/images/2023/01/30/hi-fi_rush_cattivi_jpg_800x0_crop_upscale_q85.jpg",
+        "https://multiplayer.net-cdn.it/thumbs/images/2023/01/25/hi-fi-rush-05_jpg_800x0_crop_upscale_q85.jpg"
+      ],
+      "reviewedGame": {
+        "id": "63ecf6e44b6c1ded042ba156",
+        "name": "HI-FI Rush"
+      },
+      "__v": 0
+    },
+    {
+      "id": "63ecfa434b6c1ded042ba2d0",
+      "title": "Kartrider: Drift, la recensione dell'emulo di Mario Kart gratuito da Nexon",
+      "publicationDate": "2023-02-07",
+      "content": "È strano notare come ancora nessuno abbia rubato a Nintendo il segreto su come costruire un gioco di kart perfetto da 30 anni a questa parte, eppure anche la recensione di Kartrider: Drift non fa che certificare questa situazione. Non si tratta di zelo o timore reverenziale, perché a questo punto sarebbe anche anacronistico voler difendere a tutti i costi la superiorità di Mario Kart su tutto il resto dell'offerta che ormai comincia ad essere sostanziosa, ma è la semplice verità: ci sono stati progetti interessanti, alternative piuttosto valide che sono anche riuscite a costruire una certo seguito (come Crash Team Racing), ma in tutti i casi si parla di guardare dal basso verso l'alto il racing mariesco in tutta la sua gloria.\n\nQui poi non si parla proprio di un parvenu: KartRider Rush, il primo capitolo nella serie del colosso coreano/giapponese Nexon, conta milioni di utenti in tutto il mondo e un destino simile spetterà probabilmente anche a Kartrider: Drift, anche solo in virtù della sua distribuzione su base gratuita.\n\nSi tratta infatti di un free-to-play che non ha politiche di monetizzazione particolarmente aggressive (anche se si nota quantomeno la spinta verso l'acquisto dei battle pass premium a pagamento) cosa che può portare in breve tempo a una base di utenti molto vasta. E questa pare sia già pronta, considerando la facilità con cui è possibile trovare partite online pronte su qualsiasi modalità di gioco e nonostante il titolo non sia ancora stato lanciato ufficialmente sulle console, essendo disponibile al momento solo su PC e piattaforme mobile.\n\nC'è indubbiamente una sostanziosa produzione dietro, che si riflette in una caratterizzazione interessante e una buona quantità di contenuti, ma al momento Kartrider: Drift risulta ancora lontano dai migliori standard del genere: anche senza scomodare sua maestà Mario Kart, possiamo facilmente rivolgerci alla serie Sonic All-Stars per un gioco dal modello di guida più soddisfacente, o a Crash Team Racing per un'integrazione più sensata di power-up e corsa. Il titolo Nexon, però, ha dalla sua la possibilità di essere scaricato gratuitamente e di risultare facilmente giocabile anche su piattaforme mobile, cosa che può renderlo un titolo estremamente accessibile e diffuso.\nl gameplay si basa sui fondamenti dei giochi di kart in stile arcade, ovvero guida veloce e ben poco realistica unita all'uso tattico dei potenziamenti. Il sistema di guida ricalca quello ormai diventato standard, con la scelta del momento giusto in cui accelerare al semaforo iniziale per ottenere una spinta aggiuntiva, l'effetto scia che possiamo ottenere stando dietro agli avversari e l'immancabile derapata in grado di donare un'accelerazione extra se eseguita nel modo corretto. Il problema è che ogni singolo elemento del sistema di guida appare come una sorta di semplificazione generale dei principi di Mario Kart: lo scatto alla partenza non cambia in base alle caratteristiche di pilota o veicolo, il sistema di derapata è piuttosto convincente ma viene mortificato dal design delle piste spesso troppo semplice e il fatto che personaggi e auto si equivalgano, tranne che per l'aspetto estetico, riduce in maniera notevole qualsiasi elemento tattico.\nTutti questi aspetti lo rendono un gioco particolarmente adatto alla fruizione mobile, tanto che Kartrider: Drift può essere giocato anche in maniera semi-automatica lasciando al giocatore il solo compito di sterzare e utilizzare i potenziamenti, ma anche in questa modalità risulta difficile competere con il carisma e la giocabilità immediata di Mario Kart Tour, che pure rappresenta di per sé una notevole semplificazione della formula. Sistema di guida e poteri, d'altra parte, derivano direttamente dalla tradizione del genere, sia per quanto riguarda il comportamento dei veicoli che gli effetti delle armi offensive e difensive, con qualche sporadica introduzione originale.n generale, anche nelle modalità più incentrate sull'uso dei power-up, questi risultano solo parzialmente efficaci, non andando mai a modificare troppo l'assetto della corsa: questo potrebbe essere un elemento a favore del gioco, se solo il design dei tracciati e il sistema di guida si dimostrassero un po' più stimolanti e in grado di far prevalere l'abilità dei giocatori in maniera più netta.\n\nKartrider: Drift è indubbiamente progettato tenendo anche conto delle piattaforme mobile e anche la semplificazione del sistema di guida e dei tracciati deriva da questo punto fondamentale. Il sistema di controllo semi-automatico funziona piuttosto bene su smartphone e tablet, anche se risulta meno intuitivo di quello di Mario Kart Tour, ma è soprattutto la buona reattività in termini di caricamento e matchmaking a renderlo un gioco particolarmente godibile in mobilità.La quantità di contenuti è una caratteristica a favore di Kartrider: Drift, che a ogni partita ci presenta una notevole varietà di attività a cui prendere parte, in maniera integrata con il sistema di progressione a obiettivi. Nel gioco possiamo prendere parte a corse standard basate su velocità e potenziamenti, concentrarci su sfide basate soprattutto sulla velocità, partecipare a corse a tempo, organizzare partite custom oppure dedicarci allo sblocco delle varie \"patenti\" che consentono di accedere a nuovi livelli. Ogni modalità contiene poi delle varianti in base al tipo di multiplayer, con la possibilità di scegliere tra lo scontro totale o la partita a squadre, risultando in una notevole quantità di combinazioni possibili che determinano diverse esperienze di gioco, sebbene tutte impostate secondo le stesse meccaniche di gameplay.\n\nQuesta struttura ramificata si integra con il sistema di progressione, come spesso accade ai giochi free-to-play. Anche in questo caso ci troviamo di fronte a un pass battaglia (qui chiamato opportunamente race pass) con obiettivi progressivi, suddiviso tra gratuito e a pagamento, con quest'ultimo ovviamente più ricco e interessante dell'altro. Questa differenza appare piuttosto evidente fin dalle prime partite, visto che gli obiettivi standard si esauriscono piuttosto in fretta palesando un'attenzione ovviamente molto maggiore per il battle pass a pagamento (i cui prezzi partono da 6,99 euro per il premium standard). I premi riguardano esclusivamente elementi cosmetici e non hanno influssi sul gameplay, tuttavia è chiaro che questi rappresentano una spinta effettiva a progredire, dunque la loro conquista è considerata importante nell'economia di gioco. In ogni caso, la struttura sembra meno predatoria rispetto a quanto visto in molti altri titoli basati su modelli simili (anche da parte della stessa Nexon).La grafica di Kartrider: Drift è semplice ma al contempo pulita e piacevole, grazie a una caratterizzazione in stile anime infantile che funziona sempre decisamente bene su questa tipologia di giochi, indirizzati peraltro a un pubblico molto ampio. Questo si riflette anche in nell'ottimo design di personaggi e veicoli, che risultano funzionali a tutto il sistema di progressione basato proprio sulla personalizzazione dei piloti e dei mezzi da schierare in pista. Sebbene il tutto sembri un po' anonimo rispetto ad altri giochi di kart, è quantomeno curato al punto da spingerci a voler sbloccare nuovi contenuti da esibire in gara, e non è cosa da poco visto che su questo si basa un po' tutto il sistema di gioco.\n\nNonostante l'aspetto piacevole, l'elemento forse più debole del pacchetto è proprio il design dei tracciati, che risulta spesso banale e poco stimolante. Una delle caratteristiche che hanno maggiormente contribuito a costruire il mito di Mario Kart, la costruzione delle piste ha un'importanza fondamentale per il gameplay di un gioco del genere, ma in questo caso ci troviamo di fronte a soluzioni piuttosto banali e piatte. Sebbene gli scenari siano vari, colorati e ben disegnati, in generale contribuiscono fortemente a quella mancanza di carisma generale che caratterizza un po' tutto Kartrider: Drift, con l'aggravante di influire negativamente sul gameplay stesso, in questo caso.",
+      "score": 6.5,
+      "reviewerName": "Ciro Immobile",
+      "imageUrls": [
+        "https://multiplayer.net-cdn.it/thumbs/images/2020/06/29/ss_08d1db156f56fea07529aaf539664aaf487be5a71920x1080_jpg_800x0_crop_upscale_q85.jpg",
+        "https://multiplayer.net-cdn.it/thumbs/images/2023/01/22/kartrider_drift_8_jpg_800x0_crop_upscale_q85.jpg",
+        "https://multiplayer.net-cdn.it/thumbs/images/2023/01/22/kartrider_drift_2_jpg_800x0_crop_upscale_q85.jpg",
+        "https://multiplayer.net-cdn.it/thumbs/images/2023/01/22/kartrider_drift_3_jpg_800x0_crop_upscale_q85.jpg"
+      ],
+      "reviewedGame": {
+        "id": "63ecf8fa4b6c1ded042ba1fe",
+        "name": "Kartrider: Drift"
+      },
+      "__v": 0
+    },
+    {
+      "id": "63ecfbc54b6c1ded042ba34e",
+      "title": "Persona 3 Portable, la recensione del GDR che ha cambiato la serie di Atlus",
+      "publicationDate": "2021-01-04",
+      "content": "Sebbene Persona 5 sia il titolo più famoso della serie, quello che ha sdoganato Persona in tutto il mondo anche più del quarto episodio - dalle nostre parti ha sicuramente contribuito la localizzazione italiana di Persona 5 Royal, da poco disponibile anche su Nintendo Switch - il terzo capitolo è sicuramente il più importante, giacché è stato il momento della svolta: è stato allora, infatti, che Atlus ha introdotto la componente slice of life nei suoi giochi, una caratteristica che ha finito per distinguerli da praticamente ogni altro GDR nipponico sul mercato e che ha ispirato innumerevoli produzioni successive.\n\nNonostante questo, Persona 3, che è uscito nel 2006 su PlayStation 2, è stato riproposto una volta soltanto su PSP qualche anno dopo, e poi basta. È proprio quella versione che Atlus ha deciso di portare sulle piattaforme contemporanee, localizzandola nella nostra lingua per l'occasione, ma in questa recensione di Persona 3 Portable vi spiegheremo perché ci saremmo aspettati qualcosa di più.Persona 3 ha stabilito l'ossatura della serie per come la conoscono oggi un po' tutti, intersecando l'esplorazione dei dungeon e i combattimenti a turni con la componente slice of life, che vede il giocatore alle prese con la vita di tutti i giorni: le lezioni a scuola, i lavori part-time, la socializzazione con amici, conoscenti e perfetti sconosciuti. Persona 3 ha perciò inventato quelli che i giocatori di Persona 5 chiamerebbero Confidenti, ma che fino a Persona 4 si chiamavano Social Link, ovvero i rapporti coi personaggi secondari che si costruiscono nel tempo, frequentandoli nei momenti di libertà, e che conferiscono bonus e vantaggi particolari ai sensi del gameplay.\n\nNel mezzo ci sono appunto gli impegnativi combattimenti, che s'ispirano fortemente alla tradizione di Shin Megami Tensei, la serie principale che ha ispirato Persona: a turni, col giocatore che controlla un massimo di quattro personaggi e che deve scegliere le magie e gli attacchi giusti per colpire i punti deboli dei nemici e metterli KO il più velocemente possibile.Giocando a Persona 3, un fan dell'ultima ora ritroverà più o meno tutte le caratteristiche che può aver apprezzato nella quinta iterazione, compresa la lingua italiana, che è per noi la grande novità di questa conversione in particolare. Anche la narrativa ha fatto da vera e propria apripista, stabilendo alcuni capisaldi che sarebbero poi tornati negli episodi successivi, cominciando proprio con le Ombre, misteriose creature che affiorano nel nostro mondo durante l'Ora Buia, un lasso di tempo che intercorre tra la fine della giornata e l'inizio della successiva. Mentre la stragrande maggioranza delle persone entra in una specie di stasi, alcuni individui riescono a percepire l'Ora Buia e a combattere le Ombre con l'ausilio delle Personae: riuniti in un dormitorio che sembra quasi un quartier generale, questi studenti del liceo Gekkoukan accolgono tra le loro fila il giocatore che, per qualche misteriosa ragione, può manifestare molteplici Personae.\n\nNella versione Portable di Persona 3, il giocatore può scegliere se interpretare un protagonista maschile, come nell'edizione originale per PlayStation 2, oppure femminile: la scelta non è solo estetica, dato che cambia alcuni aspetti della narrativa e del gameplay. La protagonista femminile dimostra un carattere più spigliato e ironico nelle conversazioni a scelta multipla e può legarsi a comprimari diversi rispetto alla sua controparte maschile. Si tratta, insomma, di una sorta di campagna aggiuntiva che vale la pena giocare, magari in modalità Nuova Partita+ per scoprire tutte le differenze tra le due storie.La narrativa a tinte horror di Persona 3 è molto più vicina a Shin Megami Tensei che ai Persona successivi nelle atmosfere e nelle tematiche, ma inaugura anche il corso che i primi due Persona - troppo raramente menzionati, ma ugualmente importanti - avevano quantomeno accennato: il gioco esplora in maniera quasi maniacale le psicologie dei suoi personaggi, che nel corso dell'avventura affrontano i loro demoni personali, crescendo soprattutto come individui. Ma al di là degli studenti della Gekkoukan, un po' tutti i comprimari hanno qualcosa da raccontare che invoglia il giocatore a frequentarli, tra vicende struggenti, misteriose o semplicemente buffe.\n\nPersona 3 resta un titolo ben scritto ancora oggi, con un carosello di personaggi memorabili che non a caso abbiamo ritrovato in una pletora di giochi successivi, dal picchiaduro Persona 4 Arena Ultimax al rhythm game Persona 3: Dancing in Moonlight, passando per i due Persona Q su Nintendo 3DS.Se la storia di Persona 3 continua ad appassionarci anche a distanza di anni, il nostro problema con questa conversione sta proprio in quel suffisso Portable, che rappresenta una scelta controversa sotto diversi aspetti. Presa così com'è, questa edizione è certo fedelissima all'iterazione proposta su PSP più di dieci anni fa: Atlus si è limitata ad aggiungere qualche comoda funzionalità come il salvataggio rapido e a ritoccare la risoluzione dei modelli 3D, e così facendo ha inevitabilmente compromesso la resa visiva finale, vittima di quello stacco tra i modelli poligonali e gli sfondi in 2D più slavati cui ci hanno abituato un po' tutte le remaster di questi anni, a cominciare da quelle dei Final Fantasy di Square Enix. Dopodiché, se escludiamo la summenzionata aggiunta della lingua italiana, i contenuti sono rimasti identici, e quindi chi ha già giocato Persona 3 su PSP può tranquillamente saltare questa uscita.\n\nTuttavia, al netto dei vari contenuti aggiuntivi - come la campagna della protagonista femminile, i livelli di difficoltà extra e tutta una serie di bilanciamenti e migliorie alla qualità della vita - che in un certo senso rendono questa versione la migliore lato gameplay, Persona 3 Portable resta una specie di versione troncata rispetto all'originale per PlayStation 2, perché privata non solo delle belle cinematiche a cartoni animati, che si sarebbero potute anche implementare in questa versione, ma anche di tutta la parte esplorativa fuori dai dungeon, sostituita da schermate praticamente punta e clicca che fanno tanto visual novel.Questa soluzione tarpa sicuramente il senso d'immersione del giocatore, anche se l'esplorazione nell'originale non era stata strutturata bene come nei titoli successivi, e risultava alla lunga monotona. Resta comunque la possibilità di esplorare in terza persona il Tartaro, il labirinto procedurale che si manifesta nella Gekkoukan durante l'Ora Buia, e che il giocatore deve scalare nel corso dell'anno scolastico per arrivare alla fine dell'avventura. Qui Persona 3 Portable, pur migliorato nel gameplay già rispetto alla prima edizione del 2006 con l'introduzione di nuove meccaniche e bilanciamenti, mostra il fianco e tutti i limiti di un GDR vecchia maniera. Il sistema di combattimento è funzionale, ma anche più insipido rispetto ai titoli successivi, e il Tartaro, col suo intreccio di corridoi casuali, non è esattamente il massimo del divertimento da navigare.\n\nPersona 3 mantiene comunque quella componente strategica che i fan delle serie Atlus dovrebbero adorare: possiamo conquistare nuove Personae e poi fonderle nella Stanza di Velluto al cospetto del solito Igor, sbloccando entità sempre più forti o comunque più adatte ai nostri scopi. Le funzionalità della Stanza di Velluto sono chiaramente più limitate rispetto alle iterazioni successive della serie, ma consentono comunque una gran varietà di strategie.Persona 3 Portable è ancora oggi un GDR esemplare, ma alla terza volta che lo giochiamo, anche se sono passati molti anni, dobbiamo riconoscere che è invecchiato malino rispetto, per esempio, al sempre ottimo e fresco Persona 4 Golden. Siamo comunque di fronte a una riedizione, e non a un remake, ma dispiace che Atlus non ne abbia approfittato per proporre un titolo più completo, aggiungendo, per esempio, i contenuti di Persona 3 FES.\n\nPer chi non lo sapesse, Persona 3 FES era una specie di DLC - un disco aggiuntivo per PlayStation 2, in verità - che nel resto del mondo è stato proposto in una specie di pacchetto unico che comprendeva la campagna originale, soprannominata The Journey, e i contenuti extra: una vera e propria campagna aggiuntiva, The Answer, che continuava la storia dopo lo struggente finale di Persona 3, chiudendo il cerchio su molti personaggi. Il gameplay di The Answer era sicuramente criticabile sotto diversi aspetti, ma la narrativa era meritevole di attenzione; tuttavia, col tempo Atlus sembrerebbe aver confermato la canonicità di Persona 3 Portable, ignorando quanto raccontato in The Answer, e la scelta di riproporre questa versione nel 2023 sembrerebbe confermare la decisione presa all'epoca.\n\n",
+      "score": 7.5,
+      "reviewerName": "Giuseppe Cruciani",
+      "imageUrls": [
+        "https://multiplayer.net-cdn.it/thumbs/images/2023/01/17/nswitchds_persona3portable_03_jpg_800x0_crop_upscale_q85.jpg",
+        "https://multiplayer.net-cdn.it/thumbs/images/2023/01/17/nswitchds_persona3portable_02_jpg_800x0_crop_upscale_q85.jpg",
+        "https://multiplayer.net-cdn.it/thumbs/images/2023/01/17/nswitchds_persona3portable_06_jpg_800x0_crop_upscale_q85.jpg",
+        "https://multiplayer.net-cdn.it/thumbs/images/2023/01/17/persona-3-portable-switch-switch-gioco-nintendo-eshop-europe-wallpaper-3_jpg_800x0_crop_upscale_q85.jpg",
+        "https://multiplayer.net-cdn.it/thumbs/images/2023/01/17/persona-3-portable-switch-switch-gioco-nintendo-eshop-europe-wallpaper-5_jpg_800x0_crop_upscale_q85.jpg"
+      ],
+      "reviewedGame": {
+        "id": "63ecfadd4b6c1ded042ba30b",
+        "name": "Persona 3 Portable"
+      },
+      "__v": 0
+    },
+    {
+      "id": "63ed061e4b6c1ded042ba7f1",
+      "title": "Perfect Grind",
+      "publicationDate": "2023-02-13",
+      "content": "Quello dei giochi di skateboard è un sottogenere che andava davvero forte, vent'anni or sono: la possibilità di sfruttare le tre dimensioni rappresentava una sostanziale novità e gli sviluppatori cercavano di esplorarla sempre più convintamente, il che donava una certa freschezza a tutte le produzioni che puntavano in quella direzione, anche quelle sportive.\nGli appassionati della vecchia guardia ricordano tanto i classici Tony Hawk's Pro Skater quanto il cartoonesco Jet Set Radio: titoli che hanno senza dubbio ispirato il minuscolo team di Flying Pants Games, formato da appena due persone, che ha preso una grafica in cel shading e un elaborato sistema di trick per portare su iOS e Android la propria versione di quel tipo di esperienza.Il risultato finale si pone come una manovra acrobatica perfettamente eseguita o come un grind finito male in cui ci si rimette i testicoli? Ve lo raccontiamo nella recensione di Perfect Grind.I riferimenti di Perfect Grind risultano ben chiari fin dalle prime battute e gli sviluppatori sono riusciti a ridurre quel tipo di impostazione in maniera efficace sul touch screen: con il dispositivo rigorosamente in verticale, in modalità ritratto, è possibile usare un dito per muovere la visuale e veder partire il proprio personaggio, che a quel punto si muoverà automaticamente fin quando non effettueremo una manovra per stopparlo.\n\nPotremo dunque dirigerci verso rampe e ringhiere, saltare e lasciare che il sistema ci agganci automaticamente alle sporgenze, gestendo poi l'equilibrio del grind attraverso un semplice indicatore oppure effettuando trick a mezz'aria o rotazioni mantenute che richiedono chiaramente un atterraggio ben fatto per poter essere chiuse con successo e registrare il punteggio totalizzato, per poi passare alla sfida successiva.Sebbene le meccaniche del gameplay non appaiano particolarmente raffinate, e anzi il movimento automatico finisca per rendere un po' caotica e imprecisa la gestione del personaggio, mettendo anche in luce collisioni e interazioni abbozzate, dopo un po' si entra in confidenza con la filosofia alla base di Perfect Grind e ci si diverte, a patto ovviamente di apprezzare questo tipo di formula.\n\nIl limite più grande del titolo sviluppato da Flying Pants Games, infatti, è il suo reinterpretare in maniera fin troppo fedele un approccio che ormai ha ampiamente fatto il suo tempo e che potrebbe subito risultarvi \"già visto\" se anni fa avete dedicato parecchie ore ai vari Tony Hawk's Pro Skater e Jet Set Radio. Insomma, le idee che troverete in questo gioco non sono esattamente freschissime e potreste accusare il colpo... oppure innamorarvene, dipende da voi.La modalità Carriera, che rappresenta il fulcro di Perfect Grind, ci vedrà scegliere uno skater fra quelli disponibili (con la possibilità di sbloccarne altri impiegando le monete guadagnate fino a quel momento), portare a termine un breve tutorial e lanciarci poi all'interno di alcuni scenari con l'obiettivo di completare le missioni che ci verranno assegnate dai PNG con cui ci troveremo a interagire, nell'ambito di una sorta di percorso a premi che consente di accedere alle mappe successive.\n\nIl gioco può essere scaricato gratuitamente da App Store e Google Play, sebbene pagando 3,49€ sia possibile sbloccare un paio di modalità extra (la sfida a punteggio Free Skate e il Park Editor) ed eliminare i trailer pubblicitari, che effettivamente arrivano un po' all'improvviso e finiscono per spezzare il ritmo dell'azione. Il nostro suggerimento è senza dubbio quello di provare il gioco e premiare gli autori qualora abbiate intenzione di passarci un po' di tempo.Come accennato in apertura, fra le ispirazioni di Perfect Grind c'è anche Jet Set Radio, un grande classico della grafica in cel shading: una tecnica che ritroviamo anche qui, utilizzata in maniera più che discreta per aggiungere carattere ai vari personaggi disponibili, alcuni dei quali abbastanza assurdi (vedi la, uh, banana antropomorfa). Purtroppo gli scenari non possono contare sul medesimo spessore e anzi appaiono generalmente vuoti e scialbi: peccato.\n\nPoco da dire sul comparto sonoro, composto da qualche musichetta e da effetti molto semplici, che tuttavia vanno in muto alla prima interruzione pubblicitaria: un glitch che abbiamo riscontrato durante la nostra prova su iPhone 14 Pro e che speriamo gli sviluppatori sistemino al più presto tramite un aggiornamento.",
+      "score": 7,
+      "reviewerName": "Francesk",
+      "imageUrls": [
+        "https://multiplayer.net-cdn.it/thumbs/images/2023/01/19/perfect-grind_4_jpg_800x0_crop_upscale_q85.jpg",
+        "https://multiplayer.net-cdn.it/thumbs/images/2023/01/19/perfect-grind_3_jpg_800x0_crop_upscale_q85.jpg",
+        "https://multiplayer.net-cdn.it/thumbs/images/2023/01/19/perfect-grind_2_jpg_800x0_crop_upscale_q85.jpg"
+      ],
+      "reviewedGame": {
+        "id": "63ed05894b6c1ded042ba7a0",
+        "name": "Perfect Grind"
+      },
+      "__v": 0
+    }
+  ],
+  "news": [
+    {
+      "title": "Da oggi Fire Emblem Engage è disponibile su Switch e per celebrare Nintendo ha pubblicato il trailer di lancio",
+      "category": "Nintendo Switch",
+      "imageUrl": "https://sm.ign.com/ign_it/preview/f/fire-emble/fire-emblem-engage-preview-a-loving-tribute-to-nonexistent-n_ebat.jpg",
+      "content": "Fire Emblem Engage da oggi è disponibile su Nintendo Switch e la grande N ce lo ricorda attraverso il trailer di lancio.l gioco ci mette nei panni di Aelar, il Drago Divino della profezia, che dopo un sonno durato mille anni si metterà alla ricerca degli anelli degli emblemi per sventare i piani del Drago Maligno Sombron e portare la pace nel continente.\nOltre agli immancabili combattimenti strategici tipici della serie, tra le caratteristiche di Fire Emblem Engage citiamo proprio gli anelli degli emblemi, che permettono di evocare in battaglia degli eroi leggendari, ovvero personaggi iconici dei precedenti capitoli della serie, come Marth, Celica e Byleth, giusto per citarne alcuni.",
+      "publicationDate": "2023-02-10",
+      "authorName": "Francesco Vizzoni",
+      "tags": [
+        "Fire Emblem",
+        "Tactical RPG",
+        "NEWS"
+      ],
+      "id": "63e26fb3a6043ae8a30adf4d",
+      "__v": 0
+    },
+    {
+      "id": "63ea87133745ed3c7c868439",
+      "title": "Hogwarts Legacy",
+      "category": "PC",
+      "imageUrl": "https://www.spaziogames.it/images/images/2023/01/hogwarts-legacy-54491.1920x1080.webp",
+      "content": "Potete acquistare il nuovissimo Hogwarts Legacy a soli 45,39€, con uno sconto del 24% e un risparmio reale di 14,61€ rispetto ai 60€ usuali di listino.\n\nLe vicende raccontate in Hogwarts Legacy avranno luogo diversi anni prima dell’avvento del maghetto più famoso del mondo e vedranno il giocatore impersonare uno studente della celeberrima scuola di stregoneria di Hogwarts, affrontando nemici e insidie uscite dal Wizardry World creato da J.K. Rowling.\n\nNella nostra recensione abbiamo affermato che “Hogwarts Legacy è un’esperienza di proporzioni mastodontiche, davvero difficile da sintetizzare in poche parole. Ad una riproduzione minuziosa di Hogwarts, dei suoi intricati labirinti, dei suoi infiniti segreti, si accompagna una struttura di gioco ricca e sfaccettata, che vi farà sentire, per la prima volta, dei veri studenti di Hogwarts. Il gioco è a tutti gli effetti quello che un fan di Harry Potter sogna da sempre“.",
+      "publicationDate": "2023-02-11",
+      "authorName": "Stefania Sperandio",
+      "tags": [
+        "DeadSpace",
+        "HarryPotter",
+        "Gaming",
+        "Sconti"
+      ],
+      "__v": 0
+    },
+    {
+      "id": "63ecbfdb4b6c1ded042b8af9",
+      "title": "Dead Space Remake ha una data di uscita precisa: il 27 gennaio 2023",
+      "category": "PS5",
+      "imageUrl": "https://www.hwupgrade.it/immagini/dead-space-remake-13-05-2022.jpg",
+      "content": "Dead Space Remake sarà disponibile dal 27 gennaio 2023 su PC, PS5 e Xbox Series X|S. Il titolo basato sul classico del 2008 di Visceral Games, ora nelle mani di EA Motive, è ufficialmente in sviluppo da quasi un anno, ovvero da quando lo scorso luglio la software house annunciò l'avvio dei lavori. A metà marzo gli sviluppatori avevano indicato genericamente l'inizio del 2023, ma ora hanno fissato un giorno preciso.\nOltre al rinnovamento grafico, Dead Space Remake prevede diverse novità anche per quanto concerne l'audio (componente non secondaria in un gioco come questo), le meccaniche di gioco, la risposta delle armi, la storia, i personaggi e altro ancora. Per accompagnare l'annuncio della data si è tenuta una livestream, ma se volete assaggiare un po' di atmosfera di questo remake ecco un video che fa per voi:\nSecondo gli sviluppatori di EA Motive, il lavoro sul progetto sta andando molto bene, tanto che due settimane fa la versione alpha ha raggiunto la maturità necessaria per un walkthrough completo del gioco, con tutti i contenuti presenti.\n\nInsomma, ora si tratta di ripulire e ottimizzare, dando stabilità al tutto: gli sviluppatori danno appuntamento alla fine di ottobre per un nuovo contatto con Dead Space Remake. Ottobre era la data che in casa EA si erano dati originariamente per l'uscita, ma poi hanno deciso di concedere al team più tempo per completare i lavori.",
+      "publicationDate": "2022-05-13",
+      "authorName": "Manolo De Agostini",
+      "tags": [
+        "DeadSpace",
+        "remake",
+        "ea"
+      ],
+      "__v": 0
+    },
+    {
+      "id": "63ece4aa4b6c1ded042b996e",
+      "title": "Splatoon 3: la data di uscita di Coloropoli del Pass di espansione è stata svelata",
+      "category": "Nintendo Switch",
+      "imageUrl": "https://multiplayer.net-cdn.it/thumbs/images/2021/02/18/splatoon-3_9_jpg_1280x720_crop_q85.jpg",
+      "content": "Tramite i propri canali social, Nintendo ha svelato che Coloropoli, il primo pacchetto del Pass di espansione di Splatoon 3, ha finalmente una data di uscita: è il 28 febbraio 2023. Il Pass di espansione è già disponibile all'acquisto al prezzo di 24.99€ tramite il Nintendo eShop. Nintendo ha anche pubblicato, sempre tramite Twitter, una serie di immagini che ci permettono di vedere i residenti di Coloropoli che sarà possibile incontrare all'interno di Splatoon 3 tramite il pass di espansione del 28 febbraio 2023.Ricordiamo poi che Coloropoli è solo la prima parte del Pass di espansione di Splatoon 3. Come annunciato al Nintendo Direct dell'8 febbraio 2023, sarà resa disponibile una seconda ondata di contenuti con un DLC chiamato Torre dell'Ordine di cui purtroppo per ora non sappiamo molto. La data di uscita non è stata per il momento indicata.",
+      "publicationDate": "2023-02-15",
+      "authorName": "Vittorio Brumotti",
+      "tags": [
+        "Splatoon 3",
+        "Nintendo",
+        "DLC"
+      ],
+      "__v": 0
+    },
+    {
+      "id": "63ece6084b6c1ded042b99fe",
+      "title": "PlayStation Store: al via i doppi sconti PS Plus con centinaia di giochi PS5 e PS4",
+      "category": "PS5",
+      "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps-default-listing-thumb-05oct20",
+      "content": "Il PlayStation Store ha dato via oggi alle offerte \"Doppi Sconti PlayStation Plus\" che come da tradizione propone centinaia di giochi PS5 e PS4 a prezzo ridotto, con gli abbonati a PS Plus che possono accedere a una percentuale di sconto persino maggiore. Tra i titoli in promozione troviamo, tra gli altri, Gotham Knights, Need for Speed Unbound e FIFA 23. Le offerte dei doppi sconti sono attive da oggi fino la fine di febbraio 2023 e coinvolgono oltre 400 titoli.",
+      "publicationDate": "2023-02-01",
+      "authorName": "Paolo Maldini",
+      "tags": [
+        "Playstation",
+        "PS Plus"
+      ],
+      "__v": 0
+    },
+    {
+      "id": "63ece74a4b6c1ded042b9aa3",
+      "title": "PS5: Twisted Metal potrebbe essere il gioco di Firesprite, con supporto per PlayStation VR2",
+      "category": "PS5",
+      "imageUrl": "https://multiplayer.net-cdn.it/thumbs/images/2011/06/08/doll_cover_01_cropped_0_463_2566_2259_jpeg_1280x720_crop_q85.jpg",
+      "content": "Proseguono le voci di corridoio che vogliono Firesprite al lavoro su Twisted Metal per PS5, ma intanto si arricchiscono di ulteriori particolari come il possibile supporto per PlayStation VR2 e il fatto che possa essere lanciato al day one anche su PC.Dall'acquisizione di Firesprite Studios da parte di Sony PlayStation non abbiamo ancora capito a cosa stia lavorando il team in questione, tranne l'idea che possa essere uno dei vari giochi live service che la compagnia ha in programma di lanciare in questi anni per PS5.\n\nGià tempo fa era emersa l'idea che il team stesse lavorando a Twisted Metal e questa cosa persiste anche in altre voci di corridoio, che arricchiscono il quadro aggiungendo anche altri particolari. In base a diversi annunci di lavoro pubblicati dal team, riguardanti un Principle Physics Programmer e un Designer, il gioco in questione pare essere un \"gioco d'azione multiplayer tripla A su Unreal Engine 5\".\n\nLe richieste riguardanti il candidato riguardano anche possibile \"esperienza in gameplay per VR\", mentre in altre parti si menziona anche la conoscenza di servizi come Steam e PSN. Mettendo tutto insieme, alcuni tracciano come profilo del gioco una nuova versione di Twisted Metal, che potrebbe avere supporto per PlayStation VR2 ed essere lanciato al day one anche su PC, considerando che questa dovrebbe essere la politica per i giochi live service di Sony.",
+      "publicationDate": "2023-02-06",
+      "authorName": "Melissa Satta",
+      "tags": [
+        "PS5",
+        "Twisted Metal"
+      ],
+      "__v": 0
+    },
+    {
+      "id": "63ece9324b6c1ded042b9bbe",
+      "title": "È partita La Sfida, un gioco con il Trio Medusa per diffondere la cultura assicurativa e il valore della protezione",
+      "category": "PC",
+      "imageUrl": "https://multiplayer.net-cdn.it/thumbs/images/2023/02/14/copia_di_posato_trio_90_cropped_0_473_2160_1683_jpeg_1280x720_crop_q85.jpg",
+      "content": "E' online La Sfida, un contest con testimonial il Trio Medusa per diffondere la cultura assicurativa e il valore della protezione. Ormai è assodato che la gamification sia un metodo molto efficiente per insegnare nuove nozioni e comportamenti virtuosi velocemente. Per questo motivo molte aziende stanno usando i videogiochi o le esperienze interattive per informare e rendere più consapevole la propria clientela in modo fresco e divertente.\nProprio come l'iniziativa delle Compagnie Assicurative del Gruppo Intesa Sanpaolo Vita, che hanno scelto i tre comici del Trio Medusa come protagonisti di un webgame interattivo che nel corso di 10 settimane spiega, con il classico stile ironico e tagliente che li caratterizza, la cultura assicurativa e il valore della protezione. Questo nuovo gioco si chiama La Sfida.Per accedere agli episodi e provare a vincere i tanti premi in palio, basta andare sul sito lasfida.inactionesg.it, leggere il regolamento e seguire le istruzioni che a turno Giorgio Daviddi, Gabriele Corsi e Furio Corsetti condividono con noi. Il celebre trio televisivo, infatti, ogni settimana racconta una storia diversa, portando nel game online scenari tratti dalla vita quotidiana, in cui sta all'utente scegliere da che parte andare.\n\nPer decidere basta fare un classico swipe a destra o a sinistra sul telefono, mentre da PC si può cliccare col mouse le frecce che compaiono a ogni bivio: tutto molto semplice e intuitivo. In questo modo ci troviamo a riflettere su situazioni a tratti assurde, altre marcatamente dissacranti, ma tutte pensate per veicolare, attraverso la comicità tipica del Trio, come gli strumenti assicurativi e previdenziali possano essere preziosi alleati delle nuove generazioni. Di tanto in tanto c'è anche qualche quiz, per variare il ritmo del gameplay, come amiamo dire su Universe Games.it. Ogni scelta è l'occasione per imparare in maniera veloce, diretta e divertente l'importanza di alcuni comportamenti virtuosi in ambito assicurativo. Anche l'assegnazione del punteggio all'interno del gioco è variabile, a seconda delle decisioni che il giocatore prende. I punti sono accumulati in tre aree - Wisdom, Safety, Sustainability - che sono gli ambiti di gioco lungo i quali si sviluppano gli episodi. Alla fine della partita la somma di questi punteggi decreta un punteggio complessivo, con il quale scalare le classifiche settimanali e vincere i tanti premi in palio, nonché concorrere alla classifica generale e al montepremi finale.Ogni settimana i primi 20 classificati hanno la possibilità di vincere premi fino a un valore di 100€. I 15 giocatori con i punteggi migliori alla fine delle 10 settimane potranno vincere premi fino a un valore di 300€. Anche chi non riuscirà a far parte dei primi posti in classifica avrà una chance di vincere qualcosa: alla fine del concorso saranno messi in palio 50 voucher da spendere sul portale di moda sostenibile Humana Vintage, un portale che promuove uno stile di vita più sostenibile e consapevole.\nVi ricordiamo che tutte le informazioni possono essere trovate sul sito lasfida.inactionesg.it.",
+      "publicationDate": "2023-01-18",
+      "authorName": "Lodovica Comello",
+      "tags": [
+        "trio medusa",
+        "la sfida"
+      ],
+      "__v": 0
+    },
+    {
+      "id": "63ecea0d4b6c1ded042b9c3b",
+      "title": "Metroid Prime Remastered: altri sviluppatori arrabbiati per non essere stati accreditati nel gioco",
+      "category": "Nintendo Switch",
+      "imageUrl": "https://multiplayer.net-cdn.it/thumbs/images/2023/02/09/metroidprimeremastered_scrn_027_jpg_1280x720_crop_q85.jpg",
+      "content": "Alcuni ex- sviluppatori di Retro Studios si sono lamentati per la mancata inclusione nei crediti di Metroid Prime Remastered del team di sviluppo di Metroid Prime per Gamecube e Wii, nonostante il loro lavoro sia stato ampiamente riutilizzato. Il primo ad aver sollevato il problemam, già riportato, è stato lo sviluppatore Zoid Kirsch, che su Twitter ha scritto: \"Anche se in molti hanno fatto un lavoro eccezionale con la remaster, sono rimasto deluso dal fatto che Metroid Prime Remaster non include i crediti di gioco originali. Ci ho lavorato con così tante fantastiche persone e i nomi di tutti dovrebbero essere inclusi nella remaster, non racchiusi in una singola voce.\" Nel post è allegata l'immagine del modo in cui sono stati accreditati gli autori originali, ossia con una veloce scritta che dice: \"Basato sull'opera Metroid Prime (versioni originali per Gamecube e Wii)\"A Kirsch si sono aggiunti altri sviluppatori, come il lead engineer Jack Mathews, che riprendendo il post dell'ex-collega ha definito vergognoso quanto fatto: \"Questa è una presa in giro. Non solo per il mio nome nei crediti (presumo che la maggior parte del mio codice sia stata sostituita), ma per le persone il cui codice e il cui lavoro rimasti sostanzialmente invariati, come Mark HH, Steve McCrea, tutto il lavoro artistico e il design del gioco. Vergognoso.\"@alpacaash: \"Le compagnie devono piantarla con questa merda. È una schifezza. Accreditate la gente che ha lavorato ai giochi. Ha aiutato a realizzarli e voi ci farete milioni di dollari. È il minimo che possiate fare.\" La donna ha poi sottolineato come dai crediti manchi completamente un'artista che ha lavorato a Metroid Prime Remastered.\nGiusto ricordare in questi casi che essere accreditati per il lavoro svolto non è soltanto una questione di soddisfazione personale, ma anche di curriculum, che in questo modo diventa dimostrabile.",
+      "publicationDate": "2023-01-26",
+      "authorName": "Frank Matano",
+      "tags": [
+        "Metroid",
+        "Remastered"
+      ],
+      "__v": 0
+    },
+    {
+      "id": "63eceb7f4b6c1ded042b9d6a",
+      "title": "Hi-Fi Rush ha battuto Forspoken in maniera netta nelle vendite al lancio su Steam",
+      "category": "PC",
+      "imageUrl": "https://multiplayer.net-cdn.it/thumbs/images/2023/01/26/hibiki-news-hero-image-4916fb477b67e704ab35_jpg_1280x720_crop_q85.jpg",
+      "content": "Come fatto notare da varie fonti come Benji Sales e Forbes, la classifica di vendita di Steam della scorsa settimana ha messo in rilievo un particolare di notevole interesse: Hi-Fi Rush ha battuto Forspoken in maniera netta, sempre per quanto riguarda le versioni PC.\nAbbiamo visto la classifica settimanale di Steam, con Dead Space che occupa diverse posizioni ma non è comunque riuscito a battere Hogwarts Legacy, tuttavia diversi osservatori fanno notare come un altro risultato davvero notevole sia quello di Hi-Fi Rush, soprattutto se si considera che la classifica presa in considerazione è stilata in base ai guadagni, dunque il gap in termini di quantità di copie vendute è ancora più ampio se si considera che Hi-Fi Rush a 29,99 euro costa meno della metà di Forspoken, il cui prezzo ufficiale è di 79,99 euro.La riflessione che scaturisce è dunque anche sulla validità di un'operazione particolare come il lancio a sorpresa, che ha completamente tagliato fuori ogni tipo di marketing in favore di un accesso diretto e immediato a Hi-Fi Rush senza intermediari. L'altro elemento notevole è che il gioco è presente anche su Game Pass, cosa che potrebbe consentire di giocarlo senza doverlo acquistare interamente, ma questo sembra non abbia influito più di tanto sulle vendite Steam.Dall'altra parte, Forspoken, che doveva essere la grande uscita della settimana, è crollato prima intorno alla posizione 50 e si sta ora avvicinando al margine basso dalla top 100 su Steam (per quanto riguarda le vendite globali) nonostante la notevole campagna promozionale con cui è stato lanciato.",
+      "publicationDate": "2023-01-27",
+      "authorName": "Valentina Ferragni",
+      "tags": [
+        "Hi-Fi rush",
+        "Steam",
+        "Forspoken"
+      ],
+      "__v": 0
+    },
+    {
+      "id": "63eceead4b6c1ded042b9ee3",
+      "title": "Wanted: Dead, il trailer di lancio ci mostra nuove sequenze di gioco",
+      "category": "PC",
+      "imageUrl": "https://multiplayer.net-cdn.it/thumbs/images/2023/01/12/wd_10_jpg_1280x720_crop_q85.jpg",
+      "content": "Soleil ha pubblicato il trailer di lancio dell'action Wanted: Dead, per mostrare delle nuove sequenze di gioco e fare il riassunto della storia che farà da sfondo all'azione. Nel video possiamo vedere diversi livelli della versione finale, con la protagonista Hannah stone che combatte contro diversi nemici.\nIn effetti possiamo garantirvi che nel filmato ci sono molte anticipazioni, quindi se non volete averne, prima di mettere mano sulla versione finale, è meglio che lo saltiate.",
+      "publicationDate": "2023-02-13",
+      "authorName": "Francesk",
+      "tags": [
+        "Wanted: Dead",
+        "trailer"
+      ],
+      "__v": 0
+    },
+    {
+      "id": "63ecef094b6c1ded042b9ef5",
+      "title": "Dead Island 2: la data di uscita è stata anticipata e questa volta è definitiva, il gioco è GOLD",
+      "category": "PC",
+      "imageUrl": "https://multiplayer.net-cdn.it/thumbs/images/2022/08/23/pv_keyart_primary_horiz_rgb_071621_noheader_CR9p28v_cropped_1833_1567_5448_4097_cropped_0_128_3615_2152_jpeg_1280x720_crop_q85.jpg",
+      "content": "ramite un comunicato ufficiale, Deep Silver e Dambuster Studios hanno annunciato che la data di uscita di Dead Island 2 è cambiata ancora una volta. Per fortuna in questo caso è un buona notizia in quanto è stata anticipata: ora è il 21 aprile 2023. Inoltre, non ci saranno altri cambiamenti perché il gioco è Gold.\n\"Gold\" è il termine utilizzato per indicare che il gioco è nella sua versione finale pronto per la stampa. Non significa che il team di sviluppo abbia finito di lavorare, in quanto dovrà occuparsi della patch di lancio (e di tutte quelle successive), ma è la conferma che sviluppatore ed editore sono pronti a mandare in stampa i dischi e sono quindi certi di poter pubblicare il gioco nella data ora indicata.\nDead Island 2 era previsto per il 28 aprile 2023 (perlomeno, questa era la data più recente). L'anticipo è quindi di una settimana. È un cambiamento minimo, probabilmente legato a questioni di gestione e distribuzione che sono ora più chiari. Il comunicato ufficiale di Dead Island 2 recita: \"L'innovativo franchise di Dead Island è entrato in scena per la prima volta nel 2011 con uno dei trailer di videogame più visti di tutti i tempi. L'ultimo capitolo, che è stato annunciato con un trailer gloriosamente cruento durante l'evento Opening Night Live della gamescom nel 2022, immergerà i giocatori in un viaggio pulp e intriso di sangue per fuggire da una Los Angeles, ora soprannominata HELL-A, infestata da zombie offrendo tutta l'azione e il dark humor che i fan si aspettano dalla serie.\"Viene anche detto che \"fino all'uscita del gioco, Deep Silver svelerà più gameplay e trailer per i fan del franchise prima che possano intraprendere la loro battaglia per la sopravvivenza il 21 aprile 2023.\"",
+      "publicationDate": "2023-01-30",
+      "authorName": "Francesk",
+      "tags": [
+        "Dead Island"
+      ],
+      "__v": 0
+    },
+    {
+      "id": "63ed0b2a4b6c1ded042baa1f",
+      "title": "Romancelvania: data d'uscita ufficiale annunciata con un trailer",
+      "category": "PC",
+      "imageUrl": "https://www.romancelvania.com/img/screenshots/romancelvania-fenton-screenshot.jpg",
+      "content": "La software house The Deep End Games ha annunciato la data d'uscita ufficiale di Romancelvania: 7 marzo 2023. La notizia è stata data con un nuovo trailer.Romancelvania sarà lanciato su PC, Xbox Series X/S e PS5. Per chi non lo conoscesse, si tratta di un metroidvania che unisce le meccaniche tipiche del genere a un simulatore di appuntamenti. Quindi aspettatevi un'esperienza piena di mostri contro cui combattere e di mostri sexy da sedurre o con cui fare amicizia.\nRomancelvania sembra riuscire a mescolare con successo due generi apparentemente inconciliabili. La demo ci ha fatto venire voglia di provare la versione finale, per scoprire le parti restanti del reality show e l'evoluzione delle varie storie d'amore o d'amicizia. L'impressione è quella di un titolo davvero simpatico, capace a volte anche di stupire, perché realizzato in modo solido e competente. Ne riparleremo.",
+      "publicationDate": "2023-01-04",
+      "authorName": "Gerry Scotti",
+      "tags": [
+        "Romance",
+        "Dating"
+      ],
+      "__v": 0
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 export interface Videogioco {
-  _id: string;
+  id: string;
   title: string;
   category: string;
   releaseDate: Date;
@@ -12,7 +12,7 @@ export interface Videogioco {
   coverImage: string;
 }
 
-export type NewVideogioco = Omit<Videogioco, '_id' | '__v'>;
+export type NewVideogioco = Omit<Videogioco, 'id' | '__v'>;
 export type VideogiocoSkimmed = Omit<
   Videogioco,
   | '__v'

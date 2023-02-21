@@ -25,17 +25,13 @@
         </p>
 
         <div class="button">
-          <button
-            mat-flat-button
-            color="primary"
-            (click)="onClickDelete(n._id)"
-          >
+          <button mat-flat-button color="primary" (click)="onClickDelete(n.id)">
             Elimina
           </button>
           <button
             mat-flat-button
             color="primary"
-            [routerLink]="'/modifica/news/' + n._id"
+            [routerLink]="'/modifica/news/' + n.id"
           >
             Modifica
           </button>
