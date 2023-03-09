@@ -1,11 +1,13 @@
 # UniverseGamesCsm
 
+This project is a CMS webapp for managing CRUD operations for the fictitious gaming news website "Universe-Games". The original scaffolding data was requested from a mock API; however we decided to switch to a local mock json server for long-time project maintenance (see "Development Server" for more information).
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
 ## Development server
 
-HOW TO STARTUP THE JSON SERVER (necessary to make the API calls work):
-Run `npm run server` inside the project terminal. This will start the local json server with all the scaffolding data. (NOTE: this operation is also required in order to see the data in the "universe-games_sito" application.)
+HOW TO STARTUP THE JSON SERVER (needed to make the API calls work):
+Run `npm run server` inside the project directory in the system shell. This will start the local json server with all the scaffolding data. (NOTE: this operation is also required in order to see the data in the "universe-games_sito" application.)
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
