@@ -5,8 +5,7 @@ import { NewVideogioco, Videogioco } from '../model/videogioco';
 
 @Injectable({ providedIn: 'root' })
 export class VideogiocoService {
-  private apiUrl =
-    'https://project-works-rest-api.onrender.com/api/v1/GROUP-I/videogame';
+  private apiUrl = 'http://localhost:3000/videogame';
 
   constructor(private http: HttpClient) {}
 
@@ -33,7 +32,7 @@ export class VideogiocoService {
   putVideogioco(id: string, oldData: NewVideogioco, __v: number) {
     const newData: Videogioco = {
       ...oldData,
-      _id: id,
+      id: id,
       __v,
     };
     return this.http.put(`${this.apiUrl}/${id}`, newData);

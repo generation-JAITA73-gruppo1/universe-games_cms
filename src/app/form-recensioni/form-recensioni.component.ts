@@ -97,7 +97,7 @@ export class FormRecensioniComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.videogiocoService.getVideogiochi().subscribe((list) => {
       this.listaGiochiSkimmed = list.map((obj) => ({
-        _id: obj._id,
+        id: obj.id,
         title: obj.title,
       }));
     });
@@ -158,7 +158,7 @@ export class FormRecensioniComponent implements OnInit, OnDestroy {
       .get('reviewedGame.id')
       ?.valueChanges.subscribe((gameID) => {
         const reviewedGameName = this.listaGiochiSkimmed.find(
-          (obj) => obj._id === gameID
+          (obj) => obj.id === gameID
         )!.title;
         this.form.get('reviewedGame.name')?.setValue(reviewedGameName);
         // console.log(reviewedGameName);

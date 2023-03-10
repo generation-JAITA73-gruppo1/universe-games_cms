@@ -65,6 +65,25 @@ li.navbar-item {
   background-color: transparent;
 }
 
+.home-element {
+  padding: 0;
+  border-bottom: solid 1px #babaf8;
+  border-right: solid 1px #babaf8;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.home-element > a {
+  margin: 0;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .navbar-item > a {
   width: 100%;
   height: 100%;
@@ -75,7 +94,7 @@ li.navbar-item {
   background-color: #7c7cf8;
 }
 
-.navbar-item > a > p {
+.navbar-item > a > * {
   margin: 0;
 }
 
@@ -84,9 +103,10 @@ li.navbar-item {
   background-color: #4a4ada;
 }
 
-div.navbar-item:active {
+.home-element:active {
   background-color: #7c7cf8;
 }
+
 .navbar-item > a:hover {
   background-color: #babaf8;
 }

@@ -7,14 +7,13 @@ import { Subject } from 'rxjs';
   providedIn: 'root',
 })
 export class NewsService {
-    private apiUrl =
-    'https://project-works-rest-api.onrender.com/api/v1/GROUP-I/news';
+  private apiUrl = 'http://localhost:3000/news';
 
   constructor(private http: HttpClient) {}
 
-    private newsSubject = new Subject<News[]>();
+  private newsSubject = new Subject<News[]>();
 
-    news$ = this.newsSubject.asObservable();
+  news$ = this.newsSubject.asObservable();
 
   getNews() {
     return this.http.get<News[]>(this.apiUrl);
@@ -31,9 +30,9 @@ export class NewsService {
   putNews(id: string, oldData: NewNews, __v: number) {
     const newData: News = {
       ...oldData,
-      _id: id,
-      __v
-    }
+      id: id,
+      __v,
+    };
     return this.http.put(`${this.apiUrl}/${id}`, newData);
   }
 

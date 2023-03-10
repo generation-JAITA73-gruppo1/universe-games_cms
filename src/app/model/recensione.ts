@@ -1,5 +1,5 @@
 export interface Recensione {
-  _id: string;
+  id: string;
   title: string;
   publicationDate: Date;
   content: string;
@@ -15,4 +15,4 @@ export interface ReviewedGame {
   name: string;
 }
 
-export type NewRecensione = Omit<Recensione, '_id' | '__v'>;
+export type NewRecensione = Omit<Recensione, 'id' | '__v'>;

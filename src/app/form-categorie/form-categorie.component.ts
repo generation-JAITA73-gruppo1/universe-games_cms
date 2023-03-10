@@ -46,7 +46,7 @@ export class FormCategorieComponent {
         .putCategoria(this.idModifiable, modGioco, this.__vModifiable)
         .subscribe(() => {
           this.reset();
-          this.router.navigateByUrl('lista/categories');
+          this.router.navigateByUrl('/lista/categories');
           alert('record aggiornato');
         });
     } else {
@@ -54,6 +54,7 @@ export class FormCategorieComponent {
         .addCategorie(this.form.getRawValue())
         .subscribe(() => {
           this.router.navigateByUrl('/lista/categories');
+          alert('record aggiunto');
         });
     }
   }

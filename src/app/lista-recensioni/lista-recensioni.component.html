@@ -29,11 +29,11 @@
         </div>
       </div>
       <div class="buttons">
-        <button (click)="onClickDelete(r._id)" mat-flat-button color="primary">
+        <button (click)="onClickDelete(r.id)" mat-flat-button color="primary">
           Elimina
         </button>
         <button
-          [routerLink]="'/modifica/reviews/' + r._id"
+          [routerLink]="'/modifica/reviews/' + r.id"
           mat-flat-button
           color="primary"
         >
@@ -42,6 +42,7 @@
       </div>
     </div>
     <mat-paginator
+      *ngIf="recensioni !== undefined"
       [length]="recensioni.length"
       [pageSize]="5"
       [pageSizeOptions]="[5, 10, 20]"

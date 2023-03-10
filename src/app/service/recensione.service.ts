@@ -5,8 +5,7 @@ import { NewRecensione, Recensione } from '../model/recensione';
 
 @Injectable({ providedIn: 'root' })
 export class RecensioneService {
-  private apiUrl =
-    'https://project-works-rest-api.onrender.com/api/v1/GROUP-I/review';
+  private apiUrl = 'http://localhost:3000/review';
 
   constructor(private http: HttpClient) {}
 
@@ -26,18 +25,18 @@ export class RecensioneService {
     return this.http.post<Recensione[]>(this.apiUrl, nuovaRecensione);
   }
   postRecensione(newNews: Omit<Recensione, 'id'>) {
-    return this.http.post(this.apiUrl, newNews)
+    return this.http.post(this.apiUrl, newNews);
   }
 
-  //manca il metodo put 
+  //manca il metodo put
 
   deleteRecensione(id: string) {
-    return this.http.delete(`${this.apiUrl}/${id}`)
+    return this.http.delete(`${this.apiUrl}/${id}`);
   }
   putRecensione(id: string, oldData: NewRecensione, __v: number) {
     const newData: Recensione = {
       ...oldData,
-      _id: id,
+      id: id,
       __v,
     };
     return this.http.put(`${this.apiUrl}/${id}`, newData);

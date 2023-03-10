@@ -41,17 +41,13 @@
         </table>
         <hr />
         <div class="list-buttons">
-          <button
-            mat-flat-button
-            color="primary"
-            (click)="onClickDelete(v._id)"
-          >
+          <button mat-flat-button color="primary" (click)="onClickDelete(v.id)">
             Elimina
           </button>
           <button
             mat-flat-button
             color="primary"
-            [routerLink]="'/modifica/games/' + v._id"
+            [routerLink]="'/modifica/games/' + v.id"
           >
             Modifica
           </button>
@@ -65,6 +61,7 @@
       </div>
     </div>
     <mat-paginator
+      *ngIf="videogiochi !== undefined"
       [length]="videogiochi.length"
       [pageSize]="5"
       [pageSizeOptions]="[5, 10, 20]"

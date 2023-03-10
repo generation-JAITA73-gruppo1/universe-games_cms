@@ -5,8 +5,7 @@ import { Categoria, NewCategoria } from '../model/categoria';
 
 @Injectable({ providedIn: 'root' })
 export class CategoriaService {
-  private apiUrl =
-    'https://project-works-rest-api.onrender.com/api/v1/GROUP-I/category';
+  private apiUrl = 'http://localhost:3000/category';
 
   constructor(private http: HttpClient) {}
 
@@ -32,7 +31,7 @@ export class CategoriaService {
   putCategoria(id: string, oldData: NewCategoria, __v: number) {
     const newData: Categoria = {
       ...oldData,
-      _id: id,
+      id: id,
       __v,
     };
     return this.http.put(`${this.apiUrl}/${id}`, newData);

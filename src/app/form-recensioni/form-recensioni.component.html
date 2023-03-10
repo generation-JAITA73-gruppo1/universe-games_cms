@@ -64,7 +64,7 @@
             <option hidden selected disabled value="">
               Seleziona un videogioco da recensire
             </option>
-            <option *ngFor="let g of listaGiochiSkimmed" [value]="g._id">
+            <option *ngFor="let g of listaGiochiSkimmed" [value]="g.id">
               {{ g.title }}
             </option>
           </select>
